@@ -1,0 +1,119 @@
+type salesforce.BuyerGroupPricebook {
+  salesforce.Text Id {
+    apiName = "BuyerGroupPricebook.Id"
+    label = "Buyer Group Price Book ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BuyerGroupPricebook.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "BuyerGroupPricebook.Name"
+    label = "Buyer Group Price Book Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BuyerGroupPricebook.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BuyerGroupPricebook.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BuyerGroupPricebook.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BuyerGroupPricebook.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BuyerGroupPricebook.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup BuyerGroupId {
+    apiName = "BuyerGroupPricebook.BuyerGroupId"
+    label = "Buyer Group ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "BuyerGroup",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Lookup Pricebook2Id {
+    apiName = "BuyerGroupPricebook.Pricebook2Id"
+    label = "Price Book ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Pricebook2",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "BuyerGroupPricebook.IsActive"
+    label = "Is Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Number Priority {
+    apiName = "BuyerGroupPricebook.Priority"
+    label = "Priority"
+    _required = false
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+  }
+}

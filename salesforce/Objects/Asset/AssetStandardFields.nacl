@@ -1,0 +1,280 @@
+type salesforce.Asset {
+  salesforce.Text Id {
+    apiName = "Asset.Id"
+    label = "Asset ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "Asset.ContactId"
+    label = "Contact ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Contact",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup AccountId {
+    apiName = "Asset.AccountId"
+    label = "Account ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Account",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "Asset.ParentId"
+    label = "Parent Asset ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Asset",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup RootAssetId {
+    apiName = "Asset.RootAssetId"
+    label = "Root Asset ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Asset",
+    ]
+    createable = false
+    updateable = false
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "Asset.Product2Id"
+    label = "Product ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Product2",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Text ProductCode {
+    apiName = "Asset.ProductCode"
+    label = "Product Code"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Checkbox IsCompetitorProduct {
+    apiName = "Asset.IsCompetitorProduct"
+    label = "Competitor Asset"
+    defaultValue = false
+    createable = true
+    updateable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Asset.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Asset.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Asset.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Asset.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Asset.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Asset.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "Asset.Name"
+    label = "Asset Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Text SerialNumber {
+    apiName = "Asset.SerialNumber"
+    label = "Serial Number"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.Date InstallDate {
+    apiName = "Asset.InstallDate"
+    label = "Install Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Date PurchaseDate {
+    apiName = "Asset.PurchaseDate"
+    label = "Purchase Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Date UsageEndDate {
+    apiName = "Asset.UsageEndDate"
+    label = "Usage End Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "Asset.Status"
+    label = "Status"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    valueSetName = salesforce.StandardValueSet.instance.AssetStatus
+  }
+  salesforce.Currency Price {
+    apiName = "Asset.Price"
+    label = "Price"
+    _required = false
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+  }
+  salesforce.Number Quantity {
+    apiName = "Asset.Quantity"
+    label = "Quantity"
+    _required = false
+    precision = 12
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Asset.Description"
+    label = "Description"
+    _required = false
+    createable = true
+    updateable = true
+    length = 32000
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Asset.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup AssetProvidedById {
+    apiName = "Asset.AssetProvidedById"
+    label = "Asset Provided By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Account",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup AssetServicedById {
+    apiName = "Asset.AssetServicedById"
+    label = "Asset Serviced By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Account",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Checkbox IsInternal {
+    apiName = "Asset.IsInternal"
+    label = "Internal Asset"
+    defaultValue = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Number AssetLevel {
+    apiName = "Asset.AssetLevel"
+    label = "Asset Level"
+    _required = false
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Text StockKeepingUnit {
+    apiName = "Asset.StockKeepingUnit"
+    label = "Product SKU"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 180
+  }
+}

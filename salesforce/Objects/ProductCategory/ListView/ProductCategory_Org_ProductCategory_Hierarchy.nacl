@@ -1,0 +1,10 @@
+salesforce.ListView ProductCategory_Org_ProductCategory_Hierarchy {
+  fullName = "ProductCategory.Org_ProductCategory_Hierarchy"
+  columns = [
+    "Name",
+    "IsNavigational",
+  ]
+  filterScope = "Everything"
+  label = "Category Hierarchies"
+  _parent = salesforce.ProductCategory
+}

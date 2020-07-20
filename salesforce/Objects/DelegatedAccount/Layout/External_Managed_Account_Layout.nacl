@@ -1,0 +1,72 @@
+salesforce.Layout External_Managed_Account_Layout {
+  fullName = "DelegatedAccount-External Managed Account Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "Name"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.DelegatedAccount.field.ManagedById
+            },
+            {
+              behavior = "Required"
+              field = salesforce.DelegatedAccount.field.TargetId
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.DelegatedAccount.field.OwnerId
+            },
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.DelegatedAccount,
+  ]
+}

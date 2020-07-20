@@ -1,0 +1,35 @@
+salesforce.QuickAction NewLead {
+  fullName = "NewLead"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+          },
+          {
+            emptySpace = false
+            field = "Email"
+          },
+          {
+            emptySpace = false
+            field = "Phone"
+          },
+          {
+            emptySpace = false
+            field = "Company"
+          },
+          {
+            emptySpace = false
+            field = "Title"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "New"
+  targetObject = "Lead"
+  type = "Create"
+}

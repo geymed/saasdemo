@@ -1,0 +1,6 @@
+salesforce.SharingRules CommerceEntitlementPolicy {
+  fullName = "CommerceEntitlementPolicy"
+  _parent = [
+    salesforce.CommerceEntitlementPolicy,
+  ]
+}

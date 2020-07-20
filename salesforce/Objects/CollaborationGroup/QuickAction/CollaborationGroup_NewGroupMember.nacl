@@ -1,0 +1,31 @@
+salesforce.QuickAction CollaborationGroup_NewGroupMember {
+  fullName = "CollaborationGroup.NewGroupMember"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "CollaborationGroupId"
+          },
+          {
+            emptySpace = false
+            field = "MemberId"
+          },
+          {
+            emptySpace = false
+            field = "CollaborationRole"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "AddMember"
+  targetObject = "CollaborationGroupMember"
+  targetParentField = "CollaborationGroup"
+  type = "Create"
+  _parent = [
+    salesforce.CollaborationGroup,
+  ]
+}

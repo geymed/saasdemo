@@ -1,0 +1,6 @@
+salesforce.ListView CommerceEntitlementPolicy_ALL_Entitlement_Policies {
+  fullName = "CommerceEntitlementPolicy.ALL_Entitlement_Policies"
+  filterScope = "Everything"
+  label = "All Commerce Entitlement Policies"
+  _parent = salesforce.CommerceEntitlementPolicy
+}

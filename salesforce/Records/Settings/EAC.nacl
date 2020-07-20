@@ -1,0 +1,6 @@
+salesforce.EACSettings {
+  fullName = "EAC"
+  enableInboxActivitySharing = false
+  enableInsightsInTimeline = true
+  enableInsightsInTimelineEacStd = false
+}

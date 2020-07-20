@@ -1,0 +1,20 @@
+salesforce.ContentSettings {
+  fullName = "Content"
+  enableChatterFileLink = true
+  enableContent = true
+  enableContentAutoAssign = true
+  enableContentDistForPortalUsers = false
+  enableContentDistPwOptionsBit1 = true
+  enableContentDistPwOptionsBit2 = true
+  enableContentDistribution = true
+  enableContentSupportMultiLanguage = false
+  enableContentWorkspaceAccess = true
+  enableFileShareSetByRecord = false
+  enableFilesUsrShareNetRestricted = false
+  enableJPGPreviews = false
+  enableLibraryManagedFiles = false
+  enableSiteGuestUserToUploadFiles = false
+  enableUploadFilesOnAttachments = false
+  skipContentAssetTriggers = false
+  skipContentAssetTriggersOnDeploy = true
+}

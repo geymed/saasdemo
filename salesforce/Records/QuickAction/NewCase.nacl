@@ -1,0 +1,31 @@
+salesforce.QuickAction NewCase {
+  fullName = "NewCase"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "ContactId"
+          },
+          {
+            emptySpace = false
+            field = "Status"
+          },
+          {
+            emptySpace = false
+            field = "Subject"
+          },
+          {
+            emptySpace = false
+            field = "Description"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "New"
+  targetObject = "Case"
+  type = "Create"
+}

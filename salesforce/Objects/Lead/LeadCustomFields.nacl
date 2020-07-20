@@ -1,0 +1,87 @@
+type salesforce.Lead {
+  salesforce.Text SICCode__c {
+    apiName = "Lead.SICCode__c"
+    label = "SIC Code"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 15
+    externalId = false
+  }
+  salesforce.Picklist ProductInterest__c {
+    apiName = "Lead.ProductInterest__c"
+    label = "Product Interest"
+    _required = false
+    valueSet = [
+      {
+        fullName = "GC1000 series"
+        default = false
+        label = "GC1000 series"
+      },
+      {
+        fullName = "GC5000 series"
+        default = false
+        label = "GC5000 series"
+      },
+      {
+        fullName = "GC3000 series"
+        default = false
+        label = "GC3000 series"
+      },
+      {
+        fullName = "Salto OSS"
+        default = false
+        label = "Salto OSS"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    sorted = false
+  }
+  salesforce.Picklist Primary__c {
+    apiName = "Lead.Primary__c"
+    label = "Primary"
+    _required = false
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    sorted = false
+  }
+  salesforce.Text CurrentGenerators__c {
+    apiName = "Lead.CurrentGenerators__c"
+    label = "Current Generator(s)"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    externalId = false
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Lead.NumberofLocations__c"
+    label = "Number of Locations"
+    _required = false
+    precision = 3
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    externalId = false
+  }
+}

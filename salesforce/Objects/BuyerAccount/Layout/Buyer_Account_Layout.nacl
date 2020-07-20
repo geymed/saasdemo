@@ -1,0 +1,146 @@
+salesforce.Layout Buyer_Account_Layout {
+  fullName = "BuyerAccount-Buyer Account Layout"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Buyer Account Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.BuyerAccount.field.OwnerId
+            },
+            {
+              behavior = "Required"
+              field = "Name"
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BuyerAccount.field.BuyerStatus
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.BuyerAccount.field.BuyerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.BuyerAccount.field.CommerceType
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Credit Related Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.BuyerAccount.field.CreditStatus
+            },
+            {
+              behavior = "Edit"
+              field = "MinimumOrderLimit"
+            },
+            {
+              behavior = "Edit"
+              field = "CurrentBalance"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "CreditLimit"
+            },
+            {
+              behavior = "Edit"
+              field = "MaximumOrderLimit"
+            },
+            {
+              behavior = "Readonly"
+              field = "AvailableCredit"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Payment and Tax Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.BuyerAccount.field.SendToId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.BuyerAccount.field.PayerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.BuyerAccount,
+  ]
+}

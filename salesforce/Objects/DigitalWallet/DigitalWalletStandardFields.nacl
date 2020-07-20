@@ -1,0 +1,34 @@
+type salesforce.DigitalWallet {
+  salesforce.Lookup AccountId {
+    apiName = "DigitalWallet.AccountId"
+  }
+  string AuditEmail {
+  }
+  string Comments {
+  }
+  string CompanyName {
+  }
+  string Customer {
+  }
+  string Email {
+  }
+  string GatewayToken {
+  }
+  string GatewayTokenDetails {
+  }
+  string IpAddress {
+  }
+  string MacAddress {
+  }
+  string NickName {
+  }
+  salesforce.Lookup PaymentGatewayId {
+    apiName = "DigitalWallet.PaymentGatewayId"
+  }
+  string Phone {
+  }
+  string ProcessingMode {
+  }
+  string Status {
+  }
+}

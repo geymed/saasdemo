@@ -1,0 +1,6 @@
+salesforce.ListView Activity_AllActivities {
+  fullName = "Activity.AllActivities"
+  filterScope = "Team"
+  label = "All Activities"
+  _parent = salesforce.Activity
+}

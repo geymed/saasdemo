@@ -1,0 +1,68 @@
+type salesforce.Refund {
+  salesforce.Lookup AccountId {
+    apiName = "Refund.AccountId"
+  }
+  string Amount {
+  }
+  string Balance {
+  }
+  string CancellationDate {
+  }
+  string CancellationEffectiveDate {
+  }
+  string CancellationGatewayDate {
+  }
+  string CancellationGatewayRefNumber {
+  }
+  string CancellationGatewayResultCode {
+  }
+  string CancellationSfResultCode {
+  }
+  string Comments {
+  }
+  string Date {
+  }
+  string EffectiveDate {
+  }
+  string Email {
+  }
+  string GatewayDate {
+  }
+  string GatewayRefNumber {
+  }
+  string GatewayResultCode {
+  }
+  string GatewayResultCodeDescription {
+  }
+  string ImpactAmount {
+  }
+  string IpAddress {
+  }
+  string MacAddress {
+  }
+  string NetApplied {
+  }
+  salesforce.Lookup PaymentGatewayId {
+    apiName = "Refund.PaymentGatewayId"
+  }
+  salesforce.Lookup PaymentGroupId {
+    apiName = "Refund.PaymentGroupId"
+  }
+  salesforce.Lookup PaymentMethodId {
+    apiName = "Refund.PaymentMethodId"
+  }
+  string Phone {
+  }
+  string ProcessingMode {
+  }
+  string SfResultCode {
+  }
+  string Status {
+  }
+  string TotalApplied {
+  }
+  string TotalUnapplied {
+  }
+  string Type {
+  }
+}

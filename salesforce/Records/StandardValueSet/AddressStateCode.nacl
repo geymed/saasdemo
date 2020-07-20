@@ -1,0 +1,4 @@
+salesforce.StandardValueSet AddressStateCode {
+  fullName = "AddressStateCode"
+  sorted = false
+}

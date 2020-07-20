@@ -1,0 +1,36 @@
+salesforce.CaseSettings {
+  fullName = "Case"
+  caseAssignNotificationTemplate = "unfiled$public/SupportCaseAssignmentNotification"
+  caseCreateNotificationTemplate = "unfiled$public/SupportCaseCreatedPhoneInquiries"
+  caseFeedItemSettings = {
+    characterLimit = 400
+    displayFormat = "Default"
+    feedItemType = "EmailMessageEvent"
+  }
+  caseFeedReadUnreadLtng = false
+  closeCaseThroughStatusChange = false
+  defaultCaseFeedLayoutOn = true
+  defaultCaseOwner = "gilad.foyer@gmail.com"
+  defaultCaseOwnerType = "User"
+  defaultCaseUser = "gilad.foyer@gmail.com"
+  emailToCase = {
+    enableEmailToCase = false
+  }
+  enableCaseFeed = true
+  enableCollapseEmailThread = true
+  enableEarlyEscalationRuleTriggers = false
+  enableSuggestedSolutions = true
+  escalateCaseBefore = false
+  notifyContactOnCaseComment = false
+  notifyDefaultCaseOwner = false
+  notifyOwnerOnCaseComment = false
+  notifyOwnerOnCaseOwnerChange = false
+  showEmailAttachmentsInCaseAttachmentsRL = true
+  useSystemEmailAddress = true
+  useSystemUserAsDefaultCaseUser = false
+  webToCase = {
+    caseOrigin = "Web"
+    defaultResponseTemplate = "unfiled$public/SupportCaseCreatedWebInquiries"
+    enableWebToCase = true
+  }
+}

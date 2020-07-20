@@ -1,0 +1,319 @@
+type salesforce.Case {
+  salesforce.Text Id {
+    apiName = "Case.Id"
+    label = "Case ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Case.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Lookup MasterRecordId {
+    apiName = "Case.MasterRecordId"
+    label = "Master Record ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Case",
+    ]
+    createable = false
+    updateable = false
+  }
+  salesforce.Text CaseNumber {
+    apiName = "Case.CaseNumber"
+    label = "Case Number"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 30
+  }
+  salesforce.Lookup ContactId {
+    apiName = "Case.ContactId"
+    label = "Contact ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Contact",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup AccountId {
+    apiName = "Case.AccountId"
+    label = "Account ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Account",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup AssetId {
+    apiName = "Case.AssetId"
+    label = "Asset ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Asset",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup SourceId {
+    apiName = "Case.SourceId"
+    label = "Source ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "EmailMessage",
+      "MessagingSession",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "Case.ParentId"
+    label = "Parent Case ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Case",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Text SuppliedName {
+    apiName = "Case.SuppliedName"
+    label = "Name"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.Email SuppliedEmail {
+    apiName = "Case.SuppliedEmail"
+    label = "Email Address"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+  }
+  salesforce.Text SuppliedPhone {
+    apiName = "Case.SuppliedPhone"
+    label = "Phone"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 40
+  }
+  salesforce.Text SuppliedCompany {
+    apiName = "Case.SuppliedCompany"
+    label = "Company"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.Picklist Type {
+    apiName = "Case.Type"
+    label = "Case Type"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    valueSetName = salesforce.StandardValueSet.instance.CaseType
+  }
+  salesforce.Picklist Status {
+    apiName = "Case.Status"
+    label = "Status"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    valueSetName = salesforce.StandardValueSet.instance.CaseStatus
+  }
+  salesforce.Picklist Reason {
+    apiName = "Case.Reason"
+    label = "Case Reason"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    valueSetName = salesforce.StandardValueSet.instance.CaseReason
+  }
+  salesforce.Picklist Origin {
+    apiName = "Case.Origin"
+    label = "Case Origin"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    valueSetName = salesforce.StandardValueSet.instance.CaseOrigin
+  }
+  salesforce.Text Subject {
+    apiName = "Case.Subject"
+    label = "Subject"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Picklist Priority {
+    apiName = "Case.Priority"
+    label = "Priority"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    valueSetName = salesforce.StandardValueSet.instance.CasePriority
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Case.Description"
+    label = "Description"
+    _required = false
+    createable = true
+    updateable = true
+    length = 32000
+  }
+  salesforce.Checkbox IsClosed {
+    apiName = "Case.IsClosed"
+    label = "Closed"
+    defaultValue = false
+    createable = false
+    updateable = false
+  }
+  salesforce.DateTime ClosedDate {
+    apiName = "Case.ClosedDate"
+    label = "Closed Date"
+    _required = false
+    createable = false
+    updateable = false
+  }
+  salesforce.Checkbox IsEscalated {
+    apiName = "Case.IsEscalated"
+    label = "Escalated"
+    defaultValue = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Case.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Group",
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Case.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Case.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Case.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Case.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Case.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Phone ContactPhone {
+    apiName = "Case.ContactPhone"
+    label = "Contact Phone"
+    _required = false
+    createable = false
+    updateable = false
+  }
+  salesforce.Phone ContactMobile {
+    apiName = "Case.ContactMobile"
+    label = "Contact Mobile"
+    _required = false
+    createable = false
+    updateable = false
+  }
+  salesforce.Email ContactEmail {
+    apiName = "Case.ContactEmail"
+    label = "Contact Email"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+  }
+  salesforce.Phone ContactFax {
+    apiName = "Case.ContactFax"
+    label = "Contact Fax"
+    _required = false
+    createable = false
+    updateable = false
+  }
+  salesforce.LongTextArea Comments {
+    apiName = "Case.Comments"
+    label = "Internal Comments"
+    _required = false
+    createable = true
+    updateable = true
+    length = 4000
+  }
+}

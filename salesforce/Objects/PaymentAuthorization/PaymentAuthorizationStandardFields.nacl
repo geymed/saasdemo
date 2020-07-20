@@ -1,0 +1,50 @@
+type salesforce.PaymentAuthorization {
+  salesforce.Lookup AccountId {
+    apiName = "PaymentAuthorization.AccountId"
+  }
+  string Amount {
+  }
+  string Comments {
+  }
+  string Date {
+  }
+  string EffectiveDate {
+  }
+  string Email {
+  }
+  string ExpirationDate {
+  }
+  string GatewayAuthCode {
+  }
+  string GatewayDate {
+  }
+  string GatewayRefDetails {
+  }
+  string GatewayRefNumber {
+  }
+  string GatewayResultCode {
+  }
+  string GatewayResultCodeDescription {
+  }
+  string IpAddress {
+  }
+  string MacAddress {
+  }
+  salesforce.Lookup PaymentGatewayId {
+    apiName = "PaymentAuthorization.PaymentGatewayId"
+  }
+  salesforce.Lookup PaymentGroupId {
+    apiName = "PaymentAuthorization.PaymentGroupId"
+  }
+  salesforce.Lookup PaymentMethodId {
+    apiName = "PaymentAuthorization.PaymentMethodId"
+  }
+  string Phone {
+  }
+  string ProcessingMode {
+  }
+  string SfResultCode {
+  }
+  string Status {
+  }
+}

@@ -1,0 +1,84 @@
+salesforce.FileUploadAndDownloadSecuritySettings {
+  fullName = "FileUploadAndDownloadSecurity"
+  dispositions = [
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = true
+    },
+    {
+      securityRiskFileType = true
+    },
+    {
+      securityRiskFileType = true
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = true
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = true
+    },
+    {
+      securityRiskFileType = true
+    },
+    {
+      securityRiskFileType = true
+    },
+    {
+      securityRiskFileType = true
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = true
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = false
+    },
+    {
+      securityRiskFileType = true
+    },
+  ]
+  noHtmlUploadAsAttachment = false
+}

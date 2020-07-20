@@ -1,0 +1,13 @@
+type salesforce.DelegatedAccount {
+  salesforce.Lookup ManagedById {
+    apiName = "DelegatedAccount.ManagedById"
+  }
+  string Name {
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DelegatedAccount.OwnerId"
+  }
+  salesforce.Lookup TargetId {
+    apiName = "DelegatedAccount.TargetId"
+  }
+}

@@ -1,0 +1,6 @@
+salesforce.ListView Refund_Refund {
+  fullName = "Refund.Refund"
+  filterScope = "Everything"
+  label = "All"
+  _parent = salesforce.Refund
+}

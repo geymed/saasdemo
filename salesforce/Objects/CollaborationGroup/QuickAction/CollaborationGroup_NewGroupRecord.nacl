@@ -1,0 +1,27 @@
+salesforce.QuickAction CollaborationGroup_NewGroupRecord {
+  fullName = "CollaborationGroup.NewGroupRecord"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "CollaborationGroupId"
+          },
+          {
+            emptySpace = false
+            field = "RecordId"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "AddRecord"
+  targetObject = "CollaborationGroupRecord"
+  targetParentField = "CollaborationGroup"
+  type = "Create"
+  _parent = [
+    salesforce.CollaborationGroup,
+  ]
+}

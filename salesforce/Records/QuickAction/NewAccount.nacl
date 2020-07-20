@@ -1,0 +1,39 @@
+salesforce.QuickAction NewAccount {
+  fullName = "NewAccount"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+          },
+          {
+            emptySpace = false
+            field = "Phone"
+          },
+          {
+            emptySpace = false
+            field = "Industry"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Type"
+          },
+          {
+            emptySpace = false
+            field = "Website"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "New"
+  targetObject = "Account"
+  type = "Create"
+}

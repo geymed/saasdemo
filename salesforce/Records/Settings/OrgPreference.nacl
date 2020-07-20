@@ -1,0 +1,161 @@
+salesforce.OrgPreferenceSettings {
+  fullName = "OrgPreference"
+  preferences = [
+    {
+      settingName = "AnalyticsSharingEnable"
+      settingValue = "true"
+    },
+    {
+      settingName = "ApexApprovalLockUnlock"
+      settingValue = "false"
+    },
+    {
+      settingName = "B2bmaAppEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "CallDispositionEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "ChatterEnabled"
+      settingValue = "true"
+    },
+    {
+      settingName = "CompileOnDeploy"
+      settingValue = "false"
+    },
+    {
+      settingName = "ConsentManagementEnabled"
+      settingValue = "true"
+    },
+    {
+      settingName = "DeleteMonitoringDataEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "DisableParallelApexTesting"
+      settingValue = "false"
+    },
+    {
+      settingName = "EnhancedEmailEnabled"
+      settingValue = "true"
+    },
+    {
+      settingName = "EventLogWaveIntegEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "LocalNames"
+      settingValue = "false"
+    },
+    {
+      settingName = "LoginForensicsEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "NetworksEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "NotesReservedPref01"
+      settingValue = "false"
+    },
+    {
+      settingName = "OfflineDraftsEnabled"
+      settingValue = "true"
+    },
+    {
+      settingName = "PRMAccRelPref"
+      settingValue = "false"
+    },
+    {
+      settingName = "PardotAppV1Enabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "PardotEmbeddedAnalyticsPref"
+      settingValue = "false"
+    },
+    {
+      settingName = "PardotEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "PortalUserShareOnCase"
+      settingValue = "true"
+    },
+    {
+      settingName = "RemoveThemeBrandBanner"
+      settingValue = "false"
+    },
+    {
+      settingName = "S1DesktopEnabled"
+      settingValue = "true"
+    },
+    {
+      settingName = "S1EncryptedStoragePref2"
+      settingValue = "true"
+    },
+    {
+      settingName = "S1OfflinePref"
+      settingValue = "true"
+    },
+    {
+      settingName = "ScratchOrgManagementPref"
+      settingValue = "false"
+    },
+    {
+      settingName = "SendThroughGmailPref"
+      settingValue = "false"
+    },
+    {
+      settingName = "SocialProfilesEnable"
+      settingValue = "true"
+    },
+    {
+      settingName = "Translation"
+      settingValue = "false"
+    },
+    {
+      settingName = "UseLanguageFallback"
+      settingValue = "false"
+    },
+    {
+      settingName = "UsePathCollapsedUserPref"
+      settingValue = "false"
+    },
+    {
+      settingName = "UsersAreLightningOnly"
+      settingValue = "false"
+    },
+    {
+      settingName = "VoiceCallListEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "VoiceCallRecordingEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "VoiceCoachingEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "VoiceConferencingEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "VoiceLocalPresenceEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "VoiceMailDropEnabled"
+      settingValue = "false"
+    },
+    {
+      settingName = "VoiceMailEnabled"
+      settingValue = "false"
+    },
+  ]
+}

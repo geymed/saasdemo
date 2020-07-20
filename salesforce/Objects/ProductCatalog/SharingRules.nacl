@@ -1,0 +1,6 @@
+salesforce.SharingRules ProductCatalog {
+  fullName = "ProductCatalog"
+  _parent = [
+    salesforce.ProductCatalog,
+  ]
+}

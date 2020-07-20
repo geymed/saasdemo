@@ -1,0 +1,10 @@
+type salesforce.ElectronicMediaUse {
+  salesforce.Lookup ElectronicMediaGroupId {
+    apiName = "ElectronicMediaUse.ElectronicMediaGroupId"
+  }
+  salesforce.Lookup ElectronicMediaId {
+    apiName = "ElectronicMediaUse.ElectronicMediaId"
+  }
+  string SortOrder {
+  }
+}

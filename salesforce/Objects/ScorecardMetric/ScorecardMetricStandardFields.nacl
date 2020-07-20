@@ -1,0 +1,15 @@
+type salesforce.ScorecardMetric {
+  salesforce.Picklist Category {
+    apiName = "ScorecardMetric.Category"
+  }
+  string Description {
+  }
+  string Name {
+  }
+  salesforce.Lookup ReportId {
+    apiName = "ScorecardMetric.ReportId"
+  }
+  salesforce.MasterDetail ScorecardId {
+    apiName = "ScorecardMetric.ScorecardId"
+  }
+}

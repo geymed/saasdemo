@@ -1,0 +1,9 @@
+type salesforce.Scorecard {
+  string Description {
+  }
+  string Name {
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Scorecard.OwnerId"
+  }
+}

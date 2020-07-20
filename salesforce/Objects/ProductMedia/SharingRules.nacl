@@ -1,0 +1,6 @@
+salesforce.SharingRules ProductMedia {
+  fullName = "ProductMedia"
+  _parent = [
+    salesforce.ProductMedia,
+  ]
+}

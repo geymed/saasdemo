@@ -1,0 +1,39 @@
+salesforce.QuickAction Case_NewChildCase {
+  fullName = "Case.NewChildCase"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "ContactId"
+          },
+          {
+            emptySpace = false
+            field = "Status"
+          },
+          {
+            emptySpace = false
+            field = "Subject"
+          },
+          {
+            emptySpace = false
+            field = "ParentId"
+          },
+          {
+            emptySpace = false
+            field = "Description"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "NewChild"
+  targetObject = "Case"
+  targetParentField = "Parent"
+  type = "Create"
+  _parent = [
+    salesforce.Case,
+  ]
+}

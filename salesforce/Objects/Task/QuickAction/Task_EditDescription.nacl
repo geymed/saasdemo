@@ -1,0 +1,21 @@
+salesforce.QuickAction Task_EditDescription {
+  fullName = "Task.EditDescription"
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Description"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "EditDescription"
+  type = "Update"
+  _parent = [
+    salesforce.Task,
+  ]
+}

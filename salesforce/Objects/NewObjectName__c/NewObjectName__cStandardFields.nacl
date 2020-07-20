@@ -1,0 +1,93 @@
+type salesforce.NewObjectName__c {
+  salesforce.Text Id {
+    apiName = "NewObjectName__c.Id"
+    label = "Record ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "NewObjectName__c.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Group",
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "NewObjectName__c.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "NewObjectName__c.Name"
+    label = "Name"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "NewObjectName__c.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "NewObjectName__c.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "NewObjectName__c.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "NewObjectName__c.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "NewObjectName__c.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+}

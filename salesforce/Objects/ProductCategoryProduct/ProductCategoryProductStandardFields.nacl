@@ -1,0 +1,109 @@
+type salesforce.ProductCategoryProduct {
+  salesforce.Text Id {
+    apiName = "ProductCategoryProduct.Id"
+    label = "Product Category Product ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductCategoryProduct.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "ProductCategoryProduct.Name"
+    label = "Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductCategoryProduct.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductCategoryProduct.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductCategoryProduct.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductCategoryProduct.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductCategoryProduct.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup ProductCategoryId {
+    apiName = "ProductCategoryProduct.ProductCategoryId"
+    label = "Category ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "ProductCategory",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Lookup ProductId {
+    apiName = "ProductCategoryProduct.ProductId"
+    label = "Product ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Product2",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Checkbox IsPrimaryCategory {
+    apiName = "ProductCategoryProduct.IsPrimaryCategory"
+    label = "Is Primary Category"
+    defaultValue = false
+    createable = true
+    updateable = true
+  }
+}

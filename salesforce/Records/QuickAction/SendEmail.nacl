@@ -1,0 +1,47 @@
+salesforce.QuickAction SendEmail {
+  fullName = "SendEmail"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "ValidatedFromAddress"
+          },
+          {
+            emptySpace = false
+            field = "ToAddress"
+          },
+          {
+            emptySpace = false
+            field = "CcAddress"
+          },
+          {
+            emptySpace = false
+            field = "BccAddress"
+          },
+          {
+            emptySpace = false
+            field = "Subject"
+          },
+          {
+            emptySpace = false
+            field = "HtmlBody"
+          },
+          {
+            emptySpace = false
+            field = "RelatedToId"
+          },
+          {
+            emptySpace = false
+            field = "EmailTemplateId"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "SendEmail"
+  targetObject = "OutgoingEmail"
+  type = "SendEmail"
+}

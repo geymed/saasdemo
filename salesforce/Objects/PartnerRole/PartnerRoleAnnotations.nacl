@@ -1,0 +1,48 @@
+type salesforce.PartnerRole {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    salesforce.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    salesforce.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    salesforce.SearchLayouts searchLayouts {
+    }
+    salesforce.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+  }
+  apiName = "PartnerRole"
+  metadataType = "CustomObject"
+  label = "Partner Role Value"
+  enableFeeds = false
+}

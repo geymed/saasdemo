@@ -1,0 +1,12 @@
+type salesforce.StreamActivityAccess {
+  salesforce.Lookup ActivityTeamId {
+    apiName = "StreamActivityAccess.ActivityTeamId"
+  }
+  string ExternalResource {
+  }
+  string IsContentShared {
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "StreamActivityAccess.OwnerId"
+  }
+}

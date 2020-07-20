@@ -1,0 +1,27 @@
+salesforce.QuickAction NewNote {
+  fullName = "NewNote"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Title"
+          },
+          {
+            emptySpace = false
+            field = "IsPrivate"
+          },
+          {
+            emptySpace = false
+            field = "Body"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "New"
+  targetObject = "Note"
+  type = "Create"
+}

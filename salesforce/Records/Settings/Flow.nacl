@@ -1,0 +1,16 @@
+salesforce.FlowSettings {
+  fullName = "Flow"
+  enableFlowBREncodedFixEnabled = true
+  enableFlowDeployAsActiveEnabled = false
+  enableFlowFieldFilterEnabled = true
+  enableFlowFormulasFixEnabled = false
+  enableFlowInterviewSharingEnabled = true
+  enableFlowNullPreviousValueFix = false
+  enableFlowPauseEnabled = false
+  enableFlowUseApexExceptionEmail = false
+  enableInvocableFlowFixEnabled = true
+  enableLightningRuntimeEnabled = true
+  isAccessToInvokedApexRequired = true
+  isEnhancedFlowListViewVisible = true
+  isManageFlowRequiredForAutomationCharts = false
+}

@@ -1,0 +1,172 @@
+type salesforce.OrgMetricScanResult {
+  salesforce.Text Id {
+    apiName = "OrgMetricScanResult.Id"
+    label = "Org Metric Scan Result ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrgMetricScanResult.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "OrgMetricScanResult.Name"
+    label = "Org Metric Scan Result"
+    _required = true
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrgMetricScanResult.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrgMetricScanResult.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrgMetricScanResult.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrgMetricScanResult.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrgMetricScanResult.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup OrgMetricScanSummaryId {
+    apiName = "OrgMetricScanResult.OrgMetricScanSummaryId"
+    label = "Org Metric Scan ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "OrgMetricScanSummary",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Url Url {
+    apiName = "OrgMetricScanResult.Url"
+    label = "Url"
+    _required = false
+    createable = true
+    updateable = false
+  }
+  salesforce.Text Object {
+    apiName = "OrgMetricScanResult.Object"
+    label = "Object"
+    _required = false
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime Date {
+    apiName = "OrgMetricScanResult.Date"
+    label = "Date"
+    _required = false
+    createable = true
+    updateable = false
+  }
+  salesforce.Text Type {
+    apiName = "OrgMetricScanResult.Type"
+    label = "Type"
+    _required = false
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Number Profile {
+    apiName = "OrgMetricScanResult.Profile"
+    label = "Profile"
+    _required = false
+    precision = 9
+    createable = true
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Text User {
+    apiName = "OrgMetricScanResult.User"
+    label = "User"
+    _required = false
+    createable = true
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Number Quantity {
+    apiName = "OrgMetricScanResult.Quantity"
+    label = "Quantity"
+    _required = false
+    precision = 9
+    createable = true
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Picklist ItemStatus {
+    apiName = "OrgMetricScanResult.ItemStatus"
+    label = "Status"
+    _required = false
+    createable = true
+    updateable = false
+  }
+  salesforce.Number Flags {
+    apiName = "OrgMetricScanResult.Flags"
+    label = "Flags"
+    _required = false
+    precision = 9
+    createable = true
+    updateable = false
+    scale = 0
+    unique = false
+  }
+}

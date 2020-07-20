@@ -1,0 +1,179 @@
+type salesforce.Account {
+  salesforce.Picklist CustomerPriority__c {
+    apiName = "Account.CustomerPriority__c"
+    label = "Customer Priority"
+    _required = false
+    valueSet = [
+      {
+        fullName = "High"
+        default = false
+        label = "High"
+      },
+      {
+        fullName = "Low"
+        default = false
+        label = "Low"
+      },
+      {
+        fullName = "Medium"
+        default = false
+        label = "Medium"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    sorted = false
+  }
+  salesforce.Picklist SLA__c {
+    apiName = "Account.SLA__c"
+    label = "SLA"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Gold"
+        default = false
+        label = "Gold"
+      },
+      {
+        fullName = "Silver"
+        default = false
+        label = "Silver"
+      },
+      {
+        fullName = "Platinum"
+        default = false
+        label = "Platinum"
+      },
+      {
+        fullName = "Bronze"
+        default = false
+        label = "Bronze"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    sorted = false
+  }
+  salesforce.Picklist Active__c {
+    apiName = "Account.Active__c"
+    label = "Active"
+    _required = false
+    valueSet = [
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    sorted = false
+  }
+  salesforce.Number NumberofLocations__c {
+    apiName = "Account.NumberofLocations__c"
+    label = "Number of Locations"
+    _required = false
+    precision = 3
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    externalId = false
+  }
+  salesforce.Picklist UpsellOpportunity__c {
+    apiName = "Account.UpsellOpportunity__c"
+    label = "Upsell Opportunity"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Maybe"
+        default = false
+        label = "Maybe"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    sorted = false
+  }
+  salesforce.Text SLASerialNumber__c {
+    apiName = "Account.SLASerialNumber__c"
+    label = "SLA Serial Number"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    externalId = false
+  }
+  salesforce.Date SLAExpirationDate__c {
+    apiName = "Account.SLAExpirationDate__c"
+    label = "SLA Expiration Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Picklist aaaman__c {
+    apiName = "Account.aaaman__c"
+    label = "aaaman"
+    _required = false
+    valueSet = [
+      {
+        fullName = "One"
+        default = false
+        label = "One"
+      },
+      {
+        fullName = "Two"
+        default = false
+        label = "Two"
+      },
+      {
+        fullName = "Three"
+        default = false
+        label = "Three"
+      },
+      {
+        fullName = "Four"
+        default = false
+        label = "Four"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    description = "aaayman"
+    sorted = false
+  }
+  salesforce.Text saasdemo__c {
+    apiName = "Account.saasdemo__c"
+    label = "saasdemo"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 6
+    description = "for saas demo"
+    externalId = false
+  }
+}

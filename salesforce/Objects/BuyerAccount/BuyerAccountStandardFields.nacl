@@ -1,0 +1,37 @@
+type salesforce.BuyerAccount {
+  string AvailableCredit {
+  }
+  salesforce.MasterDetail BuyerId {
+    apiName = "BuyerAccount.BuyerId"
+  }
+  salesforce.Picklist BuyerStatus {
+    apiName = "BuyerAccount.BuyerStatus"
+  }
+  salesforce.Picklist CommerceType {
+    apiName = "BuyerAccount.CommerceType"
+  }
+  string CreditLimit {
+  }
+  salesforce.Picklist CreditStatus {
+    apiName = "BuyerAccount.CreditStatus"
+  }
+  string CurrentBalance {
+  }
+  string IsActive {
+  }
+  string MaximumOrderLimit {
+  }
+  string MinimumOrderLimit {
+  }
+  string Name {
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "BuyerAccount.OwnerId"
+  }
+  salesforce.Lookup PayerId {
+    apiName = "BuyerAccount.PayerId"
+  }
+  salesforce.Lookup SendToId {
+    apiName = "BuyerAccount.SendToId"
+  }
+}

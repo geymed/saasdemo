@@ -1,0 +1,92 @@
+type salesforce.FeedItem {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    salesforce.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    salesforce.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    salesforce.SearchLayouts searchLayouts {
+    }
+    salesforce.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+  }
+  apiName = "FeedItem"
+  metadataType = "CustomObject"
+  label = "Feed Item"
+  actionOverrides = [
+    {
+      actionName = "CancelEdit"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "EditTopics"
+      type = "Default"
+    },
+    {
+      actionName = "EditTopics"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "EditTopics"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+  ]
+  enableFeeds = false
+}

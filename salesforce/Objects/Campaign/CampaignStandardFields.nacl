@@ -1,0 +1,293 @@
+type salesforce.Campaign {
+  salesforce.Text Id {
+    apiName = "Campaign.Id"
+    label = "Campaign ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Campaign.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "Campaign.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 80
+  }
+  salesforce.Lookup ParentId {
+    apiName = "Campaign.ParentId"
+    label = "Parent Campaign ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Campaign",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "Campaign.Type"
+    label = "Type"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    valueSetName = salesforce.StandardValueSet.instance.CampaignType
+  }
+  salesforce.Picklist Status {
+    apiName = "Campaign.Status"
+    label = "Status"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    valueSetName = salesforce.StandardValueSet.instance.CampaignStatus
+  }
+  salesforce.Date StartDate {
+    apiName = "Campaign.StartDate"
+    label = "Start Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "Campaign.EndDate"
+    label = "End Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Currency ExpectedRevenue {
+    apiName = "Campaign.ExpectedRevenue"
+    label = "Expected Revenue in Campaign"
+    _required = false
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+  }
+  salesforce.Currency BudgetedCost {
+    apiName = "Campaign.BudgetedCost"
+    label = "Budgeted Cost in Campaign"
+    _required = false
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+  }
+  salesforce.Currency ActualCost {
+    apiName = "Campaign.ActualCost"
+    label = "Actual Cost in Campaign"
+    _required = false
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 18
+  }
+  salesforce.Percent ExpectedResponse {
+    apiName = "Campaign.ExpectedResponse"
+    label = "Expected Response (%)"
+    _required = false
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 10
+  }
+  salesforce.Number NumberSent {
+    apiName = "Campaign.NumberSent"
+    label = "Num Sent in Campaign"
+    _required = false
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "Campaign.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Campaign.Description"
+    label = "Description"
+    _required = false
+    createable = true
+    updateable = true
+    length = 32000
+  }
+  salesforce.Number NumberOfLeads {
+    apiName = "Campaign.NumberOfLeads"
+    label = "Leads in Campaign"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfConvertedLeads {
+    apiName = "Campaign.NumberOfConvertedLeads"
+    label = "Converted Leads in Campaign"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfContacts {
+    apiName = "Campaign.NumberOfContacts"
+    label = "Contacts in Campaign"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfResponses {
+    apiName = "Campaign.NumberOfResponses"
+    label = "Responses in Campaign"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfOpportunities {
+    apiName = "Campaign.NumberOfOpportunities"
+    label = "Opportunities in Campaign"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Number NumberOfWonOpportunities {
+    apiName = "Campaign.NumberOfWonOpportunities"
+    label = "Won Opportunities in Campaign"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Currency AmountAllOpportunities {
+    apiName = "Campaign.AmountAllOpportunities"
+    label = "Value Opportunities in Campaign"
+    _required = true
+    createable = false
+    updateable = false
+    scale = 0
+    precision = 18
+  }
+  salesforce.Currency AmountWonOpportunities {
+    apiName = "Campaign.AmountWonOpportunities"
+    label = "Value Won Opportunities in Campaign"
+    _required = true
+    createable = false
+    updateable = false
+    scale = 0
+    precision = 18
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Campaign.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Campaign.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Campaign.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Campaign.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Campaign.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Campaign.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Date LastActivityDate {
+    apiName = "Campaign.LastActivityDate"
+    label = "Last Activity"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CampaignMemberRecordTypeId {
+    apiName = "Campaign.CampaignMemberRecordTypeId"
+    label = "Record Type ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "RecordType",
+    ]
+    createable = true
+    updateable = true
+  }
+}

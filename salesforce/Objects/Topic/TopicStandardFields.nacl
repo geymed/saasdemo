@@ -1,0 +1,81 @@
+type salesforce.Topic {
+  salesforce.Text Id {
+    apiName = "Topic.Id"
+    label = "Topic ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Text Name {
+    apiName = "Topic.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 99
+  }
+  salesforce.Text Description {
+    apiName = "Topic.Description"
+    label = "Description"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 1000
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Topic.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Topic.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Number TalkingAbout {
+    apiName = "Topic.TalkingAbout"
+    label = "Talking About"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Text ManagedTopicType {
+    apiName = "Topic.ManagedTopicType"
+    label = "Enabled For"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 99
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Topic.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+}

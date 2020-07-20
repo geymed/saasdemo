@@ -1,0 +1,99 @@
+type salesforce.DuplicateRecordSet {
+  salesforce.Text Id {
+    apiName = "DuplicateRecordSet.Id"
+    label = "Duplicate Record Set ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DuplicateRecordSet.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "DuplicateRecordSet.Name"
+    label = "Duplicate Record Set Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DuplicateRecordSet.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DuplicateRecordSet.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DuplicateRecordSet.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DuplicateRecordSet.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DuplicateRecordSet.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup DuplicateRuleId {
+    apiName = "DuplicateRecordSet.DuplicateRuleId"
+    label = "Duplicate Rule ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "DuplicateRule",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Summary RecordCount {
+    apiName = "DuplicateRecordSet.RecordCount"
+    label = "Record Count"
+    _required = false
+    precision = 9
+    createable = false
+    updateable = false
+  }
+}

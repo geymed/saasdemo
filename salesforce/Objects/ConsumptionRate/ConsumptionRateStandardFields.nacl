@@ -1,0 +1,166 @@
+type salesforce.ConsumptionRate {
+  salesforce.Text Id {
+    apiName = "ConsumptionRate.Id"
+    label = "Consumption Rate ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ConsumptionRate.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "ConsumptionRate.Name"
+    label = "Consumption Rate Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ConsumptionRate.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ConsumptionRate.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ConsumptionRate.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ConsumptionRate.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ConsumptionRate.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup ConsumptionScheduleId {
+    apiName = "ConsumptionRate.ConsumptionScheduleId"
+    label = "Consumption Schedule ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "ConsumptionSchedule",
+    ]
+    inlineHelpText = "This rate is a part of of this schedule."
+    createable = true
+    updateable = false
+  }
+  salesforce.LongTextArea Description {
+    apiName = "ConsumptionRate.Description"
+    label = "Description"
+    _required = false
+    createable = true
+    updateable = true
+    length = 32000
+  }
+  salesforce.Number ProcessingOrder {
+    apiName = "ConsumptionRate.ProcessingOrder"
+    label = "Processing Order"
+    _required = true
+    precision = 9
+    inlineHelpText = "The order for processing the usage rate across multiple rates. Consumption Rates are evaluated beginning with the lowest processing order."
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+  }
+  salesforce.Picklist PricingMethod {
+    apiName = "ConsumptionRate.PricingMethod"
+    label = "Pricing Method"
+    _required = true
+    valueSet = [
+      {
+        fullName = "PerUnit"
+        default = false
+        label = "Per Unit"
+        isActive = true
+      },
+      {
+        fullName = "FlatFee"
+        default = false
+        label = "Flat Fee"
+        isActive = true
+      },
+    ]
+    restricted = true
+    inlineHelpText = "Choose whether the usage is priced per unit or quantity or as a flat fee"
+    createable = true
+    updateable = true
+  }
+  salesforce.Number LowerBound {
+    apiName = "ConsumptionRate.LowerBound"
+    label = "Lower Bound"
+    _required = true
+    precision = 9
+    inlineHelpText = "The lowest quantity of usage for this consumption rate."
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+  }
+  salesforce.Number UpperBound {
+    apiName = "ConsumptionRate.UpperBound"
+    label = "Upper Bound"
+    _required = false
+    precision = 9
+    inlineHelpText = "The highest quantity of usage for this consumption rate."
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+  }
+  salesforce.Currency Price {
+    apiName = "ConsumptionRate.Price"
+    label = "Price"
+    _required = true
+    inlineHelpText = "The price for usage that falls within this consumption rate's bounds."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 13
+  }
+}

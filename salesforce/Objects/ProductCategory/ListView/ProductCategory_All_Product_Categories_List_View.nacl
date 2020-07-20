@@ -1,0 +1,6 @@
+salesforce.ListView ProductCategory_All_Product_Categories_List_View {
+  fullName = "ProductCategory.All_Product_Categories_List_View"
+  filterScope = "Everything"
+  label = "All Categories"
+  _parent = salesforce.ProductCategory
+}

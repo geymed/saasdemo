@@ -1,0 +1,8 @@
+salesforce.LanguageSettings {
+  fullName = "Language"
+  enableEndUserLanguages = false
+  enableICULocaleDateFormat = false
+  enablePlatformLanguages = false
+  enableTranslationWorkbench = false
+  useLanguageFallback = false
+}

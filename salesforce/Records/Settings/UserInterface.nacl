@@ -1,0 +1,11 @@
+salesforce.UserInterfaceSettings {
+  fullName = "UserInterface"
+  enableAsyncRelatedLists = false
+  enableClickjackUserPageHeaderless = false
+  enableCollapsibleSections = true
+  enableDeleteFieldHistory = false
+  enableHoverDetails = true
+  enableInlineEdit = true
+  enablePersonalCanvas = true
+  enableQuickCreate = true
+}

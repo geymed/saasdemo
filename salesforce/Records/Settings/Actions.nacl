@@ -1,0 +1,6 @@
+salesforce.ActionsSettings {
+  fullName = "Actions"
+  enableDefaultQuickActionsOn = true
+  enableMdpEnabled = true
+  enableThirdPartyActions = false
+}

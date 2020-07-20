@@ -1,0 +1,163 @@
+type salesforce.CommerceEntitlementProduct {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    salesforce.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    salesforce.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    salesforce.SearchLayouts searchLayouts {
+    }
+    salesforce.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+  }
+  apiName = "CommerceEntitlementProduct"
+  metadataType = "CustomObject"
+  label = "Entitlement Product"
+  actionOverrides = [
+    {
+      actionName = "AssignProductsToEntitlement"
+      type = "Default"
+    },
+    {
+      actionName = "AssignProductsToEntitlement"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "AssignProductsToEntitlement"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Clone"
+      type = "Default"
+    },
+    {
+      actionName = "Clone"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Clone"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "List"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Tab"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "UnassignProductFromEntitlement"
+      type = "Default"
+    },
+    {
+      actionName = "UnassignProductFromEntitlement"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "UnassignProductFromEntitlement"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "View"
+      formFactor = "Small"
+      type = "Default"
+    },
+  ]
+  compactLayoutAssignment = "SYSTEM"
+  enableFeeds = false
+}

@@ -1,0 +1,11 @@
+salesforce.ListView BuyerGroup_My_Buyer_Groups {
+  fullName = "BuyerGroup.My_Buyer_Groups"
+  columns = [
+    "Name",
+    "Owner",
+    "Description",
+  ]
+  filterScope = "Mine"
+  label = "My Buyer Groups"
+  _parent = salesforce.BuyerGroup
+}

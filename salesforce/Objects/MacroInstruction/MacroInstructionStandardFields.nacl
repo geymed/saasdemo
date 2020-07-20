@@ -1,0 +1,1345 @@
+type salesforce.MacroInstruction {
+  salesforce.Text Id {
+    apiName = "MacroInstruction.Id"
+    label = "Macro Instruction ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "MacroInstruction.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "MacroInstruction.Name"
+    label = "Macro Instruction Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "MacroInstruction.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "MacroInstruction.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "MacroInstruction.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "MacroInstruction.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "MacroInstruction.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup MacroId {
+    apiName = "MacroInstruction.MacroId"
+    label = "Macro ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Macro",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Picklist Operation {
+    apiName = "MacroInstruction.Operation"
+    label = "Operation"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Select"
+        default = false
+        label = "select"
+        isActive = true
+      },
+      {
+        fullName = "Set"
+        default = false
+        label = "set"
+        isActive = true
+      },
+      {
+        fullName = "Insert"
+        default = false
+        label = "insert"
+        isActive = true
+      },
+      {
+        fullName = "Submit"
+        default = false
+        label = "submit"
+        isActive = true
+      },
+      {
+        fullName = "Close"
+        default = false
+        label = "close"
+        isActive = true
+      },
+      {
+        fullName = "If"
+        default = false
+        label = "if"
+        isActive = true
+      },
+      {
+        fullName = "ElseIf"
+        default = false
+        label = "elseif"
+        isActive = true
+      },
+      {
+        fullName = "Else"
+        default = false
+        label = "else"
+        isActive = true
+      },
+      {
+        fullName = "EndIf"
+        default = false
+        label = "endif"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+  }
+  salesforce.Picklist Target {
+    apiName = "MacroInstruction.Target"
+    label = "Target"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Field.Account.Industry"
+        default = false
+        label = "Industry"
+        isActive = true
+      },
+      {
+        fullName = "Field.Account.Name"
+        default = false
+        label = "Account Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Account.Name.begin"
+        default = false
+        label = "Account Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Account.Name.end"
+        default = false
+        label = "Account Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Account.Phone"
+        default = false
+        label = "Phone"
+        isActive = true
+      },
+      {
+        fullName = "Field.Account.Type"
+        default = false
+        label = "Type"
+        isActive = true
+      },
+      {
+        fullName = "Field.Account.Website"
+        default = false
+        label = "Website"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.ContactId"
+        default = false
+        label = "Contact Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.Description"
+        default = false
+        label = "Description"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.Description.begin"
+        default = false
+        label = "Description"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.Description.cursor"
+        default = false
+        label = "Description"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.Description.end"
+        default = false
+        label = "Description"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.OwnerId"
+        default = false
+        label = "Case Owner"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.ParentId"
+        default = false
+        label = "Parent Case"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.Priority"
+        default = false
+        label = "Priority"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.Status"
+        default = false
+        label = "Status"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.Subject"
+        default = false
+        label = "Subject"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.Subject.begin"
+        default = false
+        label = "Subject"
+        isActive = true
+      },
+      {
+        fullName = "Field.Case.Subject.end"
+        default = false
+        label = "Subject"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroup.CanHaveGuests"
+        default = false
+        label = "Allow customers"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroup.CollaborationType"
+        default = false
+        label = "Access Type"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroup.Description"
+        default = false
+        label = "Description"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroup.Description.begin"
+        default = false
+        label = "Description"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroup.Description.cursor"
+        default = false
+        label = "Description"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroup.Description.end"
+        default = false
+        label = "Description"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroup.Name"
+        default = false
+        label = "Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroup.Name.begin"
+        default = false
+        label = "Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroup.Name.end"
+        default = false
+        label = "Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroupMember.CollaborationGroupId"
+        default = false
+        label = "Group"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroupMember.CollaborationRole"
+        default = false
+        label = "Group Member Role"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroupMember.MemberId"
+        default = false
+        label = "Member"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroupRecord.CollaborationGroupId"
+        default = false
+        label = "Group"
+        isActive = true
+      },
+      {
+        fullName = "Field.CollaborationGroupRecord.RecordId"
+        default = false
+        label = "Record"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.AccountId"
+        default = false
+        label = "Account Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.Email"
+        default = false
+        label = "Email"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.FirstName"
+        default = false
+        label = "First Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.FirstName.begin"
+        default = false
+        label = "First Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.FirstName.end"
+        default = false
+        label = "First Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.LastName"
+        default = false
+        label = "Last Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.LastName.begin"
+        default = false
+        label = "Last Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.LastName.end"
+        default = false
+        label = "Last Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.Phone"
+        default = false
+        label = "Phone"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.Salutation"
+        default = false
+        label = "Salutation"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.Title"
+        default = false
+        label = "Title"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.Title.begin"
+        default = false
+        label = "Title"
+        isActive = true
+      },
+      {
+        fullName = "Field.Contact.Title.end"
+        default = false
+        label = "Title"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.EndDateTime"
+        default = false
+        label = "End"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.IsAllDayEvent"
+        default = false
+        label = "All-Day Event"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.Location"
+        default = false
+        label = "Location"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.Location.begin"
+        default = false
+        label = "Location"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.Location.end"
+        default = false
+        label = "Location"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.OwnerId"
+        default = false
+        label = "Assigned To"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.StartDateTime"
+        default = false
+        label = "Start"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.Subject"
+        default = false
+        label = "Subject"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.WhatId"
+        default = false
+        label = "Related To"
+        isActive = true
+      },
+      {
+        fullName = "Field.Event.WhoId"
+        default = false
+        label = "Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.Company"
+        default = false
+        label = "Company"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.Company.begin"
+        default = false
+        label = "Company"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.Company.end"
+        default = false
+        label = "Company"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.Email"
+        default = false
+        label = "Email"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.FirstName"
+        default = false
+        label = "First Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.FirstName.begin"
+        default = false
+        label = "First Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.FirstName.end"
+        default = false
+        label = "First Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.LastName"
+        default = false
+        label = "Last Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.LastName.begin"
+        default = false
+        label = "Last Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.LastName.end"
+        default = false
+        label = "Last Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.Phone"
+        default = false
+        label = "Phone"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.Salutation"
+        default = false
+        label = "Salutation"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.Title"
+        default = false
+        label = "Title"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.Title.begin"
+        default = false
+        label = "Title"
+        isActive = true
+      },
+      {
+        fullName = "Field.Lead.Title.end"
+        default = false
+        label = "Title"
+        isActive = true
+      },
+      {
+        fullName = "Field.MessagingEndUser.MessagingConsentStatus"
+        default = false
+        label = "Messaging Consent Status"
+        isActive = true
+      },
+      {
+        fullName = "Field.MessagingEndUser.Name"
+        default = false
+        label = "Messaging User Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.MessagingEndUser.Name.begin"
+        default = false
+        label = "Messaging User Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.MessagingEndUser.Name.end"
+        default = false
+        label = "Messaging User Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Note.Body"
+        default = false
+        label = "Body"
+        isActive = true
+      },
+      {
+        fullName = "Field.Note.Body.begin"
+        default = false
+        label = "Body"
+        isActive = true
+      },
+      {
+        fullName = "Field.Note.Body.cursor"
+        default = false
+        label = "Body"
+        isActive = true
+      },
+      {
+        fullName = "Field.Note.Body.end"
+        default = false
+        label = "Body"
+        isActive = true
+      },
+      {
+        fullName = "Field.Note.IsPrivate"
+        default = false
+        label = "Private"
+        isActive = true
+      },
+      {
+        fullName = "Field.Note.Title"
+        default = false
+        label = "Title"
+        isActive = true
+      },
+      {
+        fullName = "Field.Note.Title.begin"
+        default = false
+        label = "Title"
+        isActive = true
+      },
+      {
+        fullName = "Field.Note.Title.end"
+        default = false
+        label = "Title"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.AccountId"
+        default = false
+        label = "Account Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.Amount"
+        default = false
+        label = "Amount"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.CloseDate"
+        default = false
+        label = "Close Date"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.Name"
+        default = false
+        label = "Opportunity Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.Name.begin"
+        default = false
+        label = "Opportunity Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.Name.end"
+        default = false
+        label = "Opportunity Name"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.NextStep"
+        default = false
+        label = "Next Step"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.NextStep.begin"
+        default = false
+        label = "Next Step"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.NextStep.end"
+        default = false
+        label = "Next Step"
+        isActive = true
+      },
+      {
+        fullName = "Field.Opportunity.StageName"
+        default = false
+        label = "Stage"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.AttachmentIds.end"
+        default = false
+        label = "Attachments"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.BccAddress"
+        default = false
+        label = "BCC"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.BccAddress.begin"
+        default = false
+        label = "BCC"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.BccAddress.end"
+        default = false
+        label = "BCC"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.CcAddress"
+        default = false
+        label = "CC"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.CcAddress.begin"
+        default = false
+        label = "CC"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.CcAddress.end"
+        default = false
+        label = "CC"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.ContentDocumentIds.end"
+        default = false
+        label = "Attachments"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.EmailTemplateId"
+        default = false
+        label = "Email Template"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.HtmlBody"
+        default = false
+        label = "HTML Body"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.HtmlBody.begin"
+        default = false
+        label = "HTML Body"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.HtmlBody.cursor"
+        default = false
+        label = "HTML Body"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.HtmlBody.end"
+        default = false
+        label = "HTML Body"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.RelatedToId"
+        default = false
+        label = "Related To"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.Subject"
+        default = false
+        label = "Subject"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.Subject.begin"
+        default = false
+        label = "Subject"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.Subject.end"
+        default = false
+        label = "Subject"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.ToAddress"
+        default = false
+        label = "To"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.ToAddress.begin"
+        default = false
+        label = "To"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.ToAddress.end"
+        default = false
+        label = "To"
+        isActive = true
+      },
+      {
+        fullName = "Field.OutgoingEmail.ValidatedFromAddress"
+        default = false
+        label = "From"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.ActivityDate"
+        default = false
+        label = "Due Date"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.Description"
+        default = false
+        label = "Comments"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.Description.begin"
+        default = false
+        label = "Comments"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.Description.cursor"
+        default = false
+        label = "Comments"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.Description.end"
+        default = false
+        label = "Comments"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.OwnerId"
+        default = false
+        label = "Assigned To"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.Priority"
+        default = false
+        label = "Priority"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.Status"
+        default = false
+        label = "Status"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.Subject"
+        default = false
+        label = "Subject"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.WhatId"
+        default = false
+        label = "Related To"
+        isActive = true
+      },
+      {
+        fullName = "Field.Task.WhoId"
+        default = false
+        label = "Name"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Case.LogACall"
+        default = false
+        label = "Log a Call Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Case.NewChildCase"
+        default = false
+        label = "New Child Case Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Case._LightningUpdateCase"
+        default = false
+        label = "Update Case Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.CollaborationGroup.NewGroupMember"
+        default = false
+        label = "Add Member Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.CollaborationGroup.NewGroupRecord"
+        default = false
+        label = "Add Record Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Contact._LightningRelatedContact"
+        default = false
+        label = "Update Contact Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.FeedItem.NewTaskFromFeedItem"
+        default = false
+        label = "Create New Task Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.LogACall"
+        default = false
+        label = "Log a Call Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.MessagingEndUser._UpdateMessagingEndUser"
+        default = false
+        label = "Update Messaging User Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.NewAccount"
+        default = false
+        label = "New Account Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.NewCase"
+        default = false
+        label = "New Case Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.NewContact"
+        default = false
+        label = "New Contact Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.NewEvent"
+        default = false
+        label = "New Event Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.NewGroup"
+        default = false
+        label = "New Group Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.NewLead"
+        default = false
+        label = "New Lead Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.NewNote"
+        default = false
+        label = "New Note Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.NewOpportunity"
+        default = false
+        label = "New Opportunity Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.NewTask"
+        default = false
+        label = "New Task Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.SendEmail"
+        default = false
+        label = "Email Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Task.Defer"
+        default = false
+        label = "Change Date Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Task.Defer_0"
+        default = false
+        label = "Change Date Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Task.EditDescription"
+        default = false
+        label = "Edit Comments Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Task.EditDescription_0"
+        default = false
+        label = "Edit Comments Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Task.UpdatePriority"
+        default = false
+        label = "Change Priority Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Task.UpdatePriority_0"
+        default = false
+        label = "Change Priority Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Task.UpdateStatus"
+        default = false
+        label = "Change Status Action"
+        isActive = true
+      },
+      {
+        fullName = "QuickAction.Task.UpdateStatus_0"
+        default = false
+        label = "Change Status Action"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Account"
+        default = false
+        label = "Active Account Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Asset"
+        default = false
+        label = "Active Asset Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.AssetRelationship"
+        default = false
+        label = "Active Asset Relationship Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.BuyerAccount"
+        default = false
+        label = "Active Buyer Account Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.BuyerGroup"
+        default = false
+        label = "Active Buyer Group Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.BuyerGroupPricebook"
+        default = false
+        label = "Active Buyer Group Price Book Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Case"
+        default = false
+        label = "Active Case Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.CollaborationGroup"
+        default = false
+        label = "Active Group Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.CommSubscription"
+        default = false
+        label = "Active Communication Subscription Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.CommSubscriptionChannelType"
+        default = false
+        label = "Active Communication Subscription Channel Type Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.CommSubscriptionConsent"
+        default = false
+        label = "Active Communication Subscription Consent Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.CommSubscriptionTiming"
+        default = false
+        label = "Active Communication Subscription Timing Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.CommerceEntitlementPolicy"
+        default = false
+        label = "Active Entitlement Policy Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.ConsumptionSchedule"
+        default = false
+        label = "Active Consumption Schedule Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Contact"
+        default = false
+        label = "Active Contact Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Contract"
+        default = false
+        label = "Active Contract Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.CredentialStuffingEventStore"
+        default = false
+        label = "Active Credential Stuffing Event Store Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.DelegatedAccount"
+        default = false
+        label = "Active External Managed Account Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.EngagementChannelType"
+        default = false
+        label = "Active Engagement Channel Type Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Event"
+        default = false
+        label = "Active Event Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.FeedItem"
+        default = false
+        label = "Active Feed Item Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Individual"
+        default = false
+        label = "Active Individual Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Lead"
+        default = false
+        label = "Active Lead Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.MessagingEndUser"
+        default = false
+        label = "Active Messaging User Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.MessagingSession"
+        default = false
+        label = "Active Messaging Session Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.NewObjectBabe__c"
+        default = false
+        label = "Active NewObjectBabe Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.NewObjectBabi__c"
+        default = false
+        label = "Active NewObjectBabi Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.NewObjectName__c"
+        default = false
+        label = "Active NewObjectName Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Opportunity"
+        default = false
+        label = "Active Opportunity Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.OpportunityContactRole"
+        default = false
+        label = "Active Opportunity Contact Role Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Order"
+        default = false
+        label = "Active Order Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.PartyConsent"
+        default = false
+        label = "Active Party Consent Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Product2"
+        default = false
+        label = "Active Product Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.ProductCatalog"
+        default = false
+        label = "Active Catalog Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.ProductCategory"
+        default = false
+        label = "Active Category Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.ReportAnomalyEventStore"
+        default = false
+        label = "Active Report Anomaly Event Store Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.SessionHijackingEventStore"
+        default = false
+        label = "Active Session Hijacking Event Store Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.Task"
+        default = false
+        label = "Active Task Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.ThreatDetectionFeedback"
+        default = false
+        label = "Active Threat Detection Feedback Tab"
+        isActive = true
+      },
+      {
+        fullName = "Tab.User"
+        default = false
+        label = "Active User Tab"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+  }
+  salesforce.LongTextArea Value {
+    apiName = "MacroInstruction.Value"
+    label = "Value"
+    _required = false
+    createable = true
+    updateable = true
+    length = 4000
+  }
+  salesforce.Text ValueRecord {
+    apiName = "MacroInstruction.ValueRecord"
+    label = "Value Record ID"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 15
+  }
+  salesforce.Number SortOrder {
+    apiName = "MacroInstruction.SortOrder"
+    label = "Sort Order"
+    _required = true
+    precision = 9
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+  }
+}

@@ -1,0 +1,26 @@
+type salesforce.PartyConsent {
+  string Action {
+  }
+  string CaptureContactPointType {
+  }
+  string CaptureDate {
+  }
+  string CaptureSource {
+  }
+  string DoubleConsentCaptureDate {
+  }
+  string EffectiveFrom {
+  }
+  string EffectiveTo {
+  }
+  string Name {
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartyConsent.OwnerId"
+  }
+  salesforce.Lookup PartyId {
+    apiName = "PartyConsent.PartyId"
+  }
+  string PrivacyConsentStatus {
+  }
+}

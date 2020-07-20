@@ -1,0 +1,13 @@
+type salesforce.ProductMedia {
+  salesforce.Lookup ElectronicMediaGroupId {
+    apiName = "ProductMedia.ElectronicMediaGroupId"
+  }
+  salesforce.Lookup ElectronicMediaId {
+    apiName = "ProductMedia.ElectronicMediaId"
+  }
+  salesforce.Lookup ProductId {
+    apiName = "ProductMedia.ProductId"
+  }
+  string SortOrder {
+  }
+}

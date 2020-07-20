@@ -1,0 +1,141 @@
+salesforce.EscalationRules Case {
+  fullName = "Case"
+  escalationRule = {
+    fullName = "Standard"
+    active = true
+    ruleEntry = [
+      {
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Platinum"
+          },
+          {
+            field = salesforce.Case.field.Priority
+            operation = "equals"
+            value = "High"
+          },
+        ]
+      },
+      {
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Platinum"
+          },
+          {
+            field = salesforce.Case.field.Priority
+            operation = "equals"
+            value = "Medium,Low"
+          },
+        ]
+      },
+      {
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Gold"
+          },
+          {
+            field = salesforce.Case.field.Priority
+            operation = "equals"
+            value = "High"
+          },
+        ]
+      },
+      {
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Gold"
+          },
+          {
+            field = salesforce.Case.field.Priority
+            operation = "equals"
+            value = "Medium,Low"
+          },
+        ]
+      },
+      {
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Silver"
+          },
+        ]
+      },
+      {
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "equals"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Bronze"
+          },
+        ]
+      },
+      {
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "notEqual"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Gold,Platinum"
+          },
+        ]
+      },
+      {
+        criteriaItems = [
+          {
+            field = "Account.BillingCountry"
+            operation = "notEqual"
+            value = "US,USA,United States,United States of America"
+          },
+          {
+            field = salesforce.Account.field.SLA__c
+            operation = "equals"
+            value = "Silver,Bronze"
+          },
+        ]
+      },
+    ]
+  }
+}

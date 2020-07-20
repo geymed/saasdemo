@@ -1,0 +1,13 @@
+type salesforce.CommSubscription {
+  salesforce.Lookup DataUsePurposeId {
+    apiName = "CommSubscription.DataUsePurposeId"
+    inlineHelpText = "The data use purpose record associated with the communication subscription."
+  }
+  string IsDefault {
+  }
+  string Name {
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "CommSubscription.OwnerId"
+  }
+}

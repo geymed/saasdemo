@@ -1,0 +1,31 @@
+salesforce.QuickAction NewGroup {
+  fullName = "NewGroup"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+          },
+          {
+            emptySpace = false
+            field = "Description"
+          },
+          {
+            emptySpace = false
+            field = "CollaborationType"
+          },
+          {
+            emptySpace = false
+            field = "CanHaveGuests"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "New"
+  targetObject = "CollaborationGroup"
+  type = "Create"
+}

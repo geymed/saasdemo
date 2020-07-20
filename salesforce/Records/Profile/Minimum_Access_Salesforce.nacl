@@ -1,0 +1,2108 @@
+salesforce.Profile Minimum_Access_Salesforce {
+  fullName = "Minimum Access - Salesforce"
+  applicationVisibilities = [
+    {
+      application = salesforce.CustomApplication.instance.standard__AllTabSet
+      default = true
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__AppLauncher
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Chatter
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Commerce
+      default = false
+      visible = true
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Community
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Content
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Insights
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__LightningBolt
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__LightningInstrumentation
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__LightningSales
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__LightningSalesConsole
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__LightningService
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Marketing
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Platform
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Sales
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__SalesforceCMS
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Service
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__ServiceConsole
+      default = false
+      visible = false
+    },
+    {
+      application = salesforce.CustomApplication.instance.standard__Sites
+      default = false
+      visible = false
+    },
+  ]
+  custom = false
+  fieldPermissions = [
+    {
+      editable = false
+      field = salesforce.Account.field.AccountNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.AccountSource
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Active__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.AnnualRevenue
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.BillingAddress
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.CleanStatus
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.CustomerPriority__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.DandbCompanyId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.DunsNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Fax
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Industry
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Jigsaw
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.NaicsCode
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.NaicsDesc
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.NumberOfEmployees
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.NumberofLocations__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Ownership
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.ParentId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Phone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Rating
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.SLAExpirationDate__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.SLASerialNumber__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.SLA__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.ShippingAddress
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Sic
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.SicDesc
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Site
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.TickerSymbol
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Tradestyle
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Type
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.UpsellOpportunity__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.Website
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.YearStarted
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.aaaman__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Account.field.saasdemo__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.AccountId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.AssetLevel
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.AssetProvidedById
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.AssetServicedById
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.ContactId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = "Asset.DigitalAssetStatus"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Asset.ExternalIdentifier"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.InstallDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.IsCompetitorProduct
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.IsInternal
+      readable = false
+    },
+    {
+      editable = false
+      field = "Asset.ManufactureDate"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.Price
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.Product2Id
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.ProductCode
+      readable = false
+    },
+    {
+      editable = false
+      field = "Asset.ProductDescription"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Asset.ProductFamily"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.PurchaseDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.Quantity
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.SerialNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.Status
+      readable = false
+    },
+    {
+      editable = false
+      field = "Asset.StatusReason"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.StockKeepingUnit
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Asset.field.UsageEndDate
+      readable = false
+    },
+    {
+      editable = false
+      field = "Asset.Uuid"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AssetRelationship.field.RelationshipType
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationForm.field.DefaultAuthFormTextId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationForm.field.EffectiveFromDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationForm.field.EffectiveToDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationForm.field.IsSignatureRequired
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationForm.field.RevisionNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationFormConsent.field.DocumentVersionId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationFormConsent.field.Status
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationFormText.field.ContentDocumentId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationFormText.field.FullAuthorizationFormUrl
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationFormText.field.Locale
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.AuthorizationFormText.field.SummaryAuthFormText
+      readable = false
+    },
+    {
+      editable = true
+      field = "BuyerAccount.AvailableCredit"
+      readable = true
+    },
+    {
+      editable = true
+      field = salesforce.BuyerAccount.field.BuyerStatus
+      readable = true
+    },
+    {
+      editable = true
+      field = salesforce.BuyerAccount.field.CommerceType
+      readable = true
+    },
+    {
+      editable = true
+      field = "BuyerAccount.CreditLimit"
+      readable = true
+    },
+    {
+      editable = true
+      field = salesforce.BuyerAccount.field.CreditStatus
+      readable = true
+    },
+    {
+      editable = true
+      field = "BuyerAccount.CurrentBalance"
+      readable = true
+    },
+    {
+      editable = true
+      field = "BuyerAccount.MaximumOrderLimit"
+      readable = true
+    },
+    {
+      editable = true
+      field = "BuyerAccount.MinimumOrderLimit"
+      readable = true
+    },
+    {
+      editable = true
+      field = salesforce.BuyerAccount.field.PayerId
+      readable = true
+    },
+    {
+      editable = true
+      field = salesforce.BuyerAccount.field.SendToId
+      readable = true
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.ActualCost
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.AmountAllOpportunities
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.AmountWonOpportunities
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.BudgetedCost
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.EndDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.ExpectedResponse
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.ExpectedRevenue
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyActualCost"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyAmountAllOpportunities"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyAmountWonOpportunities"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyBudgetedCost"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyExpectedRevenue"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyNumberOfContacts"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyNumberOfConvertedLeads"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyNumberOfLeads"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyNumberOfOpportunities"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyNumberOfResponses"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyNumberOfWonOpportunities"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Campaign.HierarchyNumberSent"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.IsActive
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.NumberOfContacts
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.NumberOfConvertedLeads
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.NumberOfLeads
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.NumberOfOpportunities
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.NumberOfResponses
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.NumberOfWonOpportunities
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.NumberSent
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.ParentId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.StartDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.Status
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Campaign.field.Type
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.AccountId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.AssetId
+      readable = false
+    },
+    {
+      editable = false
+      field = "Case.BusinessHoursId"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.ClosedDate
+      readable = false
+    },
+    {
+      editable = false
+      field = "Case.ClosedOnCreate"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.ContactId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.EngineeringReqNumber__c
+      readable = false
+    },
+    {
+      editable = false
+      field = "Case.IsClosedOnCreate"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.IsEscalated
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.Origin
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.ParentId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.PotentialLiability__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.Priority
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.Product__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.Reason
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.SLAViolation__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.SourceId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.Subject
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.SuppliedCompany
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.SuppliedEmail
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.SuppliedName
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.SuppliedPhone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Case.field.Type
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.CommSubscription.field.DataUsePurposeId
+      readable = false
+    },
+    {
+      editable = false
+      field = "CommSubscription.IsDefault"
+      readable = false
+    },
+    {
+      editable = false
+      field = "CommSubscriptionConsent.EffectiveToDate"
+      readable = false
+    },
+    {
+      editable = false
+      field = "CommSubscriptionTiming.Offset"
+      readable = false
+    },
+    {
+      editable = false
+      field = "CommSubscriptionTiming.PreferredTimeEnd"
+      readable = false
+    },
+    {
+      editable = false
+      field = "CommSubscriptionTiming.PreferredTimeStart"
+      readable = false
+    },
+    {
+      editable = false
+      field = "CommSubscriptionTiming.PreferredTimeZone"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ConsumptionRate.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ConsumptionRate.field.UpperBound
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ConsumptionSchedule.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ConsumptionSchedule.field.IsActive
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ConsumptionSchedule.field.MatchingAttribute
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ConsumptionSchedule.field.UnitOfMeasure
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.AccountId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.AssistantName
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.AssistantPhone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Birthdate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.CleanStatus
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Department
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = "Contact.DoNotCall"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Email
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Fax
+      readable = false
+    },
+    {
+      editable = false
+      field = "Contact.HasOptedOutOfEmail"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Contact.HasOptedOutOfFax"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.HomePhone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Jigsaw
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Languages__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.LeadSource
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Level__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.MailingAddress
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.MobilePhone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.OtherAddress
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.OtherPhone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Phone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.ReportsToId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contact.field.Title
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.ActiveFromDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.ActiveToDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.Address
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.AddressType
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.BestTimeToContactEndTime
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.BestTimeToContactStartTime
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.BestTimeToContactTimezone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.ContactPointPhoneId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.IsDefault
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.IsPrimary
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointAddress.field.ParentId
+      readable = false
+    },
+    {
+      editable = false
+      field = "ContactPointConsent.ContactPointTypeConsentId"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointConsent.field.DataUsePurposeId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointConsent.field.DoubleConsentCaptureDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointConsent.field.EffectiveFrom
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointConsent.field.EffectiveTo
+      readable = false
+    },
+    {
+      editable = false
+      field = "ContactPointConsent.EngagementChannelTypeId"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.ActiveFromDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.ActiveToDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.BestTimeToContactEndTime
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.BestTimeToContactStartTime
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.BestTimeToContactTimezone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.EmailDomain
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.EmailLatestBounceDateTime
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.EmailLatestBounceReasonText
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.EmailMailBox
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.IsPrimary
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointEmail.field.ParentId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.ActiveFromDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.AreaCode
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.BestTimeToContactEndTime
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.BestTimeToContactStartTime
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.BestTimeToContactTimezone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.ExtensionNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.FormattedInternationalPhoneNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.FormattedNationalPhoneNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.IsBusinessPhone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.IsFaxCapable
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.IsPersonalPhone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.IsPrimary
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.IsSmsCapable
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.ParentId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointPhone.field.PhoneType
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointTypeConsent.field.DataUsePurposeId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointTypeConsent.field.DoubleConsentCaptureDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointTypeConsent.field.EffectiveFrom
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.ContactPointTypeConsent.field.EffectiveTo
+      readable = false
+    },
+    {
+      editable = false
+      field = "ContactPointTypeConsent.EngagementChannelTypeId"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.ActivatedById
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.ActivatedDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.BillingAddress
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.CompanySignedDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.CompanySignedId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.ContractTerm
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.CustomerSignedDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.CustomerSignedId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.CustomerSignedTitle
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.EndDate
+      readable = false
+    },
+    {
+      editable = false
+      field = "Contract.Name"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.OwnerExpirationNotice
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.Pricebook2Id
+      readable = false
+    },
+    {
+      editable = false
+      field = "Contract.ShippingAddress"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.SpecialTerms
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Contract.field.StartDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.DataUseLegalBasis.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.DataUseLegalBasis.field.Source
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.DataUsePurpose.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = "DataUsePurpose.IsMaintainablePerContactPoint"
+      readable = false
+    },
+    {
+      editable = false
+      field = "DataUsePurpose.IsMaintainablePerParty"
+      readable = false
+    },
+    {
+      editable = false
+      field = "DataUsePurpose.IsMaintainablePerType"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.DataUsePurpose.field.LegalBasisId
+      readable = false
+    },
+    {
+      editable = false
+      field = "EngagementChannelType.ContactPointType"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Event.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Event.field.IsAllDayEvent
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Event.field.Location
+      readable = false
+    },
+    {
+      editable = false
+      field = "Event.Type"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Event.field.WhatId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Event.field.WhoId
+      readable = false
+    },
+    {
+      editable = false
+      field = "Idea.Attachment"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Idea.field.Status
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Image.field.gogo__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.BirthDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.CanStorePiiElsewhere
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.ChildrenCount
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.ConsumerCreditScore
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.ConsumerCreditScoreProviderName
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.ConvictionsCount
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.DeathDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.HasOptedOutGeoTracking
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.HasOptedOutProcessing
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.HasOptedOutProfiling
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.HasOptedOutSolicit
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.HasOptedOutTracking
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.IndividualsAge
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.InfluencerRating
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.IsHomeOwner
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.MasterRecordId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.MilitaryService
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.Occupation
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.SendIndividualData
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.ShouldForget
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Individual.field.Website
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Address
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.AnnualRevenue
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.CleanStatus
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.CompanyDunsNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.CurrentGenerators__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.DandbCompanyId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = "Lead.DoNotCall"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Email
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Fax
+      readable = false
+    },
+    {
+      editable = false
+      field = "Lead.GilTestField__c"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Lead.HasOptedOutOfEmail"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Lead.HasOptedOutOfFax"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Industry
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Jigsaw
+      readable = false
+    },
+    {
+      editable = false
+      field = "Lead.LastTransferDate"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.LeadSource
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.MobilePhone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.NumberOfEmployees
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.NumberofLocations__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Phone
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Primary__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.ProductInterest__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Rating
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.SICCode__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Title
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Lead.field.Website
+      readable = false
+    },
+    {
+      editable = false
+      field = "MessagingEndUser.AccountId"
+      readable = false
+    },
+    {
+      editable = false
+      field = "MessagingEndUser.ContactId"
+      readable = false
+    },
+    {
+      editable = false
+      field = "MessagingEndUser.HasInitialResponseSent"
+      readable = false
+    },
+    {
+      editable = false
+      field = "MessagingEndUser.IsOptedOut"
+      readable = false
+    },
+    {
+      editable = false
+      field = "MessagingSession.CaseId"
+      readable = false
+    },
+    {
+      editable = false
+      field = "MessagingSession.LeadId"
+      readable = false
+    },
+    {
+      editable = false
+      field = "MessagingSession.OpportunityId"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.NewObjectBabe__c.field.Alpha__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.NewObjectBabe__c.field.Beta__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.NewObjectBabi__c.field.Alpha__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.NewObjectBabi__c.field.Beta__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.NewObjectName__c.field.Alpha__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.NewObjectName__c.field.Beta__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.AccountId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.Amount
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.CampaignId
+      readable = false
+    },
+    {
+      editable = false
+      field = "Opportunity.ContractId"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.CurrentGenerators__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.DeliveryInstallationStatus__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.ExpectedRevenue
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.IsPrivate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.LeadSource
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.MainCompetitors__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.NextStep
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.OrderNumber__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.Probability
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.TotalOpportunityQuantity
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.TrackingNumber__c
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Opportunity.field.Type
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.OpportunityLineItem.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = "OpportunityLineItem.Discount"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.OpportunityLineItem.field.ListPrice
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.OpportunityLineItem.field.ProductCode
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.OpportunityLineItem.field.ServiceDate
+      readable = false
+    },
+    {
+      editable = false
+      field = "OpportunityLineItem.Subtotal"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.OpportunityLineItem.field.TotalPrice
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.ActivatedById
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.ActivatedDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.BillToContactId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.BillingAddress
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.CompanyAuthorizedById
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.CompanyAuthorizedDate
+      readable = false
+    },
+    {
+      editable = false
+      field = "Order.ContractEndDate"
+      readable = false
+    },
+    {
+      editable = false
+      field = "Order.ContractName"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.CustomerAuthorizedById
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.CustomerAuthorizedDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.Name
+      readable = false
+    },
+    {
+      editable = false
+      field = "Order.OpportunityId"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.OrderReferenceNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.PoDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.PoNumber
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.ShipToContactId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.ShippingAddress
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.TotalAmount
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Order.field.Type
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.OrderItem.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.OrderItem.field.EndDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.OrderItem.field.ListPrice
+      readable = false
+    },
+    {
+      editable = false
+      field = "OrderItem.ProductCode"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.OrderItem.field.ServiceDate
+      readable = false
+    },
+    {
+      editable = false
+      field = "PartyConsent.DoubleConsentCaptureDate"
+      readable = false
+    },
+    {
+      editable = false
+      field = "PartyConsent.EffectiveFrom"
+      readable = false
+    },
+    {
+      editable = false
+      field = "PartyConsent.EffectiveTo"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Product2.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Product2.field.DisplayUrl
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Product2.field.ExternalDataSourceId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Product2.field.ExternalId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Product2.field.Family
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Product2.field.ProductCode
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Product2.field.QuantityUnitOfMeasure
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Product2.field.StockKeepingUnit
+      readable = false
+    },
+    {
+      editable = false
+      field = "SocialPersona.SourceApp"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Solution.field.IsPublished
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Solution.field.IsPublishedInPublicKb
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Solution.field.SolutionNote
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Task.field.ActivityDate
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Task.field.Description
+      readable = false
+    },
+    {
+      editable = false
+      field = "Task.Type"
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Task.field.WhatId
+      readable = false
+    },
+    {
+      editable = false
+      field = salesforce.Task.field.WhoId
+      readable = false
+    },
+  ]
+  layoutAssignments = [
+    {
+      layout = salesforce.Layout.instance.Buyer_Account_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.Card_Payment_Method_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.External_Managed_Account_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.Digital_Wallet_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.Payment_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.Payment_Authorization_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.Payment_Gateway_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.Payment_Gateway_Log_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.Payment_Group_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.Refund_Layout
+    },
+    {
+      layout = salesforce.Layout.instance.Refund_Line_Payment_Layout
+    },
+  ]
+  recordTypeVisibilities = [
+    {
+      default = false
+      recordType = salesforce.RecordType.instance.Idea_InternalIdeasIdeaRecordType
+      visible = false
+    },
+  ]
+  userLicense = "Salesforce"
+  userPermissions = [
+    {
+      enabled = true
+      name = "ActivitiesAccess"
+    },
+    {
+      enabled = true
+      name = "AllowViewKnowledge"
+    },
+    {
+      enabled = true
+      name = "ChatterInternalUser"
+    },
+    {
+      enabled = true
+      name = "LightningConsoleAllowedForUser"
+    },
+    {
+      enabled = true
+      name = "ViewHelpLink"
+    },
+  ]
+}

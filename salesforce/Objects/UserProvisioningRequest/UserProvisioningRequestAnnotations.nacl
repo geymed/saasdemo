@@ -1,0 +1,69 @@
+type salesforce.UserProvisioningRequest {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    salesforce.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    salesforce.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    salesforce.SearchLayouts searchLayouts {
+    }
+    salesforce.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+  }
+  apiName = "UserProvisioningRequest"
+  metadataType = "CustomObject"
+  label = "User Provisioning Request"
+  compactLayoutAssignment = "SYSTEM"
+  enableFeeds = false
+  searchLayouts = {
+    customTabListAdditionalFields = [
+      "ConnectedApp",
+      "Operation",
+      "State",
+      "ApprovalStatus",
+      "SalesforceUser",
+      "UserProvAccount",
+      "LastModifiedBy",
+    ]
+    searchResultsAdditionalFields = [
+      "ConnectedApp",
+      "Operation",
+      "State",
+      "ApprovalStatus",
+      "SalesforceUser",
+      "UserProvAccount",
+      "LastModifiedBy",
+    ]
+  }
+}

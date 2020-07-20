@@ -1,0 +1,11 @@
+salesforce.OpportunitySettings {
+  fullName = "Opportunity"
+  autoActivateNewReminders = true
+  customizableProductSchedulesEnabled = false
+  doesEnforceStandardOpportunitySaveLogic = true
+  enableFindSimilarOpportunities = false
+  enableOpportunityFieldHistoryTracking = false
+  enableOpportunityTeam = false
+  enableUpdateReminders = true
+  promptToAddProducts = false
+}

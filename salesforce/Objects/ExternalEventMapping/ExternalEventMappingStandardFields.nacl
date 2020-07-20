@@ -1,0 +1,135 @@
+type salesforce.ExternalEventMapping {
+  salesforce.Text Id {
+    apiName = "ExternalEventMapping.Id"
+    label = "External Event Mapping ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ExternalEventMapping.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Group",
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ExternalEventMapping.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "ExternalEventMapping.Name"
+    label = "Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ExternalEventMapping.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ExternalEventMapping.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ExternalEventMapping.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ExternalEventMapping.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ExternalEventMapping.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Text ExternalId {
+    apiName = "ExternalEventMapping.ExternalId"
+    label = "External Id"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Lookup EventId {
+    apiName = "ExternalEventMapping.EventId"
+    label = "Activity ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Event",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Date StartDate {
+    apiName = "ExternalEventMapping.StartDate"
+    label = "Start Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "ExternalEventMapping.EndDate"
+    label = "End Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Checkbox IsRecurring {
+    apiName = "ExternalEventMapping.IsRecurring"
+    label = "Is Recurring"
+    defaultValue = false
+    createable = true
+    updateable = true
+  }
+}

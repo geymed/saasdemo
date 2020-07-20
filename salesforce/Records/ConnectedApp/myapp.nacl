@@ -1,0 +1,10 @@
+salesforce.ConnectedApp myapp {
+  fullName = "myapp"
+  contactEmail = "gilad.foyer@gmail.com"
+  label = "myapp"
+  oauthConfig = {
+    callbackUrl = "https://login.salesforce.com/services/oauth2/success"
+    consumerKey = "3MVG9tzQRhEbH_K2Ki2a6y4DInWfpDHXbIEBHKEzNorQGLQTnpPvOMPfR7kqe5rsZDizSyJTaq9VQDCKxt5H3"
+    isAdminApproved = false
+  }
+}

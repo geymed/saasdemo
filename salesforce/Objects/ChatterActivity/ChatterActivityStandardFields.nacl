@@ -1,0 +1,82 @@
+type salesforce.ChatterActivity {
+  salesforce.Text Id {
+    apiName = "ChatterActivity.Id"
+    label = "Chatter Activity ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Lookup ParentId {
+    apiName = "ChatterActivity.ParentId"
+    label = "Parent ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+  }
+  salesforce.Number PostCount {
+    apiName = "ChatterActivity.PostCount"
+    label = "Post Count"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Number CommentCount {
+    apiName = "ChatterActivity.CommentCount"
+    label = "Comment Count"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Number CommentReceivedCount {
+    apiName = "ChatterActivity.CommentReceivedCount"
+    label = "Comment Received Count"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Number LikeReceivedCount {
+    apiName = "ChatterActivity.LikeReceivedCount"
+    label = "Like Received Count"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.Number InfluenceRawRank {
+    apiName = "ChatterActivity.InfluenceRawRank"
+    label = "Influence Raw Rank"
+    _required = true
+    precision = 9
+    createable = false
+    updateable = false
+    scale = 0
+    unique = false
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ChatterActivity.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+}

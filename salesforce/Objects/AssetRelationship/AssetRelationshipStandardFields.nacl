@@ -1,0 +1,144 @@
+type salesforce.AssetRelationship {
+  salesforce.Text Id {
+    apiName = "AssetRelationship.Id"
+    label = "Asset Relationship ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AssetRelationship.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text AssetRelationshipNumber {
+    apiName = "AssetRelationship.AssetRelationshipNumber"
+    label = "Asset Relationship Number"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AssetRelationship.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AssetRelationship.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AssetRelationship.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AssetRelationship.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AssetRelationship.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup AssetId {
+    apiName = "AssetRelationship.AssetId"
+    label = "Asset ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Asset",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Lookup RelatedAssetId {
+    apiName = "AssetRelationship.RelatedAssetId"
+    label = "Asset ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Asset",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.DateTime FromDate {
+    apiName = "AssetRelationship.FromDate"
+    label = "From Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.DateTime ToDate {
+    apiName = "AssetRelationship.ToDate"
+    label = "To Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Picklist RelationshipType {
+    apiName = "AssetRelationship.RelationshipType"
+    label = "Relationship Type"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Replacement"
+        default = true
+        label = "Replacement"
+        isActive = true
+      },
+      {
+        fullName = "Upgrade"
+        default = false
+        label = "Upgrade"
+        isActive = true
+      },
+      {
+        fullName = "Crossgrade"
+        default = false
+        label = "Crossgrade"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+  }
+}

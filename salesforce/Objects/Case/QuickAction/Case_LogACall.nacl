@@ -1,0 +1,48 @@
+salesforce.QuickAction Case_LogACall {
+  fullName = "Case.LogACall"
+  fieldOverrides = {
+    field = "WhoId"
+    formula = "Case.ContactId"
+  }
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Subject"
+          },
+          {
+            emptySpace = false
+            field = "Description"
+          },
+          {
+            emptySpace = false
+            field = "WhoId"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = true
+          },
+          {
+            emptySpace = true
+          },
+          {
+            emptySpace = true
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "LogACall"
+  targetObject = "Task"
+  targetParentField = "What"
+  type = "LogACall"
+  _parent = [
+    salesforce.Case,
+  ]
+}

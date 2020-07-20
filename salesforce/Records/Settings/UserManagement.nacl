@@ -1,0 +1,9 @@
+salesforce.UserManagementSettings {
+  fullName = "UserManagement"
+  enableContactlessExternalIdentityUsers = false
+  enableEnhancedPermsetMgmt = false
+  enableEnhancedProfileMgmt = true
+  enableNewProfileUI = false
+  enableScrambleUserData = false
+  enableUserSelfDeactivate = false
+}

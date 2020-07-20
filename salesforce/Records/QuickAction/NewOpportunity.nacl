@@ -1,0 +1,43 @@
+salesforce.QuickAction NewOpportunity {
+  fullName = "NewOpportunity"
+  fieldOverrides = {
+    field = "CloseDate"
+    formula = "TODAY()+30"
+  }
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Name"
+          },
+          {
+            emptySpace = false
+            field = "AccountId"
+          },
+          {
+            emptySpace = false
+            field = "CloseDate"
+          },
+          {
+            emptySpace = false
+            field = "StageName"
+          },
+          {
+            emptySpace = false
+            field = "Amount"
+          },
+          {
+            emptySpace = false
+            field = "NextStep"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "New"
+  targetObject = "Opportunity"
+  type = "Create"
+}

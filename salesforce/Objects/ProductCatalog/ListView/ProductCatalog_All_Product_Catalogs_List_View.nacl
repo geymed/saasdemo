@@ -1,0 +1,6 @@
+salesforce.ListView ProductCatalog_All_Product_Catalogs_List_View {
+  fullName = "ProductCatalog.All_Product_Catalogs_List_View"
+  filterScope = "Everything"
+  label = "All Catalogs"
+  _parent = salesforce.ProductCatalog
+}

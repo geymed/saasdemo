@@ -1,0 +1,6 @@
+salesforce.ListView Case_MyCases {
+  fullName = "Case.MyCases"
+  filterScope = "Mine"
+  label = "My Cases"
+  _parent = salesforce.Case
+}

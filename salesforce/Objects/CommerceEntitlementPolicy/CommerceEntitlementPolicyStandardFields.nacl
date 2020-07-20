@@ -1,0 +1,124 @@
+type salesforce.CommerceEntitlementPolicy {
+  salesforce.Text Id {
+    apiName = "CommerceEntitlementPolicy.Id"
+    label = "Entitlement Policy ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "CommerceEntitlementPolicy.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Group",
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CommerceEntitlementPolicy.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "CommerceEntitlementPolicy.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CommerceEntitlementPolicy.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CommerceEntitlementPolicy.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CommerceEntitlementPolicy.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CommerceEntitlementPolicy.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CommerceEntitlementPolicy.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Text Description {
+    apiName = "CommerceEntitlementPolicy.Description"
+    label = "Description"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.Checkbox CanViewProduct {
+    apiName = "CommerceEntitlementPolicy.CanViewProduct"
+    label = "View products"
+    defaultValue = false
+    createable = true
+    updateable = false
+  }
+  salesforce.Checkbox CanViewPrice {
+    apiName = "CommerceEntitlementPolicy.CanViewPrice"
+    label = "View prices in catalog"
+    defaultValue = false
+    createable = true
+    updateable = false
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "CommerceEntitlementPolicy.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+  }
+}

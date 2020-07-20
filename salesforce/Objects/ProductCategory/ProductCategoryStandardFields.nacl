@@ -1,0 +1,117 @@
+type salesforce.ProductCategory {
+  salesforce.Text Id {
+    apiName = "ProductCategory.Id"
+    label = "Category ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductCategory.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "ProductCategory.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 200
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductCategory.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductCategory.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductCategory.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductCategory.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductCategory.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CatalogId {
+    apiName = "ProductCategory.CatalogId"
+    label = "Catalog ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "ProductCatalog",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Lookup ParentCategoryId {
+    apiName = "ProductCategory.ParentCategoryId"
+    label = "Category ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "ProductCategory",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.TextArea Description {
+    apiName = "ProductCategory.Description"
+    label = "Description"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Summary NumberOfProducts {
+    apiName = "ProductCategory.NumberOfProducts"
+    label = "Number of Products"
+    _required = false
+    precision = 9
+    createable = false
+    updateable = false
+  }
+}

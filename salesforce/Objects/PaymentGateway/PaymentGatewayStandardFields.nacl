@@ -1,0 +1,14 @@
+type salesforce.PaymentGateway {
+  string Comments {
+  }
+  salesforce.Lookup MerchantCredentialId {
+    apiName = "PaymentGateway.MerchantCredentialId"
+  }
+  string PaymentGatewayName {
+  }
+  salesforce.Lookup PaymentGatewayProviderId {
+    apiName = "PaymentGateway.PaymentGatewayProviderId"
+  }
+  string Status {
+  }
+}

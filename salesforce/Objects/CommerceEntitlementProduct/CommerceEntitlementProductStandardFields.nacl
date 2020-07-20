@@ -1,0 +1,102 @@
+type salesforce.CommerceEntitlementProduct {
+  salesforce.Text Id {
+    apiName = "CommerceEntitlementProduct.Id"
+    label = "Entitlement Product ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CommerceEntitlementProduct.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "CommerceEntitlementProduct.Name"
+    label = "Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CommerceEntitlementProduct.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CommerceEntitlementProduct.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CommerceEntitlementProduct.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CommerceEntitlementProduct.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CommerceEntitlementProduct.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup PolicyId {
+    apiName = "CommerceEntitlementProduct.PolicyId"
+    label = "Entitlement Policy ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "CommerceEntitlementPolicy",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Lookup ProductId {
+    apiName = "CommerceEntitlementProduct.ProductId"
+    label = "Product ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Product2",
+    ]
+    createable = true
+    updateable = false
+  }
+}

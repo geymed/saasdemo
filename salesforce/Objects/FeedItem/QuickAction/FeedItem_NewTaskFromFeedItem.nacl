@@ -1,0 +1,42 @@
+salesforce.QuickAction FeedItem_NewTaskFromFeedItem {
+  fullName = "FeedItem.NewTaskFromFeedItem"
+  fieldOverrides = {
+    field = "Description"
+    formula = "FeedItem.Body"
+  }
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "Subject"
+          },
+          {
+            emptySpace = false
+            field = "ActivityDate"
+          },
+          {
+            emptySpace = false
+            field = "WhoId"
+          },
+          {
+            emptySpace = false
+            field = "WhatId"
+          },
+          {
+            emptySpace = false
+            field = "Description"
+          },
+        ]
+      },
+    ]
+  }
+  standardLabel = "CreateNew"
+  targetObject = "Task"
+  type = "Create"
+  _parent = [
+    salesforce.FeedItem,
+  ]
+}

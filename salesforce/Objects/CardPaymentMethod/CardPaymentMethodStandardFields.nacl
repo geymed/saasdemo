@@ -1,0 +1,69 @@
+type salesforce.CardPaymentMethod {
+  salesforce.Lookup AccountId {
+    apiName = "CardPaymentMethod.AccountId"
+  }
+  string AuditEmail {
+  }
+  string AutoCardType {
+  }
+  string CardBin {
+  }
+  string CardCategory {
+  }
+  string CardHolderFirstName {
+  }
+  string CardHolderLastName {
+  }
+  string CardHolderName {
+  }
+  string CardLastFour {
+  }
+  salesforce.Picklist CardType {
+    apiName = "CardPaymentMethod.CardType"
+  }
+  string Comments {
+  }
+  string CompanyName {
+  }
+  string DisplayCardNumber {
+  }
+  string Email {
+  }
+  string ExpiryMonth {
+  }
+  string ExpiryYear {
+  }
+  string GatewayDate {
+  }
+  string GatewayResultCode {
+  }
+  string GatewayResultCodeDescription {
+  }
+  string GatewayToken {
+  }
+  string GatewayTokenDetails {
+  }
+  string InputCardNumber {
+  }
+  string IpAddress {
+  }
+  string MacAddress {
+  }
+  string NickName {
+  }
+  salesforce.Lookup PaymentGatewayId {
+    apiName = "CardPaymentMethod.PaymentGatewayId"
+  }
+  string Phone {
+  }
+  string ProcessingMode {
+  }
+  string SfResultCode {
+  }
+  string StartMonth {
+  }
+  string StartYear {
+  }
+  string Status {
+  }
+}

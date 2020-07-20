@@ -1,0 +1,6 @@
+salesforce.ListView PaymentAuthorization_PaymentAuthorization {
+  fullName = "PaymentAuthorization.PaymentAuthorization"
+  filterScope = "Everything"
+  label = "All"
+  _parent = salesforce.PaymentAuthorization
+}

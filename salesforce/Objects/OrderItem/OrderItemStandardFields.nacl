@@ -1,0 +1,195 @@
+type salesforce.OrderItem {
+  salesforce.Text Id {
+    apiName = "OrderItem.Id"
+    label = "Order Product ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "OrderItem.Product2Id"
+    label = "Product ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Product2",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Lookup OrderId {
+    apiName = "OrderItem.OrderId"
+    label = "Order ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Order",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Lookup PricebookEntryId {
+    apiName = "OrderItem.PricebookEntryId"
+    label = "Price Book Entry ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "PricebookEntry",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Lookup OriginalOrderItemId {
+    apiName = "OrderItem.OriginalOrderItemId"
+    label = "Original Order Item ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "OrderItem",
+    ]
+    createable = true
+    updateable = false
+  }
+  salesforce.Number AvailableQuantity {
+    apiName = "OrderItem.AvailableQuantity"
+    label = "Available Quantity"
+    _required = false
+    precision = 18
+    scale = 2
+    createable = false
+    updateable = false
+    unique = false
+  }
+  salesforce.Number Quantity {
+    apiName = "OrderItem.Quantity"
+    label = "Quantity"
+    _required = true
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+  }
+  salesforce.Currency UnitPrice {
+    apiName = "OrderItem.UnitPrice"
+    label = "Unit Price"
+    _required = false
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+  }
+  salesforce.Currency ListPrice {
+    apiName = "OrderItem.ListPrice"
+    label = "List Price"
+    _required = false
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+  }
+  salesforce.Currency TotalPrice {
+    apiName = "OrderItem.TotalPrice"
+    label = "Total Price"
+    _required = false
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+  }
+  salesforce.Date ServiceDate {
+    apiName = "OrderItem.ServiceDate"
+    label = "Start Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Date EndDate {
+    apiName = "OrderItem.EndDate"
+    label = "End Date"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Text Description {
+    apiName = "OrderItem.Description"
+    label = "Line Description"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderItem.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderItem.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderItem.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderItem.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderItem.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Text OrderItemNumber {
+    apiName = "OrderItem.OrderItemNumber"
+    label = "Order Product Number"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 30
+  }
+}

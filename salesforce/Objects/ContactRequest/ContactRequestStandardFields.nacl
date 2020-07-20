@@ -1,0 +1,239 @@
+type salesforce.ContactRequest {
+  salesforce.Text Id {
+    apiName = "ContactRequest.Id"
+    label = "Contact Request ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ContactRequest.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Group",
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ContactRequest.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "ContactRequest.Name"
+    label = "Contact Request Number"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ContactRequest.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ContactRequest.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ContactRequest.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ContactRequest.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ContactRequest.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup WhatId {
+    apiName = "ContactRequest.WhatId"
+    label = "Related To ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Account",
+      "Case",
+      "NewObjectBabe__c",
+      "NewObjectBabi__c",
+      "NewObjectName__c",
+      "Opportunity",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Lookup WhoId {
+    apiName = "ContactRequest.WhoId"
+    label = "Requestor ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Contact",
+      "Lead",
+      "User",
+    ]
+    createable = true
+    updateable = true
+  }
+  salesforce.Phone PreferredPhone {
+    apiName = "ContactRequest.PreferredPhone"
+    label = "Preferred Phone Number"
+    _required = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Picklist PreferredChannel {
+    apiName = "ContactRequest.PreferredChannel"
+    label = "Preferred Channel"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Phone"
+        default = true
+        label = "Phone"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Picklist Status {
+    apiName = "ContactRequest.Status"
+    label = "Request Status"
+    _required = true
+    valueSet = [
+      {
+        fullName = "New"
+        default = true
+        label = "New"
+        isActive = true
+      },
+      {
+        fullName = "Attempted"
+        default = false
+        label = "Attempted"
+        isActive = true
+      },
+      {
+        fullName = "Contacted"
+        default = false
+        label = "Contacted"
+        isActive = true
+      },
+      {
+        fullName = "Abandoned"
+        default = false
+        label = "Abandoned"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+  }
+  salesforce.Picklist RequestReason {
+    apiName = "ContactRequest.RequestReason"
+    label = "Request Reason"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Account"
+        default = true
+        label = "Account"
+        isActive = true
+      },
+      {
+        fullName = "Billing"
+        default = false
+        label = "Billing"
+        isActive = true
+      },
+      {
+        fullName = "Case"
+        default = false
+        label = "Case"
+        isActive = true
+      },
+      {
+        fullName = "General"
+        default = false
+        label = "General"
+        isActive = true
+      },
+      {
+        fullName = "Order"
+        default = false
+        label = "Order"
+        isActive = true
+      },
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+        isActive = true
+      },
+      {
+        fullName = "Other"
+        default = false
+        label = "Other"
+        isActive = true
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+  }
+  salesforce.LongTextArea RequestDescription {
+    apiName = "ContactRequest.RequestDescription"
+    label = "Request Description"
+    _required = false
+    createable = true
+    updateable = true
+    length = 32000
+  }
+}

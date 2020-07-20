@@ -1,0 +1,143 @@
+type salesforce.ElectronicMediaGroup {
+  salesforce.Text Id {
+    apiName = "ElectronicMediaGroup.Id"
+    label = "Electronic Media Group ID"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 18
+    _hidden = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ElectronicMediaGroup.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "Group",
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ElectronicMediaGroup.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "ElectronicMediaGroup.Name"
+    label = "Electronic Media Group Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 255
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ElectronicMediaGroup.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ElectronicMediaGroup.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ElectronicMediaGroup.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ElectronicMediaGroup.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      "User",
+    ]
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ElectronicMediaGroup.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    _hidden = true
+  }
+  salesforce.Text DeveloperName {
+    apiName = "ElectronicMediaGroup.DeveloperName"
+    label = "Developer Name"
+    _required = true
+    createable = false
+    updateable = false
+    unique = true
+    caseSensitive = false
+    length = 120
+  }
+  salesforce.Picklist UsageType {
+    apiName = "ElectronicMediaGroup.UsageType"
+    label = "Usage Type"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Standard"
+        default = false
+        label = "Standard"
+        isActive = true
+      },
+      {
+        fullName = "Attachment"
+        default = false
+        label = "Attachment"
+        isActive = true
+      },
+      {
+        fullName = "Listing"
+        default = false
+        label = "Listing"
+        isActive = true
+      },
+      {
+        fullName = "Banner"
+        default = false
+        label = "Banner"
+        isActive = true
+      },
+      {
+        fullName = "Tile"
+        default = false
+        label = "Tile"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+  }
+}
