@@ -1,0 +1,146 @@
+type salesforce.AuthorizationForm {
+  serviceid Id {
+    apiName = "AuthorizationForm.Id"
+    label = "Authorization Form ID"
+    _required = false
+    queryable = true
+    _hidden = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "AuthorizationForm.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Group,
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AuthorizationForm.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+    _required = false
+  }
+  salesforce.Text Name {
+    apiName = "AuthorizationForm.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AuthorizationForm.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AuthorizationForm.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AuthorizationForm.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AuthorizationForm.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AuthorizationForm.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Text RevisionNumber {
+    apiName = "AuthorizationForm.RevisionNumber"
+    label = "Revision Number"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+  }
+  salesforce.Date EffectiveFromDate {
+    apiName = "AuthorizationForm.EffectiveFromDate"
+    label = "Effective From Date"
+    _required = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date EffectiveToDate {
+    apiName = "AuthorizationForm.EffectiveToDate"
+    label = "Effective To Date"
+    _required = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup DefaultAuthFormTextId {
+    apiName = "AuthorizationForm.DefaultAuthFormTextId"
+    label = "Default Authorization Form Text ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.AuthorizationFormText,
+    ]
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsSignatureRequired {
+    apiName = "AuthorizationForm.IsSignatureRequired"
+    label = "Is Signature Required"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

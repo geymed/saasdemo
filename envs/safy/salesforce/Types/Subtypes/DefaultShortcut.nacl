@@ -1,0 +1,26 @@
+type salesforce.DefaultShortcut {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string action {
+    _required = false
+  }
+  boolean active {
+    _required = false
+  }
+  string keyCommand {
+    _required = false
+  }
+  metadataType = "DefaultShortcut"
+}

@@ -1,0 +1,142 @@
+type salesforce.CustomPageWebLink {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string availability {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "offline",
+        "online",
+      ]
+    }
+  }
+  string description {
+    _required = false
+  }
+  string encodingKey {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Big5",
+        "Big5-HKSCS",
+        "EUC-JP",
+        "GB2312",
+        "ISO-2022-JP",
+        "ISO-8859-1",
+        "Shift_JIS",
+        "UTF-8",
+        "ks_c_5601-1987",
+        "x-SJIS_0213",
+      ]
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean hasMenubar {
+    _required = false
+  }
+  boolean hasScrollbars {
+    _required = false
+  }
+  boolean hasToolbar {
+    _required = false
+  }
+  number height {
+    _required = false
+  }
+  boolean isResizable {
+    _required = false
+  }
+  string linkType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "flow",
+        "javascript",
+        "page",
+        "sControl",
+        "url",
+      ]
+    }
+  }
+  string masterLabel {
+    _required = false
+  }
+  string openType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "newWindow",
+        "noSidebar",
+        "onClickJavaScript",
+        "replace",
+        "sidebar",
+      ]
+    }
+  }
+  string page {
+    _required = false
+  }
+  string position {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "fullScreen",
+        "none",
+        "topLeft",
+      ]
+    }
+  }
+  boolean protected {
+    _required = false
+  }
+  boolean requireRowSelection {
+    _required = false
+  }
+  string scontrol {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.ApexPage,
+      "FlowDefinition",
+      salesforce.Scontrol,
+    ]
+  }
+  boolean showsLocation {
+    _required = false
+  }
+  boolean showsStatus {
+    _required = false
+  }
+  string url {
+    _required = false
+  }
+  number width {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "weblink"
+  dirName = "weblinks"
+  metadataType = "CustomPageWebLink"
+}

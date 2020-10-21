@@ -1,0 +1,16 @@
+type salesforce.CommSubscriptionTiming {
+  salesforce.MasterDetail CommSubscriptionConsentId {
+    apiName = "CommSubscriptionTiming.CommSubscriptionConsentId"
+    inlineHelpText = "The communication subscription consent record associated with the communication subscription timing."
+  }
+  string Offset {
+  }
+  string PreferredTimeEnd {
+  }
+  string PreferredTimeStart {
+  }
+  string PreferredTimeZone {
+  }
+  string Unit {
+  }
+}

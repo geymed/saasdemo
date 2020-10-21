@@ -1,0 +1,46 @@
+type salesforce.SharingCriteriaRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string accessLevel {
+    _required = false
+  }
+  salesforce.AccountSharingRuleSettings accountSettings {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  salesforce.SharedTo sharedTo {
+    _required = false
+  }
+  string booleanFilter {
+    _required = false
+  }
+  salesforce.FilterItem criteriaItems {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  metadataType = "SharingCriteriaRule"
+}

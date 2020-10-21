@@ -1,0 +1,5 @@
+type salesforce.PaymentGroup {
+  salesforce.Lookup SourceObjectId {
+    apiName = "PaymentGroup.SourceObjectId"
+  }
+}

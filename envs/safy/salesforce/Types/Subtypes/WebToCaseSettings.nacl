@@ -1,0 +1,26 @@
+type salesforce.WebToCaseSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string caseOrigin {
+    _required = false
+  }
+  string defaultResponseTemplate {
+    _required = false
+  }
+  boolean enableWebToCase {
+    _required = false
+  }
+  metadataType = "WebToCaseSettings"
+}

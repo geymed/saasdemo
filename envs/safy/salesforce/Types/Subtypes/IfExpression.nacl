@@ -1,0 +1,23 @@
+type salesforce.IfExpression {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string childName {
+    _required = false
+  }
+  string expression {
+    _required = false
+  }
+  metadataType = "IfExpression"
+}

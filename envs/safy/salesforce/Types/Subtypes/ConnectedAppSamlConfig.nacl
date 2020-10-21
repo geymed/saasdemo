@@ -1,0 +1,85 @@
+type salesforce.ConnectedAppSamlConfig {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string acsUrl {
+    _required = false
+  }
+  string certificate {
+    _required = false
+  }
+  string encryptionCertificate {
+    _required = false
+  }
+  string encryptionType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AES_128",
+        "AES_256",
+        "Triple_Des",
+      ]
+    }
+  }
+  string entityUrl {
+    _required = false
+  }
+  string issuer {
+    _required = false
+  }
+  string samlIdpSLOBindingEnum {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "PostBinding",
+        "RedirectBinding",
+      ]
+    }
+  }
+  string samlNameIdFormat {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "EmailAddress",
+        "Persistent",
+        "Transient",
+        "Unspecified",
+      ]
+    }
+  }
+  string samlSloUrl {
+    _required = false
+  }
+  string samlSubjectCustomAttr {
+    _required = false
+  }
+  string samlSubjectType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "CustomAttribute",
+        "FederationId",
+        "PersistentId",
+        "SpokeId",
+        "UserId",
+        "Username",
+      ]
+    }
+  }
+  metadataType = "ConnectedAppSamlConfig"
+}

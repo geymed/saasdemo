@@ -1,0 +1,38 @@
+type salesforce.SharingTerritoryRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string accessLevel {
+    _required = false
+  }
+  salesforce.AccountSharingRuleSettings accountSettings {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  salesforce.SharedTo sharedTo {
+    _required = false
+  }
+  salesforce.SharedTo sharedFrom {
+    _required = false
+  }
+  metadataType = "SharingTerritoryRule"
+}

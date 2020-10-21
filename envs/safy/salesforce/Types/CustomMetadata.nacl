@@ -1,0 +1,39 @@
+type salesforce.CustomMetadata {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  boolean protected {
+    _required = false
+  }
+  salesforce.CustomMetadataValue values {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "md"
+  dirName = "customMetadata"
+  metadataType = "CustomMetadata"
+}

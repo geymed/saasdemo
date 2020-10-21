@@ -1,0 +1,45 @@
+type salesforce.PermissionSetObjectPermissions {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean allowCreate {
+    _required = false
+  }
+  boolean allowDelete {
+    _required = false
+  }
+  boolean allowEdit {
+    _required = false
+  }
+  boolean allowRead {
+    _required = false
+  }
+  boolean modifyAllRecords {
+    _required = false
+  }
+  string object {
+    _required = false
+  }
+  boolean viewAllRecords {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = ""
+  dirName = ""
+  metadataType = "PermissionSetObjectPermissions"
+}

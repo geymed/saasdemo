@@ -1,0 +1,26 @@
+type salesforce.FlowSubflowInputAssignment {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  salesforce.FlowElementReferenceOrValue value {
+    _required = false
+  }
+  metadataType = "FlowSubflowInputAssignment"
+}

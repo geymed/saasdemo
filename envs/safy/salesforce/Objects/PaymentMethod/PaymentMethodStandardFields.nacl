@@ -1,0 +1,13 @@
+type salesforce.PaymentMethod {
+  salesforce.Lookup AccountId {
+    apiName = "PaymentMethod.AccountId"
+  }
+  string Comments {
+  }
+  string CompanyName {
+  }
+  string NickName {
+  }
+  string Status {
+  }
+}

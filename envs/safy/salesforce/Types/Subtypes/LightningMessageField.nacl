@@ -1,0 +1,23 @@
+type salesforce.LightningMessageField {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string fieldName {
+    _required = false
+  }
+  metadataType = "LightningMessageField"
+}

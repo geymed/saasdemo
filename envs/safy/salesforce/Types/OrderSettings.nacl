@@ -1,0 +1,39 @@
+settings salesforce.OrderSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean enableNegativeQuantity {
+    _required = false
+  }
+  boolean enableOrders {
+    _required = false
+  }
+  boolean enableReductionOrders {
+    _required = false
+  }
+  boolean enableZeroQuantity {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  boolean enableEnhancedCommerceOrders {
+  }
+  metadataType = "OrderSettings"
+}

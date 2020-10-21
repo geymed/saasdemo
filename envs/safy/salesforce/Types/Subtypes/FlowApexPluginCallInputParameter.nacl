@@ -1,0 +1,82 @@
+type salesforce.FlowApexPluginCallInputParameter {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  salesforce.FlowElementReferenceOrValue value {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "ActiveStages",
+        "ContextRecord",
+        "CurrentDate",
+        "CurrentDateTime",
+        "CurrentRecord",
+        "CurrentStage",
+        "EventDescription",
+        "EventMessage",
+        "EventName",
+        "EventNumber",
+        "FaultMessage",
+        "FaultStackTrace",
+        "FormFactor",
+        "InterviewGuid",
+        "InterviewIdValue",
+        "InterviewStartTime",
+        "None",
+        "NullNumberValue",
+        "NullStringValue",
+        "SpaceIdValue",
+        "SparkIdValue",
+        "StringOperationNumber",
+        "StringOperationText",
+        "StringOperationVariant",
+        "UserIdValue",
+      ]
+    }
+    foreignKeyDomain = [
+      "InteractionActionCall",
+      "InteractionAllocator",
+      "InteractionApexCall",
+      "InteractionChoice",
+      "InteractionChoiceLookup",
+      "InteractionConstant",
+      "InteractionDataInput",
+      "InteractionDataOutput",
+      "InteractionDecision",
+      "InteractionForm",
+      "InteractionFormula",
+      "InteractionLoop",
+      "InteractionQuestion",
+      "InteractionResource",
+      "InteractionStage",
+      "InteractionStatement",
+      "InteractionSteppedStage",
+      "InteractionSwitch",
+      "InteractionTodo",
+      "InteractionValueList",
+      "InteractionVariable",
+      "InteractionWait",
+      "InteractionWaitEvent",
+      "Subinteraction",
+    ]
+  }
+  metadataType = "FlowApexPluginCallInputParameter"
+}

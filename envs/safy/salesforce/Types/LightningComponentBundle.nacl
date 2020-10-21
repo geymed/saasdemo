@@ -1,0 +1,52 @@
+type salesforce.LightningComponentBundle {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  number apiVersion {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  boolean isExplicitImport {
+    _required = false
+  }
+  boolean isExposed {
+    _required = false
+  }
+  salesforce.LwcResources lwcResources {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  string runtimeNamespace {
+    _required = false
+  }
+  salesforce.TargetConfigs targetConfigs {
+  }
+  salesforce.Targets targets {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  dirName = "lwc"
+  metadataType = "LightningComponentBundle"
+}

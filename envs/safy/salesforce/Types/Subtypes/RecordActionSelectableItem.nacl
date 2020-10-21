@@ -1,0 +1,30 @@
+type salesforce.RecordActionSelectableItem {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string action {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Flow",
+        "QuickAction",
+      ]
+    }
+  }
+  metadataType = "RecordActionSelectableItem"
+}

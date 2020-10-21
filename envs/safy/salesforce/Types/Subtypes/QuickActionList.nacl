@@ -1,0 +1,20 @@
+type salesforce.QuickActionList {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<salesforce.QuickActionListItem>" quickActionListItems {
+    _required = false
+  }
+  metadataType = "QuickActionList"
+}

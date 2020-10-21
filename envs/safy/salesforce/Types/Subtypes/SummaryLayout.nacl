@@ -1,0 +1,50 @@
+type salesforce.SummaryLayout {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string masterLabel {
+    _required = false
+  }
+  number sizeX {
+    _required = false
+  }
+  number sizeY {
+    _required = false
+  }
+  number sizeZ {
+    _required = false
+  }
+  "List<salesforce.SummaryLayoutItem>" summaryLayoutItems {
+    _required = false
+  }
+  string summaryLayoutStyle {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "CaseInteraction",
+        "ChildServiceReportTemplateStyle",
+        "Default",
+        "DefaultQuoteTemplate",
+        "DefaultServiceReportTemplate",
+        "PathAssistant",
+        "QuickActionLayoutLeftRight",
+        "QuickActionLayoutTopDown",
+        "QuoteTemplate",
+        "ServiceReportTemplate",
+      ]
+    }
+  }
+  metadataType = "SummaryLayout"
+}

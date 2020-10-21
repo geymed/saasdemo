@@ -1,0 +1,23 @@
+type salesforce.UiFormulaRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string booleanFilter {
+    _required = false
+  }
+  "List<salesforce.UiFormulaCriterion>" criteria {
+    _required = false
+  }
+  metadataType = "UiFormulaRule"
+}

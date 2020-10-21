@@ -1,0 +1,47 @@
+type salesforce.EclairMap {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  number boundingBoxBottom {
+    _required = false
+  }
+  number boundingBoxLeft {
+    _required = false
+  }
+  number boundingBoxRight {
+    _required = false
+  }
+  number boundingBoxTop {
+    _required = false
+  }
+  string mapLabel {
+    _required = false
+  }
+  string mapName {
+    _required = false
+  }
+  string projection {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AlbersUSA",
+        "Equirectangular",
+        "Mercator",
+        "Miller",
+      ]
+    }
+  }
+  metadataType = "EclairMap"
+}

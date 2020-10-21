@@ -1,0 +1,95 @@
+type salesforce.PlatformEventChannelMember {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string eventChannel {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "ActivityEngagementVirtualChannel",
+        "ChangeDataStandardSales",
+        "ChangeEvents",
+        "CommerceChangeEvents",
+        "ConsentCDCChannel",
+        "ConversationIntelligenceVirtualChannel",
+        "CreChangeEvents",
+        "EinsteinDiscoveryWBChannel",
+        "EinsteinPlatformStandardChannel",
+        "FTestStandardChannel",
+        "FTestStandardInternalChannel",
+        "GlobalIdentityStandard",
+        "IsotopeStandardChangeEvents",
+        "PardotSyncStdChannel",
+        "WorkPlansCDCEventChannel",
+      ]
+    }
+    foreignKeyDomain = [
+      salesforce.PlatformEventChannel,
+    ]
+  }
+  string selectedEntity {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AccountChangeEvent",
+        "AccountContactRoleChangeEvent",
+        "AssetChangeEvent",
+        "AuthorizationFormConsentChangeEvent",
+        "CampaignChangeEvent",
+        "CampaignMemberChangeEvent",
+        "CampaignMemberStatusChangeEvent",
+        "CaseChangeEvent",
+        "ContactChangeEvent",
+        "ContactPointAddressChangeEvent",
+        "ContactPointConsentChangeEvent",
+        "ContactPointEmailChangeEvent",
+        "ContactPointPhoneChangeEvent",
+        "ContactPointTypeConsentChangeEvent",
+        "ContractChangeEvent",
+        "EventChangeEvent",
+        "EventRelationChangeEvent",
+        "IndividualChangeEvent",
+        "LeadChangeEvent",
+        "ListEmailChangeEvent",
+        "NewObjectBabe__ChangeEvent",
+        "NewObjectBabi__ChangeEvent",
+        "NewObjectName__ChangeEvent",
+        "OpportunityChangeEvent",
+        "OpportunityContactRoleChangeEvent",
+        "OrderChangeEvent",
+        "OrderItemChangeEvent",
+        "Product2ChangeEvent",
+        "TaskChangeEvent",
+        "TaskRelationChangeEvent",
+        "UserChangeEvent",
+      ]
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+    ]
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "platformEventChannelMember"
+  dirName = "platformEventChannelMembers"
+  metadataType = "PlatformEventChannelMember"
+}

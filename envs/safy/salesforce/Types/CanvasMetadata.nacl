@@ -1,0 +1,60 @@
+type salesforce.CanvasMetadata {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string accessMethod {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Get",
+        "Post",
+      ]
+    }
+  }
+  string canvasOptions {
+    _required = false
+  }
+  string canvasUrl {
+    _required = false
+  }
+  string lifecycleClass {
+    _required = false
+  }
+  string locationOptions {
+    _required = false
+  }
+  string samlInitiationMethod {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "IdpInitiated",
+        "None",
+        "SpInitiated",
+      ]
+    }
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "Canvas"
+  dirName = "Canvases"
+  metadataType = "CanvasMetadata"
+}

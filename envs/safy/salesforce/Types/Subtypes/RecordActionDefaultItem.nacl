@@ -1,0 +1,50 @@
+type salesforce.RecordActionDefaultItem {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string action {
+    _required = false
+  }
+  boolean isMandatory {
+    _required = false
+  }
+  boolean isUiRemoveHidden {
+    _required = false
+  }
+  string pinned {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Bottom",
+        "None",
+        "Top",
+      ]
+    }
+  }
+  number position {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Flow",
+        "QuickAction",
+      ]
+    }
+  }
+  metadataType = "RecordActionDefaultItem"
+}

@@ -1,0 +1,26 @@
+type salesforce.FlowVisibilityRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  string conditionLogic {
+    _required = false
+  }
+  salesforce.FlowCondition conditions {
+    _required = false
+  }
+  metadataType = "FlowVisibilityRule"
+}

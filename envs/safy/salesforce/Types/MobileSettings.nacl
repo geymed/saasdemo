@@ -1,0 +1,42 @@
+settings salesforce.MobileSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.DashboardMobileSettings dashboardMobile {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  boolean enableImportContactFromDevice {
+  }
+  boolean enableLightningOnMobile {
+  }
+  boolean enableNewSalesforceMobileAppForTablet {
+  }
+  boolean enableOfflineDraftsEnabled {
+  }
+  boolean enablePopulateNameManuallyInToday {
+  }
+  boolean enableS1EncryptedStoragePref2 {
+  }
+  boolean enableS1OfflinePref {
+  }
+  metadataType = "MobileSettings"
+}

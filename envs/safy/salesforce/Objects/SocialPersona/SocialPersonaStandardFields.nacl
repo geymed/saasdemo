@@ -1,0 +1,17 @@
+type salesforce.SocialPersona {
+  string ExternalId {
+  }
+  string ExternalPictureURL {
+  }
+  string Name {
+  }
+  salesforce.MasterDetail ParentId {
+    apiName = "SocialPersona.ParentId"
+  }
+  string ProfileUrl {
+  }
+  string Provider {
+  }
+  string SourceApp {
+  }
+}

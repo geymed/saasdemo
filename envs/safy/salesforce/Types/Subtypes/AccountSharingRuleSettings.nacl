@@ -1,0 +1,26 @@
+type salesforce.AccountSharingRuleSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string caseAccessLevel {
+    _required = false
+  }
+  string contactAccessLevel {
+    _required = false
+  }
+  string opportunityAccessLevel {
+    _required = false
+  }
+  metadataType = "AccountSharingRuleSettings"
+}

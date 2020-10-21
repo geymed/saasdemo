@@ -1,0 +1,26 @@
+type salesforce.LightningBoltFeatures {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string description {
+    _required = false
+  }
+  number order {
+    _required = false
+  }
+  string title {
+    _required = false
+  }
+  metadataType = "LightningBoltFeatures"
+}

@@ -1,0 +1,27 @@
+type salesforce.CommSubscriptionConsent {
+  salesforce.Lookup CommSubscriptionChannelTypeId {
+    apiName = "CommSubscriptionConsent.CommSubscriptionChannelTypeId"
+    inlineHelpText = "The communication subscription channel type record associated with the communication subscription consent."
+  }
+  string ConsentCapturedDateTime {
+  }
+  string ConsentCapturedSource {
+  }
+  salesforce.Lookup ConsentGiverId {
+    apiName = "CommSubscriptionConsent.ConsentGiverId"
+    inlineHelpText = "The person consenting to the communication subscription."
+  }
+  salesforce.Lookup ContactPointId {
+    apiName = "CommSubscriptionConsent.ContactPointId"
+    inlineHelpText = "The contact point record associated with the communication subscription consent."
+  }
+  string EffectiveFromDate {
+  }
+  string EffectiveToDate {
+  }
+  string Name {
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "CommSubscriptionConsent.OwnerId"
+  }
+}

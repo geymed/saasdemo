@@ -1,0 +1,197 @@
+type salesforce.StrategyNodeInvocableAction {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string childNode {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  number limit {
+    _required = false
+  }
+  string action {
+    _required = false
+  }
+  salesforce.StrategyNodeInvocableActionArg argument {
+    _required = false
+  }
+  boolean isGenerator {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "activateOrderAction",
+        "activateSessionPermSet",
+        "addMessageToChat",
+        "addMessageToQuipChat",
+        "addMessageToQuipDocument",
+        "addQuipDocumentToFolder",
+        "addRebateMemberList",
+        "addUsersToChat",
+        "addUsersToQuipChat",
+        "addUsersToQuipDocument",
+        "addWorkPlans",
+        "addWorkSteps",
+        "adjustOrderItemSummariesPreview",
+        "adjustOrderItemSummariesSubmit",
+        "adjustPointsAction",
+        "aggregateValue",
+        "apex",
+        "archiveKnowledgeArticles",
+        "assignKnowledgeArticles",
+        "assignTargetToSalesCadence",
+        "assignTrailheadBadge",
+        "attachQuipDocumentToRecord",
+        "batchJobAction",
+        "calcCartShipmentAction",
+        "calcCartTaxesAction",
+        "calculateRebateAmountAndUpsertPayout",
+        "cancelAccrual",
+        "cancelAppointment",
+        "cancelCartAsyncOperation",
+        "cancelFulfillmentOrderItem",
+        "cancelOrderItemSummariesPreview",
+        "cancelOrderItemSummariesSubmit",
+        "cancelRedemption",
+        "captureFunds",
+        "cartCompleteAsyncStep",
+        "cartInitiateAsyncStep",
+        "cartToOrderAction",
+        "changeAllTierOrNone",
+        "changeSalesCadenceTargetAssignee",
+        "changeTier",
+        "chat",
+        "chatterPost",
+        "checkCartInventoryAction",
+        "checkoutSessionAction",
+        "choosePricebook",
+        "component",
+        "contactRequestAction",
+        "contentWorkspaceEnableFolders",
+        "copyQuipContent",
+        "copyQuipDocument",
+        "createCreditMemoOrderSummary",
+        "createCustomField",
+        "createDraftFromOnlineKnowledgeArticle",
+        "createFinancialRecords",
+        "createFulfillmentOrder",
+        "createInvoiceFromFulfillmentOrder",
+        "createOrderPaymentSummary",
+        "createOrderSummary",
+        "createQuipChat",
+        "createQuipDocument",
+        "createQuipFolder",
+        "createResponseEventAction",
+        "createServiceReport",
+        "creditPoints",
+        "customNotificationAction",
+        "dataProcessingEngineAction",
+        "deactivateSessionPermSet",
+        "debitPoints",
+        "decisionTableAction",
+        "deleteKnowledgeArticles",
+        "deleteWorkPlans",
+        "deployOrchestration",
+        "editQuipDocument",
+        "einsteinEPLitePredictionAction",
+        "emailAlert",
+        "emailSObject",
+        "emailSimple",
+        "ensureFundsOrderSummaryAsync",
+        "ensureRefundsOrderSummaryAsync",
+        "exportSurveyResponses",
+        "externalService",
+        "flow",
+        "generateRebatePayoutPeriods",
+        "generateWorkOrders",
+        "generateWorkPlans",
+        "getBenefitAndCalculateRebateAmount",
+        "getPointsBalance",
+        "getTier",
+        "iasCreateReservation",
+        "iasFulfillment",
+        "iasGetAvailability",
+        "iasReleaseReservation",
+        "iasTransferReservation",
+        "insightFeedback",
+        "invokeOrchOutputFlow",
+        "liveMessageNotification",
+        "lockQuipDocument",
+        "managedContentReleasePublish",
+        "marketingEmail",
+        "massUpdateAccountForecast",
+        "massUpdateSalesAgreement",
+        "metricRefresh",
+        "orchestrationDebugLog",
+        "orchestrationTimer",
+        "orderToCartAction",
+        "pardotAddToListMembership",
+        "pardotGetListx",
+        "pauseSalesCadenceTracker",
+        "priceCart",
+        "print",
+        "printServiceDocument",
+        "processCreateWorkitem",
+        "processRebatesBatchCalculationJob",
+        "processStartStep",
+        "processStopInstance",
+        "processStopStep",
+        "publishKnowledgeArticles",
+        "publishPardotContent",
+        "quickAction",
+        "quipLivePaste",
+        "recalculateForecast",
+        "refreshActualsCalculation",
+        "removeQuipDocumentFromFolder",
+        "removeTargetFromSalesCadence",
+        "removeUsersFromQuipChat",
+        "removeUsersFromQuipDocument",
+        "restoreKnowledgeArticleVersion",
+        "resumeSalesCadenceTracker",
+        "returnOrderItemSummariesPreview",
+        "returnOrderItemSummariesSubmit",
+        "routingAddressVerification",
+        "salesCadenceListenerBranchStepTranslator",
+        "saveAppointment",
+        "saveRecommendationDecision",
+        "scaleCacheAsyncRefresh",
+        "sendAlert",
+        "sendSurveyInvitation",
+        "sfdcOutputAction",
+        "skillsBasedRouting",
+        "storeReplyRecommendationsFeedback",
+        "submit",
+        "submitDigitalFormResponse",
+        "submitKnowledgeArticleForTranslation",
+        "thanks",
+        "thunderResponse",
+        "updateAcctMgrTarget",
+        "updateCheckoutSessionStateAction",
+        "upsertCustomRebatePayout",
+      ]
+    }
+  }
+  metadataType = "StrategyNodeInvocableAction"
+}

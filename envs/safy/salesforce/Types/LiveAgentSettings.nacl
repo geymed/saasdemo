@@ -1,0 +1,32 @@
+settings salesforce.LiveAgentSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean enableLiveAgent {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  number priority {
+  }
+  boolean enableQuickTextEnabled {
+  }
+  metadataType = "LiveAgentSettings"
+}

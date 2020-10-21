@@ -1,0 +1,47 @@
+type salesforce.FlowWait {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  number locationX {
+    _required = false
+  }
+  number locationY {
+    _required = false
+  }
+  salesforce.FlowConnector defaultConnector {
+    _required = false
+  }
+  string defaultConnectorLabel {
+    _required = false
+  }
+  salesforce.FlowConnector faultConnector {
+    _required = false
+  }
+  salesforce.FlowWaitEvent waitEvents {
+    _required = false
+  }
+  metadataType = "FlowWait"
+}

@@ -1,0 +1,52 @@
+settings salesforce.IdeasSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean enableChatterProfile {
+    _required = false
+  }
+  boolean enableHtmlIdea {
+    _required = false
+  }
+  boolean enableIdeaMultipleCategory {
+    _required = false
+  }
+  boolean enableIdeaThemes {
+    _required = false
+  }
+  boolean enableIdeas {
+    _required = false
+  }
+  boolean enableIdeasControllerExtensions {
+    _required = false
+  }
+  boolean enableIdeasReputation {
+    _required = false
+  }
+  number halfLife {
+    _required = false
+  }
+  string ideasProfilePage {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  metadataType = "IdeasSettings"
+}

@@ -1,0 +1,30 @@
+type salesforce.Holidays {
+  string name {
+  }
+  string description {
+  }
+  string activityDate {
+  }
+  string recurrenceStartDate {
+  }
+  string recurrenceEndDate {
+  }
+  string startTime {
+  }
+  string endTime {
+  }
+  string recurrenceType {
+  }
+  string recurrenceInterval {
+  }
+  string recurrenceDayOfWeek {
+  }
+  string recurrenceDayOfMonth {
+  }
+  string recurrenceInstance {
+  }
+  string recurrenceMonthOfYear {
+  }
+  string businessHours {
+  }
+}

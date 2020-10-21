@@ -1,0 +1,29 @@
+type salesforce.RecordActionDeploymentContext {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string entityName {
+    _required = false
+    foreignKeyDomain = [
+      "EntityDefinition",
+    ]
+  }
+  string recommendationStrategy {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.RecommendationStrategy,
+    ]
+  }
+  metadataType = "RecordActionDeploymentContext"
+}

@@ -1,0 +1,39 @@
+type salesforce.CustomPermission {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string connectedApp {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.ConnectedApp,
+    ]
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "customPermission"
+  dirName = "customPermissions"
+  metadataType = "CustomPermission"
+}

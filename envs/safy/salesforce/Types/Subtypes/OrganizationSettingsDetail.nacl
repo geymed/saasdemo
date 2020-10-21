@@ -1,0 +1,6 @@
+type salesforce.OrganizationSettingsDetail {
+  string settingName {
+  }
+  string settingValue {
+  }
+}

@@ -1,0 +1,155 @@
+type salesforce.PromptVersion {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string actionButtonLabel {
+    _required = false
+  }
+  string actionButtonLink {
+    _required = false
+  }
+  string body {
+    _required = false
+  }
+  string customApplication {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.CustomApplication,
+    ]
+  }
+  number delayDays {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string dismissButtonLabel {
+    _required = false
+  }
+  string displayPosition {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "BottomCenter",
+        "BottomLeft",
+        "BottomRight",
+        "TopCenter",
+        "TopLeft",
+        "TopRight",
+      ]
+    }
+  }
+  string displayType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "DockedComposer",
+        "FloatingPanel",
+        "Walkthrough",
+      ]
+    }
+  }
+  string endDate {
+    _required = false
+  }
+  string header {
+    _required = false
+  }
+  string indexWithIsPublished {
+    _required = false
+  }
+  string indexWithoutIsPublished {
+    _required = false
+  }
+  boolean isPublished {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  string publishedByUser {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.User,
+    ]
+  }
+  string publishedDate {
+    _required = false
+  }
+  boolean shouldDisplayActionButton {
+    _required = false
+  }
+  boolean shouldIgnoreGlobalDelay {
+    _required = false
+  }
+  string startDate {
+    _required = false
+  }
+  number stepNumber {
+    _required = false
+  }
+  string targetAppDeveloperName {
+    _required = false
+  }
+  string targetAppNamespacePrefix {
+    _required = false
+  }
+  string targetPageKey1 {
+    _required = false
+  }
+  string targetPageKey2 {
+    _required = false
+  }
+  string targetPageType {
+    _required = false
+  }
+  number timesToDisplay {
+    _required = false
+  }
+  string title {
+    _required = false
+  }
+  salesforce.UiFormulaRule uiFormulaRule {
+    _required = false
+  }
+  string userAccess {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Everyone",
+        "SpecificPermissions",
+      ]
+    }
+  }
+  string userProfileAccess {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Everyone",
+        "SpecificProfiles",
+      ]
+    }
+  }
+  number versionNumber {
+    _required = false
+  }
+  string videoLink {
+    _required = false
+  }
+  metadataType = "PromptVersion"
+}

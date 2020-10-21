@@ -1,0 +1,21 @@
+salesforce.LightningExperienceSettings {
+  fullName = "LightningExperience"
+  enableAccessCheckCrucPref = false
+  enableApiUserLtngOutAccessPref = false
+  enableAuraCDNPref = true
+  enableFeedbackInMobile = true
+  enableIE11DeprecationMsgHidden = false
+  enableIE11LEXCrucPref = false
+  enableInAppTooltips = true
+  enableLEXOnIpadEnabled = false
+  enableLexEndUsersNoSwitching = false
+  enableNavPersonalizationOptOut = false
+  enableRemoveThemeBrandBanner = false
+  enableS1BannerPref = true
+  enableS1BrowserEnabled = true
+  enableS1DesktopEnabled = true
+  enableS1UiLoggingEnabled = true
+  enableTryLightningOptOut = false
+  enableUseS1AlohaDesktop = false
+  enableUsersAreLightningOnly = false
+}

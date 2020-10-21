@@ -1,0 +1,64 @@
+type salesforce.ListView {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string booleanFilter {
+    _required = false
+  }
+  "List<string>" columns {
+    _required = false
+  }
+  string division {
+    _required = false
+  }
+  "List<salesforce.ListViewFilter>" filters {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string language {
+    _required = false
+  }
+  string queue {
+    _required = false
+  }
+  salesforce.SharedTo sharedTo {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  string filterScope {
+    _restriction = {
+      values = [
+        "Everything",
+        "Mine",
+        "MineAndMyGroups",
+        "Queue",
+        "Delegated",
+        "MyTerritory",
+        "MyTeamTerritory",
+        "Team",
+        "SalesTeam",
+      ]
+    }
+  }
+  metadataType = "ListView"
+}

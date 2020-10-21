@@ -1,5 +1,5 @@
 workspace {
-  uid = "997d3ef0-3f26-4452-aa01-d64b38676eb0"
-  name = "eli"
+  uid = "401ba24b-760d-491f-bc61-f39293cb6047"
+  name = "brush"
   staleStateThresholdMinutes = undefined
 }

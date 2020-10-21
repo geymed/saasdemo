@@ -1,0 +1,90 @@
+type salesforce.WorkflowTask {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string assignedTo {
+    _required = false
+  }
+  string assignedToType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "accountCreator",
+        "accountOwner",
+        "accountTeam",
+        "creator",
+        "opportunityTeam",
+        "owner",
+        "partnerUser",
+        "portalRole",
+        "role",
+        "user",
+      ]
+    }
+  }
+  string description {
+    _required = false
+  }
+  number dueDateOffset {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean notifyAssignee {
+    _required = false
+  }
+  string offsetFromField {
+    _required = false
+  }
+  string priority {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "High",
+        "Low",
+        "Normal",
+      ]
+    }
+  }
+  boolean protected {
+    _required = false
+  }
+  string status {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Completed",
+        "Deferred",
+        "In Progress",
+        "Not Started",
+        "Waiting on someone else",
+      ]
+    }
+  }
+  string subject {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = ""
+  dirName = ""
+  metadataType = "WorkflowTask"
+}

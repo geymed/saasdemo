@@ -1,0 +1,64 @@
+type salesforce.RuleEntry {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string assignedTo {
+    _required = false
+  }
+  string booleanFilter {
+    _required = false
+  }
+  string businessHours {
+    _required = false
+  }
+  "List<salesforce.FilterItem>" criteriaItems {
+    _required = false
+  }
+  boolean disableEscalationWhenModified {
+    _required = false
+  }
+  string formula {
+    _required = false
+  }
+  boolean notifyCcRecipients {
+    _required = false
+  }
+  boolean overrideExistingTeams {
+    _required = false
+  }
+  string replyToEmail {
+    _required = false
+  }
+  string senderEmail {
+    _required = false
+  }
+  string senderName {
+    _required = false
+  }
+  string team {
+    _required = false
+  }
+  string template {
+    _required = false
+  }
+  string assignedToType {
+    _restriction = {
+      values = [
+        "User",
+        "Queue",
+      ]
+    }
+  }
+  metadataType = "RuleEntry"
+}

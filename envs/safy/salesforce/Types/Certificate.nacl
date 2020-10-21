@@ -1,0 +1,49 @@
+type salesforce.Certificate {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean caSigned {
+    _required = false
+  }
+  string content {
+    _required = false
+  }
+  boolean encryptedWithPlatformEncryption {
+    _required = false
+  }
+  string expirationDate {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  number keySize {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  boolean privateKeyExportable {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  hasMetaFile = true
+  suffix = "crt"
+  dirName = "certs"
+  metadataType = "Certificate"
+}

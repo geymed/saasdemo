@@ -1,0 +1,12 @@
+type salesforce.LightningComponentBundleSupportedFormFactor {
+  string type {
+    _required = true
+    _restriction = {
+      values = [
+        "Small",
+        "Large",
+      ]
+    }
+    isAttribute = true
+  }
+}

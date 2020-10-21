@@ -1,0 +1,74 @@
+type salesforce.BrandingSet {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.BrandingSetProperty brandingSetProperty {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "b2b:branding-b2b",
+        "b2c-lite-storefront:branding",
+        "citizen:branding-citizen",
+        "cpt:branding-cpt",
+        "cypress:branding-cypress",
+        "ember:branding-ember",
+        "es-channel-menu",
+        "helpCenter:branding-helpCenter",
+        "identity:branding-identity",
+        "insurance:branding-insurance",
+        "jepson:branding-jepson",
+        "koa:branding-koa",
+        "kokua:branding-kokua",
+        "login:branding-login",
+        "login:branding-login2",
+        "lpi:branding-lpi",
+        "mfg:branding-mfg",
+        "mortgage:branding-mortgage",
+        "napili:branding-napili",
+        "napili:branding-napili-merged",
+        "prm:branding-prm-merged",
+        "service:branding-service",
+        "starter:branding-starter",
+        "stella:branding-stella",
+        "survey",
+        "talon-template-byo:branding",
+        "webster:branding-webster",
+      ]
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+    ]
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "brandingSet"
+  dirName = "brandingSets"
+  metadataType = "BrandingSet"
+}

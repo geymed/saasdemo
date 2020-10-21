@@ -1,0 +1,37 @@
+type salesforce.EclairGeoData {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string content {
+    _required = false
+  }
+  salesforce.EclairMap maps {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  hasMetaFile = true
+  suffix = "geodata"
+  dirName = "eclair"
+  metadataType = "EclairGeoData"
+}

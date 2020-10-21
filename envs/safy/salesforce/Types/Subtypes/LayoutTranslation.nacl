@@ -1,0 +1,26 @@
+type salesforce.LayoutTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string layout {
+    _required = false
+  }
+  string layoutType {
+    _required = false
+  }
+  "List<salesforce.LayoutSectionTranslation>" sections {
+    _required = false
+  }
+  metadataType = "LayoutTranslation"
+}

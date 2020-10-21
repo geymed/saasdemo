@@ -1,0 +1,65 @@
+type salesforce.PermissionSet {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string description {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean hasActivationRequired {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string license {
+    _required = false
+    foreignKeyDomain = [
+      "PermissionSetLicense",
+      "UserLicense",
+    ]
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  "List<salesforce.PermissionSetApplicationVisibility>" applicationVisibilities {
+  }
+  "List<salesforce.PermissionSetApexClassAccess>" classAccesses {
+  }
+  "List<salesforce.PermissionSetCustomMetadataTypeAccess>" customMetadataTypeAccesses {
+  }
+  "List<salesforce.PermissionSetCustomPermissions>" customPermissions {
+  }
+  "List<salesforce.PermissionSetCustomSettingAccesses>" customSettingAccesses {
+  }
+  "List<salesforce.PermissionSetFieldPermissions>" fieldPermissions {
+  }
+  "List<salesforce.PermissionSetObjectPermissions>" objectPermissions {
+  }
+  "List<salesforce.PermissionSetApexPageAccess>" pageAccesses {
+  }
+  "List<salesforce.PermissionSetRecordTypeVisibility>" recordTypeVisibilities {
+  }
+  "List<salesforce.PermissionSetTabSetting>" tabSettings {
+  }
+  "List<salesforce.PermissionSetUserPermission>" userPermissions {
+  }
+  suffix = "permissionset"
+  dirName = "permissionsets"
+  metadataType = "PermissionSet"
+}

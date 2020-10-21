@@ -1,0 +1,26 @@
+type salesforce.SiteWebAddress {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string certificate {
+    _required = false
+  }
+  string domainName {
+    _required = false
+  }
+  boolean primary {
+    _required = false
+  }
+  metadataType = "SiteWebAddress"
+}

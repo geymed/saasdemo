@@ -1,0 +1,26 @@
+type salesforce.ComponentInstance {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<salesforce.ComponentInstanceProperty>" componentInstanceProperties {
+    _required = false
+  }
+  string componentName {
+    _required = false
+  }
+  salesforce.UiFormulaRule visibilityRule {
+    _required = false
+  }
+  metadataType = "ComponentInstance"
+}

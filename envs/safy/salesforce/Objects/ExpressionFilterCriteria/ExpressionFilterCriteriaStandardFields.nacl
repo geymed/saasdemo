@@ -1,0 +1,136 @@
+type salesforce.ExpressionFilterCriteria {
+  serviceid Id {
+    apiName = "ExpressionFilterCriteria.Id"
+    label = "ExpressionFilterCriteria ID"
+    _required = false
+    queryable = true
+    _hidden = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ExpressionFilterCriteria.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+    _required = false
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ExpressionFilterCriteria.Name"
+    label = "ExpressionFilterCriteria Name"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ExpressionFilterCriteria.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ExpressionFilterCriteria.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ExpressionFilterCriteria.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ExpressionFilterCriteria.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ExpressionFilterCriteria.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Text FilterTarget {
+    apiName = "ExpressionFilterCriteria.FilterTarget"
+    label = "FilterTarget"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Text FilterTargetValue {
+    apiName = "ExpressionFilterCriteria.FilterTargetValue"
+    label = "Context"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Picklist Operation {
+    apiName = "ExpressionFilterCriteria.Operation"
+    label = "Operation"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SortOrder {
+    apiName = "ExpressionFilterCriteria.SortOrder"
+    label = "SortOrder"
+    _required = false
+    precision = 8
+    createable = true
+    updateable = true
+    scale = 0
+    unique = false
+    queryable = true
+  }
+  salesforce.Lookup ExpressionFilterId {
+    apiName = "ExpressionFilterCriteria.ExpressionFilterId"
+    label = "ExpressionFilter ID"
+    _required = true
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.ExpressionFilter,
+    ]
+    createable = true
+    updateable = false
+    queryable = true
+  }
+}

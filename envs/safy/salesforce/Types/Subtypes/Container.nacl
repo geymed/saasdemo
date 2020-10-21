@@ -1,0 +1,38 @@
+type salesforce.Container {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  number height {
+    _required = false
+  }
+  boolean isContainerAutoSizeEnabled {
+    _required = false
+  }
+  string region {
+    _required = false
+  }
+  salesforce.SidebarComponent sidebarComponents {
+    _required = false
+  }
+  string style {
+    _required = false
+  }
+  string unit {
+    _required = false
+  }
+  number width {
+    _required = false
+  }
+  metadataType = "Container"
+}

@@ -1,0 +1,27 @@
+salesforce.CustomObjectTranslation NewObjectBabe__c_en_US {
+  fullName = "NewObjectBabe__c-en_US"
+  caseValues = [
+    {
+      plural = false
+      value = "NewObjectBabe"
+    },
+    {
+      plural = true
+      value = "NewObjectBabes"
+    },
+  ]
+  fields = [
+    {
+      label = ""
+      name = salesforce.NewObjectBabe__c.field.Alpha__c
+    },
+    {
+      label = ""
+      name = salesforce.NewObjectBabe__c.field.Beta__c
+    },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+    salesforce.NewObjectBabe__c,
+  ]
+}

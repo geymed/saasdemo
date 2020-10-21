@@ -1,0 +1,83 @@
+type salesforce.SharedTo {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string allCustomerPortalUsers {
+    _required = false
+  }
+  string allInternalUsers {
+    _required = false
+  }
+  string allPartnerUsers {
+    _required = false
+  }
+  string channelProgramGroup {
+    _required = false
+  }
+  string channelProgramGroups {
+    _required = false
+  }
+  "List<string>" group {
+    _required = false
+  }
+  string groups {
+    _required = false
+  }
+  string guestUser {
+    _required = false
+  }
+  string managerSubordinates {
+    _required = false
+  }
+  string managers {
+    _required = false
+  }
+  string portalRole {
+    _required = false
+  }
+  string portalRoleAndSubordinates {
+    _required = false
+  }
+  string queue {
+    _required = false
+  }
+  "List<string>" role {
+    _required = false
+  }
+  string roleAndSubordinates {
+    _required = false
+  }
+  string roleAndSubordinatesInternal {
+    _required = false
+  }
+  string roles {
+    _required = false
+  }
+  string rolesAndSubordinates {
+    _required = false
+  }
+  string territories {
+    _required = false
+  }
+  string territoriesAndSubordinates {
+    _required = false
+  }
+  string territory {
+    _required = false
+  }
+  string territoryAndSubordinates {
+    _required = false
+  }
+  metadataType = "SharedTo"
+}

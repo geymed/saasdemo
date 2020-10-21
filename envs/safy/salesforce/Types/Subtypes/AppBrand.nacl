@@ -1,0 +1,35 @@
+type salesforce.AppBrand {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string footerColor {
+    _required = false
+  }
+  string headerColor {
+    _required = false
+  }
+  string logo {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.ContentAsset,
+    ]
+  }
+  number logoVersion {
+    _required = false
+  }
+  boolean shouldOverrideOrgTheme {
+    _required = false
+  }
+  metadataType = "AppBrand"
+}

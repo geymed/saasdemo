@@ -1,0 +1,26 @@
+type salesforce.PackageVersion {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  number majorNumber {
+    _required = false
+  }
+  number minorNumber {
+    _required = false
+  }
+  string namespace {
+    _required = false
+  }
+  metadataType = "PackageVersion"
+}

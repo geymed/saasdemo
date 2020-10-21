@@ -1,0 +1,26 @@
+type salesforce.Image {
+  salesforce.Text gogo__c {
+    apiName = "Image.gogo__c"
+    label = "gogo"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 8
+    queryable = true
+    externalId = false
+  }
+  salesforce.Number gogn__c {
+    apiName = "Image.gogn__c"
+    label = "gogn"
+    _required = true
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+  }
+}

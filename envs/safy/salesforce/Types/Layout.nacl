@@ -1,0 +1,93 @@
+type salesforce.Layout {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<string>" customButtons {
+    _required = false
+  }
+  salesforce.CustomConsoleComponents customConsoleComponents {
+    _required = false
+  }
+  boolean emailDefault {
+    _required = false
+  }
+  "List<string>" excludeButtons {
+    _required = false
+  }
+  salesforce.FeedLayout feedLayout {
+    _required = false
+  }
+  "List<salesforce.LayoutSection>" layoutSections {
+    _required = false
+  }
+  salesforce.MiniLayout miniLayout {
+    _required = false
+  }
+  "List<string>" multilineLayoutFields {
+    _required = false
+  }
+  salesforce.PlatformActionList platformActionList {
+    _required = false
+  }
+  salesforce.QuickActionList quickActionList {
+    _required = false
+  }
+  salesforce.RelatedContent relatedContent {
+    _required = false
+  }
+  "List<salesforce.RelatedListItem>" relatedLists {
+    _required = false
+  }
+  "List<string>" relatedObjects {
+    _required = false
+  }
+  boolean runAssignmentRulesDefault {
+    _required = false
+  }
+  boolean showEmailCheckbox {
+    _required = false
+  }
+  boolean showHighlightsPanel {
+    _required = false
+  }
+  boolean showInteractionLogPanel {
+    _required = false
+  }
+  boolean showKnowledgeComponent {
+    _required = false
+  }
+  boolean showRunAssignmentRulesCheckbox {
+    _required = false
+  }
+  boolean showSolutionSection {
+    _required = false
+  }
+  boolean showSubmitAndAttachButton {
+    _required = false
+  }
+  salesforce.SummaryLayout summaryLayout {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "layout"
+  dirName = "layouts"
+  metadataType = "Layout"
+}

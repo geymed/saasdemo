@@ -1,0 +1,23 @@
+type salesforce.ValidationRuleTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string errorMessage {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "ValidationRuleTranslation"
+}

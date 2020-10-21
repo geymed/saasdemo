@@ -1,0 +1,29 @@
+type salesforce.FieldMapping {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string SObjectType {
+    _required = false
+  }
+  string developerName {
+    _required = false
+  }
+  "List<salesforce.FieldMappingRow>" fieldMappingRows {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  metadataType = "FieldMapping"
+}

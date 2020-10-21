@@ -1,0 +1,49 @@
+type salesforce.ApexPage {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  number apiVersion {
+    _required = false
+  }
+  boolean availableInTouch {
+    _required = false
+  }
+  boolean confirmationTokenRequired {
+    _required = false
+  }
+  string content {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  "List<salesforce.PackageVersion>" packageVersions {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  hasMetaFile = true
+  suffix = "page"
+  dirName = "pages"
+  metadataType = "ApexPage"
+}

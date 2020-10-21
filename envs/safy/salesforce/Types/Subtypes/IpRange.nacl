@@ -1,0 +1,26 @@
+type salesforce.IpRange {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string end {
+    _required = false
+  }
+  string start {
+    _required = false
+  }
+  metadataType = "IpRange"
+}

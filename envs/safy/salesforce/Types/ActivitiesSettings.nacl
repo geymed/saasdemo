@@ -1,0 +1,91 @@
+settings salesforce.ActivitiesSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean allowUsersToRelateMultipleContactsToTasksAndEvents {
+    _required = false
+  }
+  boolean autoRelateEventAttendees {
+    _required = false
+  }
+  boolean enableActivityReminders {
+    _required = false
+  }
+  boolean enableClickCreateEvents {
+    _required = false
+  }
+  boolean enableDragAndDropScheduling {
+    _required = false
+  }
+  boolean enableEmailTracking {
+    _required = false
+  }
+  boolean enableGroupTasks {
+    _required = false
+  }
+  boolean enableListViewScheduling {
+    _required = false
+  }
+  boolean enableLogNote {
+    _required = false
+  }
+  boolean enableMultidayEvents {
+    _required = false
+  }
+  boolean enableRecurringEvents {
+    _required = false
+  }
+  boolean enableRecurringTasks {
+    _required = false
+  }
+  boolean enableRollUpActivToContactsAcct {
+    _required = false
+  }
+  boolean enableSidebarCalendarShortcut {
+    _required = false
+  }
+  boolean enableSimpleTaskCreateUI {
+    _required = false
+  }
+  boolean enableUNSTaskDelegatedToNotifications {
+    _required = false
+  }
+  boolean enableUserListViewCalendars {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string meetingRequestsLogo {
+    _required = false
+  }
+  boolean showCustomLogoMeetingRequests {
+    _required = false
+  }
+  boolean showEventDetailsMultiUserCalendar {
+    _required = false
+  }
+  boolean showHomePageHoverLinksForEvents {
+    _required = false
+  }
+  boolean showMyTasksHoverLinks {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  metadataType = "ActivitiesSettings"
+}

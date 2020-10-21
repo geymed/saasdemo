@@ -1,0 +1,38 @@
+type salesforce.RefundLinePayment {
+  string Amount {
+  }
+  string AppliedDate {
+  }
+  salesforce.Lookup AssociatedAccountId {
+    apiName = "RefundLinePayment.AssociatedAccountId"
+  }
+  salesforce.Lookup AssociatedRefundLinePaymentId {
+    apiName = "RefundLinePayment.AssociatedRefundLinePaymentId"
+  }
+  string Comments {
+  }
+  string Date {
+  }
+  string EffectiveDate {
+  }
+  string EffectiveImpactAmount {
+  }
+  string HasBeenUnapplied {
+  }
+  string ImpactAmount {
+  }
+  string PaymentBalance {
+  }
+  salesforce.MasterDetail PaymentId {
+    apiName = "RefundLinePayment.PaymentId"
+  }
+  string RefundBalance {
+  }
+  salesforce.Lookup RefundId {
+    apiName = "RefundLinePayment.RefundId"
+  }
+  string Type {
+  }
+  string UnappliedDate {
+  }
+}

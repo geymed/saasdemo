@@ -1,0 +1,29 @@
+type salesforce.KnowledgeSuggestedArticlesSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.KnowledgeCaseFieldsSettings caseFields {
+    _required = false
+  }
+  boolean useSuggestedArticlesForCase {
+    _required = false
+  }
+  salesforce.KnowledgeWorkOrderFieldsSettings workOrderFields {
+    _required = false
+  }
+  salesforce.KnowledgeWorkOrderLineItemFieldsSettings workOrderLineItemFields {
+    _required = false
+  }
+  metadataType = "KnowledgeSuggestedArticlesSettings"
+}

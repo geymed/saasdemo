@@ -1,0 +1,33 @@
+type salesforce.FieldMappingField {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string dataServiceField {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.CustomField,
+      "CustomFieldDataColumn",
+    ]
+  }
+  string dataServiceObjectName {
+    _required = false
+    foreignKeyDomain = [
+      "CustomObject",
+    ]
+  }
+  number priority {
+    _required = false
+  }
+  metadataType = "FieldMappingField"
+}

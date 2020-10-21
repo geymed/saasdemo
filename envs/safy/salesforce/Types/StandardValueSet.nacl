@@ -1,0 +1,36 @@
+type salesforce.StandardValueSet {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string groupingStringEnum {
+    _required = false
+  }
+  boolean sorted {
+    _required = false
+  }
+  "List<salesforce.StandardValue>" standardValue {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "standardValueSet"
+  dirName = "standardValueSets"
+  metadataType = "StandardValueSet"
+}

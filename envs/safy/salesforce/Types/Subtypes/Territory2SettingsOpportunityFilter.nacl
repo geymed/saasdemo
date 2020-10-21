@@ -1,0 +1,26 @@
+type salesforce.Territory2SettingsOpportunityFilter {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string apexClassName {
+    _required = false
+  }
+  boolean enableFilter {
+    _required = false
+  }
+  boolean runOnCreate {
+    _required = false
+  }
+  metadataType = "Territory2SettingsOpportunityFilter"
+}

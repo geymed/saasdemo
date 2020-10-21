@@ -1,0 +1,6 @@
+salesforce.InstalledPackage sf_com_apps {
+  attr_xmlns = "http://soap.sforce.com/2006/04/metadata"
+  "attr_xmlns:xsi" = "http://www.w3.org/2001/XMLSchema-instance"
+  versionNumber = "1.7"
+  fullName = "sf_com_apps"
+}

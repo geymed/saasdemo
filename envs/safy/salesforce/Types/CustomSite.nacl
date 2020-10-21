@@ -1,0 +1,202 @@
+type salesforce.CustomSite {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean active {
+    _required = false
+  }
+  boolean allowHomePage {
+    _required = false
+  }
+  boolean allowStandardAnswersPages {
+    _required = false
+  }
+  boolean allowStandardIdeasPages {
+    _required = false
+  }
+  boolean allowStandardLookups {
+    _required = false
+  }
+  boolean allowStandardPortalPages {
+    _required = false
+  }
+  boolean allowStandardSearch {
+    _required = false
+  }
+  string analyticsTrackingCode {
+    _required = false
+  }
+  string authorizationRequiredPage {
+    _required = false
+  }
+  string bandwidthExceededPage {
+    _required = false
+  }
+  boolean browserXssProtection {
+    _required = false
+  }
+  string changePasswordPage {
+    _required = false
+  }
+  string chatterAnswersForgotPasswordConfirmPage {
+    _required = false
+  }
+  string chatterAnswersForgotPasswordPage {
+    _required = false
+  }
+  string chatterAnswersHelpPage {
+    _required = false
+  }
+  string chatterAnswersLoginPage {
+    _required = false
+  }
+  string chatterAnswersRegistrationPage {
+    _required = false
+  }
+  string clickjackProtectionLevel {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AllowAllFraming",
+        "External",
+        "NoFraming",
+        "SameOriginOnly",
+      ]
+    }
+  }
+  boolean contentSniffingProtection {
+    _required = false
+  }
+  boolean cspUpgradeInsecureRequests {
+    _required = false
+  }
+  salesforce.SiteWebAddress customWebAddresses {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  boolean enableAuraRequests {
+    _required = false
+  }
+  string favoriteIcon {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.StaticResource,
+    ]
+  }
+  string fileNotFoundPage {
+    _required = false
+  }
+  string forgotPasswordPage {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string genericErrorPage {
+    _required = false
+  }
+  string guestProfile {
+    _required = false
+  }
+  string inMaintenancePage {
+    _required = false
+  }
+  string inactiveIndexPage {
+    _required = false
+  }
+  string indexPage {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.ApexPage,
+    ]
+  }
+  string masterLabel {
+    _required = false
+  }
+  string myProfilePage {
+    _required = false
+  }
+  string portal {
+    _required = false
+    foreignKeyDomain = [
+      "Portal",
+    ]
+  }
+  boolean referrerPolicyOriginWhenCrossOrigin {
+    _required = false
+  }
+  boolean requireHttps {
+    _required = false
+  }
+  boolean requireInsecurePortalAccess {
+    _required = false
+  }
+  string robotsTxtPage {
+    _required = false
+  }
+  string rootComponent {
+    _required = false
+    foreignKeyDomain = [
+      "ManagedContent",
+      "SiteComponent",
+    ]
+  }
+  string selfRegPage {
+    _required = false
+  }
+  string serverIsDown {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.StaticResource,
+    ]
+  }
+  string siteAdmin {
+    _required = false
+  }
+  salesforce.SiteRedirectMapping siteRedirectMappings {
+    _required = false
+  }
+  string siteTemplate {
+    _required = false
+  }
+  string siteType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "ChatterNetwork",
+        "ChatterNetworkPicasso",
+        "Siteforce",
+        "Visualforce",
+      ]
+    }
+  }
+  string subdomain {
+    _required = false
+  }
+  string urlPathPrefix {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "site"
+  dirName = "sites"
+  metadataType = "CustomSite"
+}

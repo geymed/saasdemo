@@ -1,0 +1,23 @@
+type salesforce.FindSimilarOppFilter {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string similarOpportunitiesDisplayColumns {
+    _required = false
+  }
+  string similarOpportunitiesMatchFields {
+    _required = false
+  }
+  metadataType = "FindSimilarOppFilter"
+}

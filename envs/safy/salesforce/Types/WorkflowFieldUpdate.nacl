@@ -1,0 +1,76 @@
+type salesforce.WorkflowFieldUpdate {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string field {
+    _required = false
+  }
+  string formula {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string literalValue {
+    _required = false
+  }
+  string lookupValue {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.Queue,
+      salesforce.RecordType,
+      salesforce.User,
+    ]
+  }
+  string name {
+    _required = false
+  }
+  boolean notifyAssignee {
+    _required = false
+  }
+  string operation {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Formula",
+        "Literal",
+        "LookupValue",
+        "NextValue",
+        "Null",
+        "PreviousValue",
+      ]
+    }
+  }
+  boolean protected {
+    _required = false
+  }
+  boolean reevaluateOnChange {
+    _required = false
+  }
+  string targetObject {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = ""
+  dirName = ""
+  metadataType = "WorkflowFieldUpdate"
+}

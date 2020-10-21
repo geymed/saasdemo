@@ -1,0 +1,23 @@
+type salesforce.ValueTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string masterLabel {
+    _required = false
+  }
+  string translation {
+    _required = false
+  }
+  metadataType = "ValueTranslation"
+}

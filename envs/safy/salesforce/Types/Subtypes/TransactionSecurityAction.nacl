@@ -1,0 +1,32 @@
+type salesforce.TransactionSecurityAction {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean block {
+    _required = false
+  }
+  boolean endSession {
+    _required = false
+  }
+  boolean freezeUser {
+    _required = false
+  }
+  salesforce.TransactionSecurityNotification notifications {
+    _required = false
+  }
+  boolean twoFactorAuthentication {
+    _required = false
+  }
+  metadataType = "TransactionSecurityAction"
+}

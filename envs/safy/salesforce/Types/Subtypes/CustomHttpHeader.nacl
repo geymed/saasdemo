@@ -1,0 +1,29 @@
+type salesforce.CustomHttpHeader {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string headerFieldName {
+    _required = false
+  }
+  string headerFieldValue {
+    _required = false
+  }
+  boolean isActive {
+    _required = false
+  }
+  metadataType = "CustomHttpHeader"
+}

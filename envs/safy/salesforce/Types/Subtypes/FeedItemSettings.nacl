@@ -1,0 +1,71 @@
+type salesforce.FeedItemSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  number characterLimit {
+    _required = false
+  }
+  string displayFormat {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Default",
+        "HideBlankLines",
+      ]
+    }
+  }
+  string feedItemType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "ActivityEvent",
+        "AdvancedTextPost",
+        "AnnouncementPost",
+        "ApprovalPost",
+        "AttachArticleEvent",
+        "AttachExternalDocumentEvent",
+        "BasicTemplateFeedItem",
+        "CallLogPost",
+        "CanvasPost",
+        "CaseCommentPost",
+        "ChangeStatusPost",
+        "ChatTranscriptPost",
+        "CollaborationGroupCreated",
+        "CollaborationGroupUnarchived",
+        "ContentPost",
+        "CreateRecordEvent",
+        "DashboardComponentAlert",
+        "DashboardComponentSnapshot",
+        "EmailMessageEvent",
+        "FacebookPost",
+        "LinkPost",
+        "MilestoneEvent",
+        "PollPost",
+        "ProfileSkillPost",
+        "QuestionPost",
+        "ReplyPost",
+        "RypplePost",
+        "SocialPost",
+        "TestItem",
+        "TextPost",
+        "TrackedChange",
+        "Undefined",
+        "UserStatus",
+      ]
+    }
+  }
+  metadataType = "FeedItemSettings"
+}

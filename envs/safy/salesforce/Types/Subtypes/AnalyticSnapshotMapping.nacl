@@ -1,0 +1,48 @@
+type salesforce.AnalyticSnapshotMapping {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string aggregateType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Average",
+        "Maximum",
+        "Minimum",
+        "None",
+        "Sum",
+        "Unique",
+      ]
+    }
+  }
+  string sourceField {
+    _required = false
+  }
+  string sourceType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "snapshot",
+        "summary",
+        "tabular",
+      ]
+    }
+  }
+  string targetField {
+    _required = false
+  }
+  metadataType = "AnalyticSnapshotMapping"
+}

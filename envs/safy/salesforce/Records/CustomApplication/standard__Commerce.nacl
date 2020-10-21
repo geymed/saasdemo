@@ -1,0 +1,41 @@
+salesforce.CustomApplication standard__Commerce {
+  fullName = "standard__Commerce"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  label = "Commerce"
+  navType = "Console"
+  tabs = [
+    "standard-home",
+    "standard-Pricebook2",
+    "standard-Account",
+    "standard-Contact",
+    "standard-report",
+    "standard-Order",
+  ]
+  uiType = "Lightning"
+  workspaceConfig = {
+    mappings = [
+      {
+        tab = "standard-Account"
+      },
+      {
+        tab = "standard-Contact"
+      },
+      {
+        tab = "standard-Order"
+      },
+      {
+        tab = "standard-Pricebook2"
+      },
+      {
+        tab = "standard-home"
+      },
+      {
+        tab = "standard-report"
+      },
+    ]
+  }
+}

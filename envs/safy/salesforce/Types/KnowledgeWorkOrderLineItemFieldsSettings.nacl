@@ -1,0 +1,26 @@
+type salesforce.KnowledgeWorkOrderLineItemFieldsSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  "List<salesforce.KnowledgeWorkOrderLineItemField>" field {
+  }
+  suffix = ""
+  dirName = ""
+  metadataType = "KnowledgeWorkOrderLineItemFieldsSettings"
+}

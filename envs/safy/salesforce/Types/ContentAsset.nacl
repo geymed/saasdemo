@@ -1,0 +1,72 @@
+type salesforce.ContentAsset {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string content {
+    _required = false
+  }
+  boolean isVisibleByExternalUsers {
+    _required = false
+  }
+  string language {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "da",
+        "de",
+        "en_US",
+        "es",
+        "es_MX",
+        "fi",
+        "fr",
+        "it",
+        "ja",
+        "ko",
+        "nl_NL",
+        "no",
+        "pt_BR",
+        "ru",
+        "sv",
+        "th",
+        "zh_CN",
+        "zh_TW",
+      ]
+    }
+  }
+  string masterLabel {
+    _required = false
+  }
+  string originNetwork {
+    _required = false
+  }
+  "List<salesforce.ContentAssetRelationships>" relationships {
+    _required = false
+  }
+  salesforce.ContentAssetVersions versions {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  hasMetaFile = true
+  suffix = "asset"
+  dirName = "contentassets"
+  metadataType = "ContentAsset"
+}

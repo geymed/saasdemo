@@ -1,0 +1,26 @@
+type salesforce.HistoryRetentionPolicy {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  number archiveAfterMonths {
+    _required = false
+  }
+  number archiveRetentionYears {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  metadataType = "HistoryRetentionPolicy"
+}

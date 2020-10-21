@@ -1,0 +1,38 @@
+type salesforce.ReportChartComponentLayoutItem {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean cacheData {
+    _required = false
+  }
+  string contextFilterableField {
+    _required = false
+  }
+  string error {
+    _required = false
+  }
+  boolean hideOnError {
+    _required = false
+  }
+  boolean includeContext {
+    _required = false
+  }
+  string reportName {
+    _required = false
+  }
+  boolean showTitle {
+    _required = false
+  }
+  metadataType = "ReportChartComponentLayoutItem"
+}

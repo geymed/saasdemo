@@ -1,0 +1,41 @@
+settings salesforce.LeadConfigSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  boolean doesEnableLeadConvertDefaultSubjectBlankTaskCreation {
+  }
+  boolean doesHideOpportunityInConvertLeadWindow {
+  }
+  boolean doesPreserveLeadStatus {
+  }
+  boolean doesSelectNoOpportunityOnConvertLead {
+  }
+  boolean doesTrackHistory {
+  }
+  boolean enableConversionsOnMobile {
+  }
+  boolean enableOrgWideMergeAndDelete {
+  }
+  boolean shouldLeadConvertRequireValidation {
+  }
+  metadataType = "LeadConfigSettings"
+}

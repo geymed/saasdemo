@@ -1,0 +1,76 @@
+type salesforce.FlowRecordLookup {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  number locationX {
+    _required = false
+  }
+  number locationY {
+    _required = false
+  }
+  boolean assignNullValuesIfNoRecordsFound {
+    _required = false
+  }
+  salesforce.FlowConnector connector {
+    _required = false
+  }
+  salesforce.FlowConnector faultConnector {
+    _required = false
+  }
+  "List<salesforce.FlowRecordFilter>" filters {
+    _required = false
+  }
+  boolean getFirstRecordOnly {
+    _required = false
+  }
+  string object {
+    _required = false
+  }
+  "List<salesforce.FlowOutputFieldAssignment>" outputAssignments {
+    _required = false
+  }
+  string outputReference {
+    _required = false
+  }
+  "List<string>" queriedFields {
+    _required = false
+  }
+  string sortField {
+    _required = false
+  }
+  boolean storeOutputAutomatically {
+    _required = false
+  }
+  string sortOrder {
+    _restriction = {
+      values = [
+        "Asc",
+        "Desc",
+      ]
+    }
+  }
+  metadataType = "FlowRecordLookup"
+}

@@ -1,0 +1,46 @@
+type salesforce.EmbeddedServiceCustomComponent {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string componentBundleType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AuraDefinitionBundle",
+        "LightningComponentBundle",
+      ]
+    }
+  }
+  string customComponent {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.AuraDefinitionBundle,
+      salesforce.LightningComponentBundle,
+    ]
+  }
+  string customComponentType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "LA_ChatHeader",
+        "LA_Minimized",
+        "LA_PlainTextChatMessage",
+        "LA_Prechat",
+      ]
+    }
+  }
+  metadataType = "EmbeddedServiceCustomComponent"
+}

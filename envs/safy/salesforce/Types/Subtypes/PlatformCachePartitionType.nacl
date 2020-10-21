@@ -1,0 +1,36 @@
+type salesforce.PlatformCachePartitionType {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  number allocatedCapacity {
+    _required = false
+  }
+  number allocatedPurchasedCapacity {
+    _required = false
+  }
+  number allocatedTrialCapacity {
+    _required = false
+  }
+  string cacheType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Organization",
+        "Session",
+      ]
+    }
+  }
+  metadataType = "PlatformCachePartitionType"
+}

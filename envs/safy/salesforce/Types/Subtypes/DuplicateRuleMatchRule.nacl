@@ -1,0 +1,29 @@
+type salesforce.DuplicateRuleMatchRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string matchRuleSObjectType {
+    _required = false
+  }
+  string matchingRule {
+    _required = false
+  }
+  "List<salesforce.ObjectMapping>" objectMapping {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.ObjectMapping,
+    ]
+  }
+  metadataType = "DuplicateRuleMatchRule"
+}

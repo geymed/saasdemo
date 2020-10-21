@@ -1,0 +1,26 @@
+type salesforce.TransactionSecurityNotification {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean inApp {
+    _required = false
+  }
+  boolean sendEmail {
+    _required = false
+  }
+  string user {
+    _required = false
+  }
+  metadataType = "TransactionSecurityNotification"
+}

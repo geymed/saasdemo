@@ -1,0 +1,93 @@
+type salesforce.CustomObjectTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<salesforce.ObjectNameCaseValue>" caseValues {
+    _required = false
+  }
+  "List<salesforce.FieldSetTranslation>" fieldSets {
+    _required = false
+  }
+  "List<salesforce.CustomFieldTranslation>" fields {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.LayoutTranslation>" layouts {
+    _required = false
+  }
+  string nameFieldLabel {
+    _required = false
+  }
+  salesforce.QuickActionTranslation quickActions {
+    _required = false
+  }
+  "List<salesforce.RecordTypeTranslation>" recordTypes {
+    _required = false
+  }
+  salesforce.SharingReasonTranslation sharingReasons {
+    _required = false
+  }
+  salesforce.StandardFieldTranslation standardFields {
+    _required = false
+  }
+  "List<salesforce.ValidationRuleTranslation>" validationRules {
+    _required = false
+  }
+  "List<salesforce.WebLinkTranslation>" webLinks {
+    _required = false
+  }
+  "List<salesforce.WorkflowTaskTranslation>" workflowTasks {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  string gender {
+    _restriction = {
+      values = [
+        "Masculine",
+        "Feminine",
+        "Neuter",
+        "AnimateMasculine",
+        "ClassI",
+        "ClassIII",
+        "ClassV",
+        "ClassVII",
+        "ClassIX",
+        "ClassXI",
+        "ClassXIV",
+        "ClassXV",
+        "ClassXVI",
+        "ClassXVII",
+        "ClassXVIII",
+      ]
+    }
+  }
+  string startsWith {
+    _restriction = {
+      values = [
+        "Consonant",
+        "Vowel",
+        "Special",
+      ]
+    }
+  }
+  suffix = "objectTranslation"
+  dirName = "objectTranslations"
+  metadataType = "CustomObjectTranslation"
+}

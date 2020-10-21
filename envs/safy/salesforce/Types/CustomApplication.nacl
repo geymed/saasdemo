@@ -1,0 +1,118 @@
+type salesforce.CustomApplication {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.AppActionOverride actionOverrides {
+    _required = false
+  }
+  salesforce.AppBrand brand {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.AppBrand,
+    ]
+  }
+  salesforce.ServiceCloudConsoleConfig consoleConfig {
+    _required = false
+  }
+  string defaultLandingTab {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  "List<string>" formFactors {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Large",
+        "Medium",
+        "Small",
+      ]
+    }
+  }
+  boolean isNavAutoTempTabsDisabled {
+    _required = false
+  }
+  boolean isNavPersonalizationDisabled {
+    _required = false
+  }
+  boolean isServiceCloudConsole {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string logo {
+    _required = false
+  }
+  string navType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Console",
+        "Standard",
+      ]
+    }
+  }
+  salesforce.AppPreferences preferences {
+    _required = false
+  }
+  "List<salesforce.AppProfileActionOverride>" profileActionOverrides {
+    _required = false
+  }
+  string setupExperience {
+    _required = false
+    foreignKeyDomain = [
+      "SetupApp",
+    ]
+  }
+  string subscriberTabs {
+    _required = false
+  }
+  "List<string>" tabs {
+    _required = false
+  }
+  string uiType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Aloha",
+        "Lightning",
+      ]
+    }
+  }
+  string utilityBar {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.LightningPage,
+    ]
+  }
+  salesforce.AppWorkspaceConfig workspaceConfig {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "app"
+  dirName = "applications"
+  metadataType = "CustomApplication"
+}

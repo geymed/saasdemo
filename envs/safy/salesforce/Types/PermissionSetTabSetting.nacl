@@ -1,0 +1,27 @@
+type salesforce.PermissionSetTabSetting {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string tab {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = ""
+  dirName = ""
+  metadataType = "PermissionSetTabSetting"
+}

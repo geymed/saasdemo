@@ -1,0 +1,101 @@
+type salesforce.TransactionSecurityPolicy {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.TransactionSecurityAction action {
+    _required = false
+  }
+  boolean active {
+    _required = false
+  }
+  string apexClass {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string developerName {
+    _required = false
+  }
+  string eventName {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AdminSetupEvent",
+        "ApiAnomalyEventStore",
+        "ApiEvent",
+        "BulkApiResultEventStore",
+        "CredentialStuffingEventStore",
+        "ListViewEvent",
+        "LoginEvent",
+        "ReportAnomalyEventStore",
+        "ReportEvent",
+        "SessionHijackingEventStore",
+      ]
+    }
+  }
+  string eventType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AccessResource",
+        "AuditTrail",
+        "DataExport",
+        "Entity",
+        "Login",
+      ]
+    }
+  }
+  string executionUser {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.User,
+    ]
+  }
+  string flow {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.Flow,
+    ]
+  }
+  string masterLabel {
+    _required = false
+  }
+  string resourceName {
+    _required = false
+  }
+  string type {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "CustomApexPolicy",
+        "CustomConditionBuilderPolicy",
+      ]
+    }
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "transactionSecurityPolicy"
+  dirName = "transactionSecurityPolicies"
+  metadataType = "TransactionSecurityPolicy"
+}

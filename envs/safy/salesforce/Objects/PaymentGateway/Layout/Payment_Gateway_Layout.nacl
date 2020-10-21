@@ -1,0 +1,50 @@
+salesforce.Layout Payment_Gateway_Layout {
+  fullName = "PaymentGateway-Payment Gateway Layout"
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Payment Gateway"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "PaymentGatewayName"
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PaymentGateway.field.PaymentGatewayProviderId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PaymentGateway.field.MerchantCredentialId
+            },
+            {
+              behavior = "Required"
+              field = "Status"
+            },
+            {
+              behavior = "Edit"
+              field = "Comments"
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.PaymentGateway,
+  ]
+}

@@ -1,0 +1,47 @@
+type salesforce.LeadConvertSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean allowOwnerChange {
+    _required = false
+  }
+  string opportunityCreationOptions {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "NotVisible",
+        "VisibleOptional",
+        "VisibleRequired",
+      ]
+    }
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  string inputField {
+  }
+  string outputField {
+  }
+  string outputObject {
+  }
+  suffix = "LeadConvertSetting"
+  dirName = "LeadConvertSettings"
+  metadataType = "LeadConvertSettings"
+}

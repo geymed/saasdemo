@@ -1,0 +1,38 @@
+type salesforce.StrategyNodeRecommendationLimit {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string childNode {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  number limit {
+    _required = false
+  }
+  number lookbackDuration {
+    _required = false
+  }
+  number maxRecommendationCount {
+    _required = false
+  }
+  metadataType = "StrategyNodeRecommendationLimit"
+}

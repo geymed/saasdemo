@@ -1,0 +1,26 @@
+type salesforce.KnowledgeAnswerSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string assignTo {
+    _required = false
+  }
+  string defaultArticleType {
+    _required = false
+  }
+  boolean enableArticleCreation {
+    _required = false
+  }
+  metadataType = "KnowledgeAnswerSettings"
+}

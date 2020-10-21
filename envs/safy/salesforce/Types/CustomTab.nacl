@@ -1,0 +1,78 @@
+type salesforce.CustomTab {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.ActionOverride actionOverrides {
+    _required = false
+  }
+  string auraComponent {
+    _required = false
+  }
+  boolean customObject {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string flexiPage {
+    _required = false
+  }
+  number frameHeight {
+    _required = false
+  }
+  boolean hasSidebar {
+    _required = false
+  }
+  string icon {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.Document,
+    ]
+  }
+  string label {
+    _required = false
+  }
+  string lwcComponent {
+    _required = false
+  }
+  string motif {
+    _required = false
+  }
+  string page {
+    _required = false
+  }
+  string scontrol {
+    _required = false
+  }
+  string splashPageLink {
+    _required = false
+  }
+  string url {
+    _required = false
+  }
+  string urlEncodingKey {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "tab"
+  dirName = "tabs"
+  metadataType = "CustomTab"
+}

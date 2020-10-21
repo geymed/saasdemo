@@ -1,0 +1,20 @@
+type salesforce.ContentAssetVersions {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<salesforce.ContentAssetVersion>" version {
+    _required = false
+  }
+  metadataType = "ContentAssetVersions"
+}

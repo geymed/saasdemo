@@ -1,0 +1,78 @@
+type salesforce.DuplicateRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string actionOnInsert {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Allow",
+        "Block",
+      ]
+    }
+  }
+  string actionOnUpdate {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Allow",
+        "Block",
+      ]
+    }
+  }
+  string alertText {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  salesforce.DuplicateRuleFilter duplicateRuleFilter {
+    _required = false
+  }
+  "List<salesforce.DuplicateRuleMatchRule>" duplicateRuleMatchRules {
+    _required = false
+  }
+  boolean isActive {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  string securityOption {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "BypassSharingRules",
+        "EnforceSharingRules",
+      ]
+    }
+  }
+  number sortOrder {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "duplicateRule"
+  dirName = "duplicateRules"
+  metadataType = "DuplicateRule"
+}

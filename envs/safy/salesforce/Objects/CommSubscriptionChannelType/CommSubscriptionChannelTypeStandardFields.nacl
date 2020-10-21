@@ -1,0 +1,15 @@
+type salesforce.CommSubscriptionChannelType {
+  salesforce.Lookup CommunicationSubscriptionId {
+    apiName = "CommSubscriptionChannelType.CommunicationSubscriptionId"
+    inlineHelpText = "The communication subscription record associated with the communication subscription channel type."
+  }
+  salesforce.Lookup EngagementChannelTypeId {
+    apiName = "CommSubscriptionChannelType.EngagementChannelTypeId"
+    inlineHelpText = "The engagement channel type record associated with the communication subscription channel type."
+  }
+  string Name {
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "CommSubscriptionChannelType.OwnerId"
+  }
+}

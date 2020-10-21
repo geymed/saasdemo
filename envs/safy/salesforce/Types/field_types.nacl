@@ -1,0 +1,1176 @@
+type salesforce.Text is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    boolean unique {
+    }
+    boolean externalId {
+    }
+    boolean caseSensitive {
+    }
+    salesforce.TextLength length {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.Number is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    boolean unique {
+    }
+    boolean externalId {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.AutoNumber is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    boolean externalId {
+    }
+    string displayFormat {
+    }
+  }
+}
+type salesforce.Checkbox is boolean {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    boolean defaultValue {
+    }
+  }
+}
+type salesforce.Date is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.Time is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.DateTime is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.Currency is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.Picklist is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    salesforce.FieldDependency fieldDependency {
+    }
+    salesforce.valueSet valueSet {
+    }
+    boolean restricted {
+    }
+    string valueSetName {
+    }
+    boolean sorted {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.MultiselectPicklist is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    salesforce.MultiPicklistVisibleLines visibleLines {
+    }
+    salesforce.FieldDependency fieldDependency {
+    }
+    salesforce.valueSet valueSet {
+    }
+    boolean restricted {
+    }
+    string valueSetName {
+    }
+    boolean sorted {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.Email is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    boolean unique {
+    }
+    boolean externalId {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.Percent is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.Phone is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.LongTextArea is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    salesforce.LongTextAreaVisibleLines visibleLines {
+    }
+    salesforce.TextAreaLength length {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.Html is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    salesforce.RichTextAreaVisibleLines visibleLines {
+    }
+    salesforce.TextAreaLength length {
+    }
+  }
+}
+type salesforce.TextArea is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.EncryptedText is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    salesforce.maskChar maskChar {
+    }
+    salesforce.maskType maskType {
+    }
+    salesforce.EncryptedTextLength length {
+    }
+  }
+}
+type salesforce.Url is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string defaultValueFormula {
+    }
+  }
+}
+type salesforce.Lookup is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    boolean allowLookupRecordDeletion {
+    }
+    string referenceTo {
+    }
+    salesforce.LookupFilter lookupFilter {
+    }
+  }
+}
+type salesforce.MasterDetail is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    boolean reparentableMasterDetail {
+    }
+    boolean writeRequiresMasterRead {
+    }
+    salesforce.LookupFilter lookupFilter {
+    }
+    string referenceTo {
+    }
+    salesforce.RelationshipOrder relationshipOrder {
+    }
+  }
+}
+type salesforce.Summary is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string summarizedField {
+    }
+    salesforce.summaryFilterItems summaryFilterItems {
+    }
+    string summaryForeignKey {
+    }
+    salesforce.summaryOperation summaryOperation {
+    }
+  }
+}
+type salesforce.Unknown is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+  }
+}
+type salesforce.AnyType is unknown {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+  }
+}
+type salesforce.Address {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+  }
+  string city {
+  }
+  string country {
+  }
+  salesforce.Picklist geocodeAccuracy {
+  }
+  number latitude {
+  }
+  number longitude {
+  }
+  string postalCode {
+  }
+  string state {
+  }
+  salesforce.TextArea street {
+  }
+}
+type salesforce.Name {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+  }
+  string FirstName {
+  }
+  string LastName {
+  }
+  salesforce.Picklist Salutation {
+  }
+}
+type salesforce.Location {
+  annotations {
+    boolean displayLocationInDecimal {
+    }
+    number scale {
+    }
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+  }
+  number latitude {
+  }
+  number longitude {
+  }
+}
+type salesforce.FormulaCheckbox is boolean {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    boolean defaultValue {
+    }
+    string formula {
+    }
+    salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type salesforce.FormulaCurrency is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type salesforce.FormulaDate is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type salesforce.FormulaDateTime is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type salesforce.FormulaNumber is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    boolean unique {
+    }
+    boolean externalId {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type salesforce.FormulaPercent is number {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    number scale {
+    }
+    number precision {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type salesforce.FormulaText is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    boolean unique {
+    }
+    boolean externalId {
+    }
+    boolean caseSensitive {
+    }
+    salesforce.TextLength length {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}
+type salesforce.FormulaTime is string {
+  annotations {
+    serviceid apiName {
+    }
+    string description {
+    }
+    string inlineHelpText {
+    }
+    string label {
+    }
+    string businessOwnerUser {
+    }
+    string businessOwnerGroup {
+    }
+    salesforce.businessStatus businessStatus {
+    }
+    salesforce.securityClassification securityClassification {
+    }
+    string complianceGroup {
+    }
+    boolean createable {
+    }
+    boolean updateable {
+    }
+    boolean queryable {
+    }
+    string defaultValueFormula {
+    }
+    string formula {
+    }
+    salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+  }
+}

@@ -1,0 +1,84 @@
+type salesforce.ConnectedApp {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.ConnectedAppAttribute attributes {
+    _required = false
+  }
+  salesforce.CanvasMetadata canvas {
+    _required = false
+  }
+  salesforce.ConnectedAppCanvasConfig canvasConfig {
+    _required = false
+  }
+  string contactEmail {
+    _required = false
+  }
+  string contactPhone {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string iconUrl {
+    _required = false
+  }
+  string infoUrl {
+    _required = false
+  }
+  salesforce.ConnectedAppIpRange ipRanges {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string logoUrl {
+    _required = false
+  }
+  salesforce.ConnectedAppMobileDetailConfig mobileAppConfig {
+    _required = false
+  }
+  string mobileStartUrl {
+    _required = false
+  }
+  salesforce.ConnectedAppOauthConfig oauthConfig {
+    _required = false
+  }
+  string permissionSetName {
+    _required = false
+  }
+  string plugin {
+    _required = false
+  }
+  string profileName {
+    _required = false
+  }
+  salesforce.ConnectedAppSamlConfig samlConfig {
+    _required = false
+  }
+  string startUrl {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "connectedApp"
+  dirName = "connectedApps"
+  metadataType = "ConnectedApp"
+}

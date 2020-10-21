@@ -1,0 +1,23 @@
+type salesforce.FieldSetTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string label {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "FieldSetTranslation"
+}

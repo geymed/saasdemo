@@ -1,0 +1,64 @@
+type salesforce.CollaborationGroupMember {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    salesforce.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    salesforce.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    salesforce.SearchLayouts searchLayouts {
+    }
+    salesforce.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+  }
+  apiName = "CollaborationGroupMember"
+  metadataType = "CustomObject"
+  label = "Group Member"
+  actionOverrides = [
+    {
+      actionName = "Delete"
+      type = "Default"
+    },
+    {
+      actionName = "Delete"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "Delete"
+      formFactor = "Small"
+      type = "Default"
+    },
+  ]
+  enableFeeds = false
+}

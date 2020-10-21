@@ -1,0 +1,8 @@
+type salesforce.ScorecardAssociation {
+  salesforce.MasterDetail ScorecardId {
+    apiName = "ScorecardAssociation.ScorecardId"
+  }
+  salesforce.Lookup TargetEntityId {
+    apiName = "ScorecardAssociation.TargetEntityId"
+  }
+}

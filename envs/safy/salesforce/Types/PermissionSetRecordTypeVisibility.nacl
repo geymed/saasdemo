@@ -1,0 +1,30 @@
+type salesforce.PermissionSetRecordTypeVisibility {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string recordType {
+    _required = false
+  }
+  boolean visible {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = ""
+  dirName = ""
+  metadataType = "PermissionSetRecordTypeVisibility"
+}

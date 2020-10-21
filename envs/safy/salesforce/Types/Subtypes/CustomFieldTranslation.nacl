@@ -1,0 +1,35 @@
+type salesforce.CustomFieldTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string help {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  salesforce.LookupFilterTranslation lookupFilter {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  "List<salesforce.PicklistValueTranslation>" picklistValues {
+    _required = false
+  }
+  string relationshipLabel {
+    _required = false
+  }
+  metadataType = "CustomFieldTranslation"
+}

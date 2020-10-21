@@ -1,0 +1,20 @@
+type salesforce.EmbeddedServiceLayoutRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string appointmentStatus {
+    _required = false
+  }
+  metadataType = "EmbeddedServiceLayoutRule"
+}

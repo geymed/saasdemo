@@ -1,0 +1,23 @@
+type salesforce.Attachment {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string content {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  metadataType = "Attachment"
+}

@@ -1,0 +1,51 @@
+type salesforce.LightningOnboardingConfig {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string collaborationGroup {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.CollaborationGroup,
+    ]
+  }
+  string customQuestion {
+    _required = false
+  }
+  number feedbackFormDaysFrequency {
+    _required = false
+  }
+  boolean isCustom {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  number promptDelayTime {
+    _required = false
+  }
+  boolean sendFeedbackToSalesforce {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "lightningOnboardingConfig"
+  dirName = "lightningOnboardingConfigs"
+  metadataType = "LightningOnboardingConfig"
+}

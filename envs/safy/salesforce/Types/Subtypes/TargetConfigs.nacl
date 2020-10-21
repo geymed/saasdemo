@@ -1,0 +1,4 @@
+type salesforce.TargetConfigs {
+  "List<salesforce.LightningComponentBundleTargetConfig>" targetConfig {
+  }
+}

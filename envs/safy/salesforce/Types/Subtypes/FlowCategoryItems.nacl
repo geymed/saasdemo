@@ -1,0 +1,20 @@
+type salesforce.FlowCategoryItems {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string flow {
+    _required = false
+  }
+  metadataType = "FlowCategoryItems"
+}

@@ -1,0 +1,23 @@
+type salesforce.NextAutomatedApprover {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean useApproverFieldOfRecordOwner {
+    _required = false
+  }
+  string userHierarchyField {
+    _required = false
+  }
+  metadataType = "NextAutomatedApprover"
+}

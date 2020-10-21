@@ -1,0 +1,53 @@
+type salesforce.ServiceCloudConsoleConfig {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.AppComponentList componentList {
+    _required = false
+  }
+  string detailPageRefreshMethod {
+    _required = false
+  }
+  string footerColor {
+    _required = false
+  }
+  string headerColor {
+    _required = false
+  }
+  salesforce.KeyboardShortcuts keyboardShortcuts {
+    _required = false
+  }
+  salesforce.ListPlacement listPlacement {
+    _required = false
+  }
+  string listRefreshMethod {
+    _required = false
+  }
+  salesforce.LiveAgentConfig liveAgentConfig {
+    _required = false
+  }
+  string primaryTabColor {
+    _required = false
+  }
+  salesforce.PushNotification pushNotifications {
+    _required = false
+  }
+  salesforce.TabLimitConfig tabLimitConfig {
+    _required = false
+  }
+  string whitelistedDomains {
+    _required = false
+  }
+  metadataType = "ServiceCloudConsoleConfig"
+}

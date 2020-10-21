@@ -1,0 +1,68 @@
+type salesforce.ConnectedAppMobileDetailConfig {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string applicationBinaryFile {
+    _required = false
+  }
+  string applicationBinaryFileName {
+    _required = false
+  }
+  string applicationBundleIdentifier {
+    _required = false
+  }
+  number applicationFileLength {
+    _required = false
+  }
+  string applicationIconFile {
+    _required = false
+  }
+  string applicationIconFileName {
+    _required = false
+  }
+  string applicationInstallUrl {
+    _required = false
+  }
+  string devicePlatform {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "android",
+        "ios",
+      ]
+    }
+  }
+  string deviceType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "minitablet",
+        "phone",
+        "tablet",
+      ]
+    }
+  }
+  string minimumOsVersion {
+    _required = false
+  }
+  boolean privateApp {
+    _required = false
+  }
+  string version {
+    _required = false
+  }
+  metadataType = "ConnectedAppMobileDetailConfig"
+}

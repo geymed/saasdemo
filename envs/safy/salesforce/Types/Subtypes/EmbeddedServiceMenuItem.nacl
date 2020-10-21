@@ -1,0 +1,42 @@
+type salesforce.EmbeddedServiceMenuItem {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string channel {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.EmbeddedServiceConfig,
+      "MessagingChannel",
+    ]
+  }
+  string channelType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "CustomURL",
+        "EmbeddedServiceConfig",
+        "MessagingChannel",
+        "Phone",
+      ]
+    }
+  }
+  number displayOrder {
+    _required = false
+  }
+  string phoneNumber {
+    _required = false
+  }
+  metadataType = "EmbeddedServiceMenuItem"
+}

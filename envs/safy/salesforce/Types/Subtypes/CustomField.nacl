@@ -1,0 +1,235 @@
+type salesforce.CustomField {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string businessOwnerGroup {
+    _required = false
+  }
+  string businessOwnerUser {
+    _required = false
+  }
+  string businessStatus {
+    _required = false
+  }
+  boolean caseSensitive {
+    _required = false
+  }
+  string complianceGroup {
+    _required = false
+  }
+  string customDataType {
+    _required = false
+  }
+  string defaultValue {
+    _required = false
+  }
+  boolean deprecated {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string displayFormat {
+    _required = false
+  }
+  boolean escapeMarkup {
+    _required = false
+  }
+  string externalDeveloperName {
+    _required = false
+  }
+  boolean externalId {
+    _required = false
+  }
+  string formula {
+    _required = false
+  }
+  string inlineHelpText {
+    _required = false
+  }
+  boolean isAIPredictionField {
+    _required = false
+  }
+  boolean isConvertLeadDisabled {
+    _required = false
+  }
+  boolean isFilteringDisabled {
+    _required = false
+  }
+  boolean isNameField {
+    _required = false
+  }
+  boolean isSortingDisabled {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  number length {
+    _required = false
+  }
+  salesforce.LookupFilter lookupFilter {
+    _required = false
+  }
+  string maskChar {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "X",
+        "asterisk",
+      ]
+    }
+  }
+  string maskType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "all",
+        "creditCard",
+        "lastFour",
+        "nino",
+        "sin",
+        "ssn",
+      ]
+    }
+  }
+  string metadataRelationshipControllingField {
+    _required = false
+  }
+  boolean populateExistingRows {
+    _required = false
+  }
+  number precision {
+    _required = false
+  }
+  string referenceTargetField {
+    _required = false
+  }
+  string referenceTo {
+    _required = false
+  }
+  string relationshipLabel {
+    _required = false
+  }
+  string relationshipName {
+    _required = false
+  }
+  number relationshipOrder {
+    _required = false
+  }
+  boolean reparentableMasterDetail {
+    _required = false
+  }
+  boolean required {
+    _required = false
+  }
+  boolean restrictedAdminField {
+    _required = false
+  }
+  number scale {
+    _required = false
+  }
+  string securityClassification {
+    _required = false
+  }
+  number startingNumber {
+    _required = false
+  }
+  boolean stripMarkup {
+    _required = false
+  }
+  string summarizedField {
+    _required = false
+  }
+  salesforce.FilterItem summaryFilterItems {
+    _required = false
+  }
+  string summaryForeignKey {
+    _required = false
+  }
+  string summaryOperation {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "count",
+        "max",
+        "min",
+        "sum",
+      ]
+    }
+  }
+  boolean trackFeedHistory {
+    _required = false
+  }
+  boolean trackHistory {
+    _required = false
+  }
+  boolean trackTrending {
+    _required = false
+  }
+  boolean translateData {
+    _required = false
+  }
+  boolean unique {
+    _required = false
+  }
+  salesforce.ValueSet valueSet {
+    _required = false
+  }
+  number visibleLines {
+    _required = false
+  }
+  boolean writeRequiresMasterRead {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  string type {
+    _restriction = {
+      values = [
+        "AutoNumber",
+        "Text",
+        "Number",
+        "Percent",
+        "Checkbox",
+        "Date",
+        "Time",
+        "DateTime",
+        "Currency",
+        "Picklist",
+        "MultiselectPicklist",
+        "Email",
+        "Phone",
+        "LongTextArea",
+        "Html",
+        "TextArea",
+        "EncryptedText",
+        "Url",
+        "Lookup",
+        "MasterDetail",
+        "Summary",
+      ]
+    }
+  }
+  metadataType = "CustomField"
+}

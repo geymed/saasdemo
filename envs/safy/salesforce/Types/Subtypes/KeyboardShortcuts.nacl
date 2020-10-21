@@ -1,0 +1,23 @@
+type salesforce.KeyboardShortcuts {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.CustomShortcut customShortcuts {
+    _required = false
+  }
+  "List<salesforce.DefaultShortcut>" defaultShortcuts {
+    _required = false
+  }
+  metadataType = "KeyboardShortcuts"
+}

@@ -1,0 +1,48 @@
+type salesforce.Queue {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean doesSendEmailToMembers {
+    _required = false
+  }
+  string email {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  salesforce.QueueMembers queueMembers {
+    _required = false
+  }
+  string queueRoutingConfig {
+    _required = false
+    foreignKeyDomain = [
+      "QueueRoutingConfig",
+    ]
+  }
+  salesforce.QueueSobject queueSobject {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "queue"
+  dirName = "queues"
+  metadataType = "Queue"
+}

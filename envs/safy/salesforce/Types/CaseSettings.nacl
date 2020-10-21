@@ -1,0 +1,148 @@
+settings salesforce.CaseSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string caseAssignNotificationTemplate {
+    _required = false
+  }
+  string caseCloseNotificationTemplate {
+    _required = false
+  }
+  string caseCommentNotificationTemplate {
+    _required = false
+  }
+  string caseCreateNotificationTemplate {
+    _required = false
+  }
+  salesforce.FeedItemSettings caseFeedItemSettings {
+    _required = false
+  }
+  boolean closeCaseThroughStatusChange {
+    _required = false
+  }
+  string defaultCaseOwner {
+    _required = false
+  }
+  string defaultCaseOwnerType {
+    _required = false
+  }
+  string defaultCaseUser {
+    _required = false
+  }
+  string emailActionDefaultsHandlerClass {
+    _required = false
+  }
+  salesforce.EmailToCaseSettings emailToCase {
+    _required = false
+  }
+  boolean enableCaseFeed {
+    _required = false
+  }
+  boolean enableCollapseEmailThread {
+    _required = false
+  }
+  boolean enableDraftEmails {
+    _required = false
+  }
+  boolean enableEarlyEscalationRuleTriggers {
+    _required = false
+  }
+  boolean enableEmailActionDefaultsHandler {
+    _required = false
+  }
+  boolean enableSuggestedArticlesApplication {
+    _required = false
+  }
+  boolean enableSuggestedArticlesCustomerPortal {
+    _required = false
+  }
+  boolean enableSuggestedArticlesPartnerPortal {
+    _required = false
+  }
+  boolean enableSuggestedSolutions {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean keepRecordTypeOnAssignmentRule {
+    _required = false
+  }
+  boolean notifyContactOnCaseComment {
+    _required = false
+  }
+  boolean notifyDefaultCaseOwner {
+    _required = false
+  }
+  boolean notifyOwnerOnCaseComment {
+    _required = false
+  }
+  boolean notifyOwnerOnCaseOwnerChange {
+    _required = false
+  }
+  boolean showEmailAttachmentsInCaseAttachmentsRL {
+    _required = false
+  }
+  boolean showFewerCloseActions {
+    _required = false
+  }
+  string systemUserEmail {
+    _required = false
+  }
+  boolean useSystemEmailAddress {
+    _required = false
+  }
+  boolean useSystemUserAsDefaultCaseUser {
+    _required = false
+  }
+  salesforce.WebToCaseSettings webToCase {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  string newEmailDefaultTemplateClass {
+  }
+  boolean caseAutoProcUser {
+  }
+  boolean caseFeedReadUnreadLtng {
+  }
+  boolean caseMergeinLightning {
+  }
+  boolean defaultCaseFeedLayoutOn {
+  }
+  boolean enableEmailContactOnCasePost {
+  }
+  boolean enableEscalateQfiToCaseInternal {
+  }
+  boolean enableEscalateQfiToCaseNetworks {
+  }
+  boolean enableExtNetworksCaseFeedEnabled {
+  }
+  boolean enableNewEmailDefaultTemplate {
+  }
+  boolean escalateCaseBefore {
+  }
+  boolean genericMessageEnabled {
+  }
+  boolean keepCaseMergeRecords {
+  }
+  boolean predictiveSupportEnabled {
+  }
+  boolean visibleInCssCheckbox {
+  }
+  metadataType = "CaseSettings"
+}

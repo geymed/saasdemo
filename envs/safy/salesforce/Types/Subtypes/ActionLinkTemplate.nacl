@@ -1,0 +1,84 @@
+type salesforce.ActionLinkTemplate {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string actionUrl {
+    _required = false
+  }
+  string headers {
+    _required = false
+  }
+  boolean isConfirmationRequired {
+    _required = false
+  }
+  boolean isGroupDefault {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string labelKey {
+    _required = false
+  }
+  string linkType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "API",
+        "APIAsync",
+        "Download",
+        "UI",
+      ]
+    }
+  }
+  string method {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "HttpDelete",
+        "HttpGet",
+        "HttpHead",
+        "HttpPatch",
+        "HttpPost",
+        "HttpPut",
+      ]
+    }
+  }
+  number position {
+    _required = false
+  }
+  string requestBody {
+    _required = false
+  }
+  string userAlias {
+    _required = false
+  }
+  string userVisibility {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Creator",
+        "CustomExcludedUser",
+        "CustomUser",
+        "Everyone",
+        "EveryoneButCreator",
+        "Manager",
+      ]
+    }
+  }
+  metadataType = "ActionLinkTemplate"
+}

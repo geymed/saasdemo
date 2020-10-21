@@ -1,0 +1,134 @@
+type salesforce.AuthProvider {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string appleTeam {
+    _required = false
+  }
+  string authorizeUrl {
+    _required = false
+  }
+  string consumerKey {
+    _required = false
+  }
+  string consumerSecret {
+    _required = false
+  }
+  string customMetadataTypeRecord {
+    _required = false
+  }
+  string defaultScopes {
+    _required = false
+  }
+  string ecKey {
+    _required = false
+  }
+  string errorUrl {
+    _required = false
+  }
+  string executionUser {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.User,
+    ]
+  }
+  string friendlyName {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string iconUrl {
+    _required = false
+  }
+  string idTokenIssuer {
+    _required = false
+  }
+  boolean includeOrgIdInIdentifier {
+    _required = false
+  }
+  string linkKickoffUrl {
+    _required = false
+  }
+  string logoutUrl {
+    _required = false
+  }
+  string oauthKickoffUrl {
+    _required = false
+  }
+  string plugin {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.ApexClass,
+    ]
+  }
+  string portal {
+    _required = false
+    foreignKeyDomain = [
+      "Portal",
+    ]
+  }
+  string providerType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Apple",
+        "Custom",
+        "Evergreen",
+        "Facebook",
+        "GitHub",
+        "Google",
+        "Janrain",
+        "LinkedIn",
+        "MicrosoftACS",
+        "OpenIdConnect",
+        "Salesforce",
+        "Twitter",
+      ]
+    }
+  }
+  string registrationHandler {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.ApexClass,
+    ]
+  }
+  boolean sendAccessTokenInHeader {
+    _required = false
+  }
+  boolean sendClientCredentialsInHeader {
+    _required = false
+  }
+  boolean sendSecretInApis {
+    _required = false
+  }
+  string ssoKickoffUrl {
+    _required = false
+  }
+  string tokenUrl {
+    _required = false
+  }
+  string userInfoUrl {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "authprovider"
+  dirName = "authproviders"
+  metadataType = "AuthProvider"
+}

@@ -1,0 +1,78 @@
+type salesforce.AuraDefinitionBundle {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string SVGContent {
+    _required = false
+  }
+  number apiVersion {
+    _required = false
+  }
+  string controllerContent {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string designContent {
+    _required = false
+  }
+  string documentationContent {
+    _required = false
+  }
+  string helperContent {
+    _required = false
+  }
+  string markup {
+    _required = false
+  }
+  string modelContent {
+    _required = false
+  }
+  salesforce.PackageVersion packageVersions {
+    _required = false
+  }
+  string rendererContent {
+    _required = false
+  }
+  string styleContent {
+    _required = false
+  }
+  string testsuiteContent {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  string type {
+    _required = true
+    _restriction = {
+      enforceValue = true
+      values = [
+        "Application",
+        "Component",
+        "Event",
+        "Interface",
+        "Tokens",
+      ]
+    }
+  }
+  dirName = "aura"
+  metadataType = "AuraDefinitionBundle"
+}

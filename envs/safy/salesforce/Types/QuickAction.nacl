@@ -1,0 +1,154 @@
+type salesforce.QuickAction {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string canvas {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  salesforce.FieldOverride fieldOverrides {
+    _required = false
+  }
+  string flowDefinition {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  number height {
+    _required = false
+  }
+  string icon {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.StaticResource,
+    ]
+  }
+  boolean isProtected {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string lightningComponent {
+    _required = false
+  }
+  boolean optionsCreateFeedItem {
+    _required = false
+  }
+  string page {
+    _required = false
+  }
+  salesforce.QuickActionLayout quickActionLayout {
+    _required = false
+  }
+  salesforce.QuickActionSendEmailOptions quickActionSendEmailOptions {
+    _required = false
+  }
+  string standardLabel {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AddMember",
+        "AddRecord",
+        "ChangeDueDate",
+        "ChangePriority",
+        "ChangeStatus",
+        "CreateNew",
+        "CreateNewRecordType",
+        "Custom",
+        "Defer",
+        "EditDescription",
+        "EnrollInProgram",
+        "Escalate",
+        "EscalateToRecord",
+        "Forward",
+        "LogACall",
+        "LogANote",
+        "ModifyAppointment",
+        "New",
+        "NewChild",
+        "NewChildRecordType",
+        "NewRecordType",
+        "OfferFeedback",
+        "Quick",
+        "QuickRecordType",
+        "Reply",
+        "ReplyAll",
+        "RequestFeedback",
+        "ScheduleAppointment",
+        "SendEmail",
+        "SocialPost",
+        "Update",
+        "UpdateRecordType",
+      ]
+    }
+  }
+  string successMessage {
+    _required = false
+  }
+  string targetObject {
+    _required = false
+  }
+  string targetParentField {
+    _required = false
+  }
+  string targetRecordType {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.RecordType,
+    ]
+  }
+  string type {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Canvas",
+        "CaseComment",
+        "ChangeDueDate",
+        "ChangePriority",
+        "ChangeStatus",
+        "Create",
+        "Email",
+        "Flow",
+        "LightningComponent",
+        "LightningWebComponent",
+        "LogACall",
+        "MobileCreateFull",
+        "MobileExtension",
+        "MobileSmartActions",
+        "Post",
+        "SendEmail",
+        "SocialPost",
+        "Update",
+        "VisualforcePage",
+      ]
+    }
+  }
+  number width {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "quickAction"
+  dirName = "quickActions"
+  metadataType = "QuickAction"
+}

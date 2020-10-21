@@ -1,0 +1,59 @@
+type salesforce.ProfileSessionSetting {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean externalCommunityUserIdentityVerif {
+    _required = false
+  }
+  boolean forceLogout {
+    _required = false
+  }
+  string profile {
+    _required = false
+    foreignKeyDomain = [
+      "Profile",
+    ]
+  }
+  string requiredSessionLevel {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "HIGH_ASSURANCE",
+        "LOW",
+        "STANDARD",
+      ]
+    }
+  }
+  boolean sessionPersistence {
+    _required = false
+  }
+  number sessionTimeout {
+    _required = false
+  }
+  boolean sessionTimeoutWarning {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "profileSessionSetting"
+  dirName = "profileSessionSettings"
+  metadataType = "ProfileSessionSetting"
+}

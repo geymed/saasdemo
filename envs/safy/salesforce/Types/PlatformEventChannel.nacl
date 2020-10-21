@@ -1,0 +1,40 @@
+type salesforce.PlatformEventChannel {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string channelType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "data",
+        "event",
+      ]
+    }
+  }
+  string label {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "platformEventChannel"
+  dirName = "platformEventChannels"
+  metadataType = "PlatformEventChannel"
+}

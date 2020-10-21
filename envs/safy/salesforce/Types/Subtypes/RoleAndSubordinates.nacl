@@ -1,0 +1,20 @@
+type salesforce.RoleAndSubordinates {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string roleAndSubordinate {
+    _required = false
+  }
+  metadataType = "RoleAndSubordinates"
+}

@@ -1,0 +1,70 @@
+settings salesforce.SearchSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean documentContentSearchEnabled {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean optimizeSearchForCJKEnabled {
+    _required = false
+  }
+  boolean recentlyViewedUsersForBlankLookupEnabled {
+    _required = false
+  }
+  salesforce.SearchSettingsByObject searchSettingsByObject {
+    _required = false
+  }
+  boolean sidebarAutoCompleteEnabled {
+    _required = false
+  }
+  boolean sidebarDropDownListEnabled {
+    _required = false
+  }
+  boolean sidebarLimitToItemsIOwnCheckboxEnabled {
+    _required = false
+  }
+  boolean singleSearchResultShortcutEnabled {
+    _required = false
+  }
+  boolean spellCorrectKnowledgeSearchEnabled {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  boolean enableAdvancedSearchInAlohaSidebar {
+  }
+  boolean enableEinsteinSearchPersonalization {
+  }
+  boolean enablePersonalTagging {
+  }
+  boolean enablePublicTagging {
+  }
+  boolean enableSalesforceGeneratedSynonyms {
+  }
+  boolean enableSearchTermHistory {
+  }
+  boolean enableSetupSearch {
+  }
+  boolean enableSuggestArticlesLinksOnly {
+  }
+  boolean enableUseDefaultSearchEntity {
+  }
+  metadataType = "SearchSettings"
+}

@@ -1,0 +1,135 @@
+type salesforce.SamlSsoConfig {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string attributeName {
+    _required = false
+  }
+  string attributeNameIdFormat {
+    _required = false
+  }
+  string decryptionCertificate {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.Certificate,
+    ]
+  }
+  string errorUrl {
+    _required = false
+  }
+  string executionUserId {
+    _required = false
+  }
+  string identityLocation {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Attribute",
+        "SubjectNameId",
+      ]
+    }
+  }
+  string identityMapping {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "FederationId",
+        "UserId",
+        "Username",
+      ]
+    }
+  }
+  string issuer {
+    _required = false
+  }
+  string loginUrl {
+    _required = false
+  }
+  string logoutUrl {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string oauthTokenEndpoint {
+    _required = false
+  }
+  boolean redirectBinding {
+    _required = false
+  }
+  string requestSignatureMethod {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "RSA-SHA1",
+        "RSA-SHA256",
+      ]
+    }
+  }
+  string requestSigningCertId {
+    _required = false
+  }
+  string salesforceLoginUrl {
+    _required = false
+  }
+  string samlEntityId {
+    _required = false
+  }
+  string samlJitHandlerId {
+    _required = false
+  }
+  string samlVersion {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SAML1_1",
+        "SAML2_0",
+      ]
+    }
+  }
+  string singleLogoutBinding {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "PostBinding",
+        "RedirectBinding",
+      ]
+    }
+  }
+  string singleLogoutUrl {
+    _required = false
+  }
+  boolean userProvisioning {
+    _required = false
+  }
+  string validationCert {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "samlssoconfig"
+  dirName = "samlssoconfigs"
+  metadataType = "SamlSsoConfig"
+}

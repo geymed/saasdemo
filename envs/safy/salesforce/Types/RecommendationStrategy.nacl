@@ -1,0 +1,72 @@
+type salesforce.RecommendationStrategy {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  salesforce.StrategyAction actionContext {
+    _required = false
+  }
+  string contextRecordType {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  salesforce.StrategyNodeFilter filter {
+    _required = false
+  }
+  salesforce.StrategyNodeIf if {
+    _required = false
+  }
+  salesforce.StrategyNodeInvocableAction invocableAction {
+    _required = false
+  }
+  boolean isTemplate {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  salesforce.StrategyNodeMap map {
+    _required = false
+  }
+  salesforce.StrategyNodeExclusive mutuallyExclusive {
+    _required = false
+  }
+  string onBehalfOfExpression {
+    _required = false
+  }
+  salesforce.StrategyNodeRecommendationLimit recommendationLimit {
+    _required = false
+  }
+  salesforce.StrategyNodeRecommendationLoad recommendationLoad {
+    _required = false
+  }
+  salesforce.StrategyNodeSort sort {
+    _required = false
+  }
+  salesforce.StrategyNodeUnion union {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "recommendationStrategy"
+  dirName = "recommendationStrategies"
+  metadataType = "RecommendationStrategy"
+}

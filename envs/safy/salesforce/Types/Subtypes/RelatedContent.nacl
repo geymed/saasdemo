@@ -1,0 +1,20 @@
+type salesforce.RelatedContent {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<salesforce.RelatedContentItem>" relatedContentItems {
+    _required = false
+  }
+  metadataType = "RelatedContent"
+}

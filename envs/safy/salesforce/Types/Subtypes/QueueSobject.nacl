@@ -1,0 +1,64 @@
+type salesforce.QueueSobject {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string sobjectType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AuthorizationForm",
+        "AuthorizationFormConsent",
+        "AuthorizationFormDataUse",
+        "Case",
+        "CommSubscription",
+        "CommSubscriptionChannelType",
+        "CommSubscriptionConsent",
+        "ConsumptionSchedule",
+        "ContactPointAddress",
+        "ContactPointConsent",
+        "ContactPointEmail",
+        "ContactPointPhone",
+        "ContactPointTypeConsent",
+        "ContactRequest",
+        "DataUseLegalBasis",
+        "DataUsePurpose",
+        "EngagementChannelType",
+        "Goal",
+        "Image",
+        "Lead",
+        "Macro",
+        "MessagingEndUser",
+        "MessagingSession",
+        "Metric",
+        "NewObjectBabe__c",
+        "NewObjectBabi__c",
+        "NewObjectName__c",
+        "Order",
+        "PartyConsent",
+        "QuickText",
+        "Scorecard",
+        "UserProvisioningRequest",
+        "WorkCoaching",
+        "WorkFeedback",
+        "WorkFeedbackQuestion",
+        "WorkFeedbackQuestionSet",
+        "WorkFeedbackRequest",
+        "WorkFeedbackTemplate",
+        "WorkPerformanceCycle",
+      ]
+    }
+  }
+  metadataType = "QueueSobject"
+}

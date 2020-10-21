@@ -1,0 +1,407 @@
+type salesforce.Opportunity {
+  serviceid Id {
+    apiName = "Opportunity.Id"
+    label = "Opportunity ID"
+    _required = false
+    queryable = true
+    _hidden = true
+    updateable = false
+    createable = false
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Opportunity.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+    _required = false
+  }
+  salesforce.Lookup AccountId {
+    apiName = "Opportunity.AccountId"
+    label = "Account ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsPrivate {
+    apiName = "Opportunity.IsPrivate"
+    label = "Private"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "Opportunity.Name"
+    label = "Name"
+    _required = true
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 120
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Opportunity.Description"
+    label = "Description"
+    _required = false
+    createable = true
+    updateable = true
+    length = 32000
+    queryable = true
+  }
+  salesforce.Picklist StageName {
+    apiName = "Opportunity.StageName"
+    label = "Stage"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.OpportunityStage
+  }
+  salesforce.Currency Amount {
+    apiName = "Opportunity.Amount"
+    label = "Amount"
+    _required = false
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Percent Probability {
+    apiName = "Opportunity.Probability"
+    label = "Probability (%)"
+    _required = false
+    createable = true
+    updateable = true
+    scale = 0
+    precision = 3
+    queryable = true
+  }
+  salesforce.Currency ExpectedRevenue {
+    apiName = "Opportunity.ExpectedRevenue"
+    label = "Expected Amount"
+    _required = false
+    createable = false
+    updateable = false
+    scale = 2
+    precision = 18
+    queryable = true
+  }
+  salesforce.Number TotalOpportunityQuantity {
+    apiName = "Opportunity.TotalOpportunityQuantity"
+    label = "Quantity"
+    _required = false
+    precision = 18
+    scale = 2
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+  }
+  salesforce.Date CloseDate {
+    apiName = "Opportunity.CloseDate"
+    label = "Close Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "Opportunity.Type"
+    label = "Opportunity Type"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.OpportunityType
+  }
+  salesforce.Text NextStep {
+    apiName = "Opportunity.NextStep"
+    label = "Next Step"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+  }
+  salesforce.Picklist LeadSource {
+    apiName = "Opportunity.LeadSource"
+    label = "Lead Source"
+    _required = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    valueSetName = salesforce.StandardValueSet.instance.LeadSource
+  }
+  salesforce.Checkbox IsClosed {
+    apiName = "Opportunity.IsClosed"
+    label = "Closed"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+  }
+  salesforce.Checkbox IsWon {
+    apiName = "Opportunity.IsWon"
+    label = "Won"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist ForecastCategory {
+    apiName = "Opportunity.ForecastCategory"
+    label = "Forecast Category"
+    _required = true
+    valueSet = [
+      {
+        fullName = "Omitted"
+        default = false
+        label = "Omitted"
+        isActive = true
+      },
+      {
+        fullName = "Pipeline"
+        default = false
+        label = "Pipeline"
+        isActive = true
+      },
+      {
+        fullName = "BestCase"
+        default = false
+        label = "Best Case"
+        isActive = true
+      },
+      {
+        fullName = "Forecast"
+        default = false
+        label = "Commit"
+        isActive = true
+      },
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist ForecastCategoryName {
+    apiName = "Opportunity.ForecastCategoryName"
+    label = "Forecast Category"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Omitted"
+        default = false
+        label = "Omitted"
+        isActive = true
+      },
+      {
+        fullName = "Pipeline"
+        default = false
+        label = "Pipeline"
+        isActive = true
+      },
+      {
+        fullName = "Best Case"
+        default = false
+        label = "Best Case"
+        isActive = true
+      },
+      {
+        fullName = "Commit"
+        default = false
+        label = "Commit"
+        isActive = true
+      },
+      {
+        fullName = "Closed"
+        default = false
+        label = "Closed"
+        isActive = true
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CampaignId {
+    apiName = "Opportunity.CampaignId"
+    label = "Campaign ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Campaign,
+    ]
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox HasOpportunityLineItem {
+    apiName = "Opportunity.HasOpportunityLineItem"
+    label = "Has Line Item"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup Pricebook2Id {
+    apiName = "Opportunity.Pricebook2Id"
+    label = "Price Book ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Pricebook2,
+    ]
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Opportunity.OwnerId"
+    label = "Owner ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Opportunity.CreatedDate"
+    label = "Created Date"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Opportunity.CreatedById"
+    label = "Created By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Opportunity.LastModifiedDate"
+    label = "Last Modified Date"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Opportunity.LastModifiedById"
+    label = "Last Modified By ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.User,
+    ]
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Opportunity.SystemModstamp"
+    label = "System Modstamp"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Date LastActivityDate {
+    apiName = "Opportunity.LastActivityDate"
+    label = "Last Activity"
+    _required = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden = true
+  }
+  salesforce.Text Fiscal {
+    apiName = "Opportunity.Fiscal"
+    label = "Fiscal Period"
+    _required = false
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 6
+    queryable = true
+  }
+  salesforce.Lookup ContactId {
+    apiName = "Opportunity.ContactId"
+    label = "Contact ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Contact,
+    ]
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Checkbox HasOpenActivity {
+    apiName = "Opportunity.HasOpenActivity"
+    label = "Has Open Activity"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+  }
+  salesforce.Checkbox HasOverdueTask {
+    apiName = "Opportunity.HasOverdueTask"
+    label = "Has Overdue Task"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup ContractId {
+    apiName = "Opportunity.ContractId"
+    queryable = false
+    updateable = false
+    createable = false
+  }
+  salesforce.Unknown IqScore {
+    apiName = "Opportunity.IqScore"
+    queryable = false
+    updateable = false
+    createable = false
+  }
+}

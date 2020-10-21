@@ -1,0 +1,26 @@
+type salesforce.PathAssistantStep {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string fieldNames {
+    _required = false
+  }
+  string info {
+    _required = false
+  }
+  string picklistValueName {
+    _required = false
+  }
+  metadataType = "PathAssistantStep"
+}

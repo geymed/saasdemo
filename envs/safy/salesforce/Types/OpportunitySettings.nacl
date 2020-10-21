@@ -1,0 +1,54 @@
+settings salesforce.OpportunitySettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean autoActivateNewReminders {
+    _required = false
+  }
+  boolean doesEnforceStandardOpportunitySaveLogic {
+    _required = false
+  }
+  boolean enableFindSimilarOpportunities {
+    _required = false
+  }
+  boolean enableOpportunityTeam {
+    _required = false
+  }
+  boolean enableUpdateReminders {
+    _required = false
+  }
+  salesforce.FindSimilarOppFilter findSimilarOppFilter {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean promptToAddProducts {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  boolean customizableProductSchedulesEnabled {
+  }
+  boolean doesAutoAddSplitOwnerAsOpportunityTeamMember {
+  }
+  boolean enableOpportunityFieldHistoryTracking {
+  }
+  boolean enableOpportunityInsightsInMobile {
+  }
+  metadataType = "OpportunitySettings"
+}

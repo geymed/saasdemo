@@ -1,0 +1,23 @@
+type salesforce.BrandingSetProperty {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string propertyName {
+    _required = false
+  }
+  string propertyValue {
+    _required = false
+  }
+  metadataType = "BrandingSetProperty"
+}

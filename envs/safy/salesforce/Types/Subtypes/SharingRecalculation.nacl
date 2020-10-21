@@ -1,0 +1,20 @@
+type salesforce.SharingRecalculation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string className {
+    _required = false
+  }
+  metadataType = "SharingRecalculation"
+}

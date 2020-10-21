@@ -1,0 +1,131 @@
+type salesforce.SessionSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean allowUserAuthenticationByCertificate {
+    _required = false
+  }
+  boolean canConfirmEmailChangeInLightningCommunities {
+    _required = false
+  }
+  boolean disableTimeoutWarning {
+    _required = false
+  }
+  boolean enableCSPOnEmail {
+    _required = false
+  }
+  boolean enableCSRFOnGet {
+    _required = false
+  }
+  boolean enableCSRFOnPost {
+    _required = false
+  }
+  boolean enableCacheAndAutocomplete {
+    _required = false
+  }
+  boolean enableClickjackNonsetupSFDC {
+    _required = false
+  }
+  boolean enableClickjackNonsetupUser {
+    _required = false
+  }
+  boolean enableClickjackNonsetupUserHeaderless {
+    _required = false
+  }
+  boolean enableClickjackSetup {
+    _required = false
+  }
+  boolean enableContentSniffingProtection {
+    _required = false
+  }
+  boolean enableLightningLogin {
+    _required = false
+  }
+  boolean enableLightningLoginOnlyWithUserPerm {
+    _required = false
+  }
+  boolean enablePostForSessions {
+    _required = false
+  }
+  boolean enableSMSIdentity {
+    _required = false
+  }
+  boolean enableU2F {
+    _required = false
+  }
+  boolean enableUpgradeInsecureRequests {
+    _required = false
+  }
+  boolean enableXssProtection {
+    _required = false
+  }
+  boolean enforceIpRangesEveryRequest {
+    _required = false
+  }
+  boolean forceLogoutOnSessionTimeout {
+    _required = false
+  }
+  boolean forceRelogin {
+    _required = false
+  }
+  boolean hasRetainedLoginHints {
+    _required = false
+  }
+  boolean hasUserSwitching {
+    _required = false
+  }
+  boolean hstsOnForcecomSites {
+    _required = false
+  }
+  boolean identityConfirmationOnEmailChange {
+    _required = false
+  }
+  boolean identityConfirmationOnTwoFactorRegistrationEnabled {
+    _required = false
+  }
+  boolean lockSessionsToDomain {
+    _required = false
+  }
+  boolean lockSessionsToIp {
+    _required = false
+  }
+  string lockerServiceAPIVersion {
+    _required = false
+  }
+  boolean lockerServiceCSP {
+    _required = false
+  }
+  boolean lockerServiceFrozenRealm {
+    _required = false
+  }
+  string logoutURL {
+    _required = false
+  }
+  boolean redirectionWarning {
+    _required = false
+  }
+  boolean referrerPolicy {
+    _required = false
+  }
+  boolean requireHttpOnly {
+    _required = false
+  }
+  boolean requireHttps {
+    _required = false
+  }
+  boolean securityCentralKillSession {
+    _required = false
+  }
+  metadataType = "SessionSettings"
+}

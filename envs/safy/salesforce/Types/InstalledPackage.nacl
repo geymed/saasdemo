@@ -1,0 +1,36 @@
+type salesforce.InstalledPackage {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean activateRSS {
+    _required = false
+  }
+  string password {
+    _required = false
+  }
+  string versionNumber {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "installedPackage"
+  dirName = "installedPackages"
+  metadataType = "InstalledPackage"
+}

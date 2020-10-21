@@ -1,0 +1,38 @@
+type salesforce.RecordActionRecommendation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string defaultStrategy {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.RecommendationStrategy,
+    ]
+  }
+  boolean hasDescription {
+    _required = false
+  }
+  boolean hasImage {
+    _required = false
+  }
+  boolean hasRejectAction {
+    _required = false
+  }
+  boolean hasTitle {
+    _required = false
+  }
+  number maxDisplayRecommendations {
+    _required = false
+  }
+  metadataType = "RecordActionRecommendation"
+}

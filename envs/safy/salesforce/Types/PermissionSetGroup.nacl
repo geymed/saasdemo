@@ -1,0 +1,49 @@
+type salesforce.PermissionSetGroup {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string status {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Failed",
+        "Outdated",
+        "Updated",
+        "Updating",
+      ]
+    }
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  "List<string>" permissionSets {
+  }
+  string mutingPermissionSets {
+  }
+  suffix = "permissionsetgroup"
+  dirName = "permissionsetgroups"
+  metadataType = "PermissionSetGroup"
+}

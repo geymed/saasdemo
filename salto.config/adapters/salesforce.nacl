@@ -1,0 +1,19 @@
+salesforce {
+  metadataTypesSkippedList = [
+    "Report",
+    "ReportType",
+    "ReportFolder",
+    "Dashboard",
+    "DashboardFolder",
+    "Profile",
+    "ForecastingSettings",
+  ]
+  instancesRegexSkippedList = [
+    "^EmailTemplate.MarketoEmailTemplates",
+    "^StandardValueSet.AddressCountryCode",
+    "^StandardValueSet.AddressStateCode",
+  ]
+  maxConcurrentRetrieveRequests = 3
+  maxItemsInRetrieveRequest = 2500
+  enableHideTypesInNacls = false
+}

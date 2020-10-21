@@ -1,0 +1,36 @@
+type salesforce.WorkflowTimeTrigger {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<salesforce.WorkflowActionReference>" actions {
+    _required = false
+  }
+  string offsetFromField {
+    _required = false
+  }
+  string timeLength {
+    _required = false
+  }
+  string workflowTimeTriggerUnit {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Days",
+        "Hours",
+      ]
+    }
+  }
+  metadataType = "WorkflowTimeTrigger"
+}

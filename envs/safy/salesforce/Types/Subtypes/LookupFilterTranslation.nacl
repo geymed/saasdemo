@@ -1,0 +1,23 @@
+type salesforce.LookupFilterTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string errorMessage {
+    _required = false
+  }
+  string informationalMessage {
+    _required = false
+  }
+  metadataType = "LookupFilterTranslation"
+}

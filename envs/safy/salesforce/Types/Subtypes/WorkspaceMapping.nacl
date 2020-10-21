@@ -1,0 +1,23 @@
+type salesforce.WorkspaceMapping {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string fieldName {
+    _required = false
+  }
+  string tab {
+    _required = false
+  }
+  metadataType = "WorkspaceMapping"
+}

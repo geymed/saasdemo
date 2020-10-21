@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_SUPPORTSelfServiceNewUserLoginInformationSAMPLE {
+  attr_xmlns = "http://soap.sforce.com/2006/04/metadata"
+  available = true
+  description = "Notification of login and password to new Self-Service user"
+  encodingKey = "ISO-8859-1"
+  name = "SUPPORT:  Self-Service New User Login Information (SAMPLE)"
+  style = "none"
+  subject = "Your {!Organization.Name} Self-Service username and password"
+  type = "text"
+  uiType = "Aloha"
+  fullName = "unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email")
+}

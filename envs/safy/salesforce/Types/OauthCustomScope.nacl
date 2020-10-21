@@ -1,0 +1,42 @@
+type salesforce.OauthCustomScope {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string developerName {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean isProtected {
+    _required = false
+  }
+  boolean isPublic {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "oauthcustomscope"
+  dirName = "oauthcustomscopes"
+  metadataType = "OauthCustomScope"
+}

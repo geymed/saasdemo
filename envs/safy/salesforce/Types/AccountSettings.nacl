@@ -1,0 +1,42 @@
+settings salesforce.AccountSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean enableAccountOwnerReport {
+    _required = false
+  }
+  boolean enableAccountTeams {
+    _required = false
+  }
+  serviceid fullName {
+    _required = false
+  }
+  boolean showViewHierarchyLink {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  boolean enableAccountHistoryTracking {
+  }
+  boolean enableAccountInsightsInMobile {
+  }
+  boolean enableContactHistoryTracking {
+  }
+  boolean enableRelateContactToMultipleAccounts {
+  }
+  metadataType = "AccountSettings"
+}

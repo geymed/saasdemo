@@ -1,0 +1,119 @@
+type salesforce.AnimationRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string animationFrequency {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "always",
+        "often",
+        "rarely",
+        "sometimes",
+      ]
+    }
+  }
+  string developerName {
+    _required = false
+  }
+  boolean isActive {
+    _required = false
+  }
+  string masterLabel {
+    _required = false
+  }
+  string recordTypeContext {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "All",
+        "Custom",
+        "Master",
+      ]
+    }
+  }
+  string recordTypeName {
+    _required = false
+  }
+  string sobjectType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Account",
+        "Campaign",
+        "Case",
+        "Contact",
+        "Contract",
+        "Lead",
+        "NewObjectBabe__c",
+        "NewObjectBabi__c",
+        "NewObjectName__c",
+        "Opportunity",
+        "Order",
+      ]
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+    ]
+  }
+  string targetField {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AccountSource",
+        "Active__c",
+        "CustomerPriority__c",
+        "DeliveryInstallationStatus__c",
+        "ForecastCategoryName",
+        "Industry",
+        "LeadSource",
+        "Level__c",
+        "Ownership",
+        "PotentialLiability__c",
+        "Primary__c",
+        "ProductInterest__c",
+        "Product__c",
+        "Rating",
+        "SLAViolation__c",
+        "SLA__c",
+        "StageName",
+        "Status",
+        "Type",
+        "UpsellOpportunity__c",
+        "aaaman__c",
+      ]
+    }
+    foreignKeyDomain = [
+      salesforce.CustomField,
+    ]
+  }
+  string targetFieldChangeToValues {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "animationRule"
+  dirName = "animationRules"
+  metadataType = "AnimationRule"
+}

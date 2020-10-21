@@ -1,0 +1,37 @@
+type salesforce.FieldSet {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.FieldSetItem>" availableFields {
+    _required = false
+  }
+  string description {
+    _required = false
+  }
+  "List<salesforce.FieldSetItem>" displayedFields {
+    _required = false
+  }
+  string label {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  metadataType = "FieldSet"
+}

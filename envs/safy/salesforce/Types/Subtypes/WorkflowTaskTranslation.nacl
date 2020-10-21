@@ -1,0 +1,26 @@
+type salesforce.WorkflowTaskTranslation {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string description {
+    _required = false
+  }
+  string name {
+    _required = false
+  }
+  string subject {
+    _required = false
+  }
+  metadataType = "WorkflowTaskTranslation"
+}

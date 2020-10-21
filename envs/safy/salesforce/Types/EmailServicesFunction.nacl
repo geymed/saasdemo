@@ -1,0 +1,121 @@
+type salesforce.EmailServicesFunction {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  string apexClass {
+    _required = false
+    foreignKeyDomain = [
+      salesforce.ApexClass,
+    ]
+  }
+  string attachmentOption {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "All",
+        "BinaryOnly",
+        "NoContent",
+        "None",
+        "TextOnly",
+      ]
+    }
+  }
+  string authenticationFailureAction {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Bounce",
+        "Discard",
+        "Requeue",
+        "UseSystemDefault",
+      ]
+    }
+  }
+  string authorizationFailureAction {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Bounce",
+        "Discard",
+        "Requeue",
+        "UseSystemDefault",
+      ]
+    }
+  }
+  string authorizedSenders {
+    _required = false
+  }
+  salesforce.EmailServicesAddress emailServicesAddresses {
+    _required = false
+  }
+  string errorRoutingAddress {
+    _required = false
+  }
+  string functionInactiveAction {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Bounce",
+        "Discard",
+        "Requeue",
+        "UseSystemDefault",
+      ]
+    }
+  }
+  string functionName {
+    _required = false
+  }
+  boolean isActive {
+    _required = false
+  }
+  boolean isAuthenticationRequired {
+    _required = false
+  }
+  boolean isErrorRoutingEnabled {
+    _required = false
+  }
+  boolean isTextAttachmentsAsBinary {
+    _required = false
+  }
+  boolean isTlsRequired {
+    _required = false
+  }
+  string overLimitAction {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Bounce",
+        "Discard",
+        "Requeue",
+        "UseSystemDefault",
+      ]
+    }
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  suffix = "xml"
+  dirName = "emailservices"
+  metadataType = "EmailServicesFunction"
+}

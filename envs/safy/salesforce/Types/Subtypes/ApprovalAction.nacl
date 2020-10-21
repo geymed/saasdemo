@@ -1,0 +1,20 @@
+type salesforce.ApprovalAction {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  "List<salesforce.WorkflowActionReference>" action {
+    _required = false
+  }
+  metadataType = "ApprovalAction"
+}

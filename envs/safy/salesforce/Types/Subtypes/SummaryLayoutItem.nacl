@@ -1,0 +1,32 @@
+type salesforce.SummaryLayoutItem {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string customLink {
+    _required = false
+  }
+  string field {
+    _required = false
+  }
+  number posX {
+    _required = false
+  }
+  number posY {
+    _required = false
+  }
+  number posZ {
+    _required = false
+  }
+  metadataType = "SummaryLayoutItem"
+}

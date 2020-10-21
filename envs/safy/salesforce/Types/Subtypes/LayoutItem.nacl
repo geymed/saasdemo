@@ -1,0 +1,65 @@
+type salesforce.LayoutItem {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.AnalyticsCloudComponentLayoutItem analyticsCloudComponent {
+    _required = false
+  }
+  string canvas {
+    _required = false
+  }
+  string component {
+    _required = false
+  }
+  string customLink {
+    _required = false
+  }
+  boolean emptySpace {
+    _required = false
+  }
+  string field {
+    _required = false
+  }
+  number height {
+    _required = false
+  }
+  string page {
+    _required = false
+  }
+  salesforce.ReportChartComponentLayoutItem reportChartComponent {
+    _required = false
+  }
+  string scontrol {
+    _required = false
+  }
+  boolean showLabel {
+    _required = false
+  }
+  boolean showScrollbars {
+    _required = false
+  }
+  string width {
+    _required = false
+  }
+  string behavior {
+    _restriction = {
+      values = [
+        "Edit",
+        "Required",
+        "Readonly",
+      ]
+    }
+  }
+  metadataType = "LayoutItem"
+}
