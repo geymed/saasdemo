@@ -5,9 +5,9 @@ type salesforce.Order {
     _required = false
     createable = false
     updateable = false
-    unique = false
-    caseSensitive = false
-    length = 18
+    
+    
+    
     _hidden = true
   }
   salesforce.Lookup OwnerId {
@@ -280,9 +280,9 @@ type salesforce.Order {
     _required = true
     createable = false
     updateable = false
-    unique = false
-    caseSensitive = false
-    length = 30
+    
+    
+    
   }
   salesforce.Currency TotalAmount {
     apiName = "Order.TotalAmount"

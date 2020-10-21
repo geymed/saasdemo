@@ -5,9 +5,9 @@ type salesforce.Contract {
     _required = false
     createable = false
     updateable = false
-    unique = false
-    caseSensitive = false
-    length = 18
+    
+    
+    
     _hidden = true
   }
   salesforce.Lookup AccountId {
@@ -265,9 +265,9 @@ type salesforce.Contract {
     _required = true
     createable = false
     updateable = false
-    unique = false
-    caseSensitive = false
-    length = 30
+    
+    
+    
   }
   salesforce.DateTime LastApprovedDate {
     apiName = "Contract.LastApprovedDate"

@@ -5,9 +5,9 @@ type salesforce.NewObjectBabe__c {
     _required = false
     createable = false
     updateable = false
-    unique = false
-    caseSensitive = false
-    length = 18
+    
+    
+    
     _hidden = true
   }
   salesforce.Lookup OwnerId {

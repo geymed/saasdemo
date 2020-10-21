@@ -5,8 +5,8 @@ salesforce.SecuritySettings {
   enableAuditFieldsInactiveOwner = false
   enableAuraSecureEvalPref = true
   enableRequireHttpsConnection = true
-  isTLSv12Required = false
-  isTLSv12RequiredCommunities = false
+  
+  
   passwordPolicies = {
     enableSetPasswordInApi = true
     historyRestriction = "3"
@@ -49,7 +49,7 @@ salesforce.SecuritySettings {
     referrerPolicy = true
     requireHttpOnly = false
     requireHttps = true
-    securityCentralKillSession = true
+    
   }
   singleSignOnSettings = {
     enableMultipleSamlConfigs = true

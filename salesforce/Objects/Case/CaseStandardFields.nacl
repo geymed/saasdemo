@@ -5,9 +5,9 @@ type salesforce.Case {
     _required = false
     createable = false
     updateable = false
-    unique = false
-    caseSensitive = false
-    length = 18
+    
+    
+    
     _hidden = true
   }
   salesforce.Checkbox IsDeleted {
@@ -36,9 +36,9 @@ type salesforce.Case {
     _required = true
     createable = false
     updateable = false
-    unique = false
-    caseSensitive = false
-    length = 30
+    
+    
+    
   }
   salesforce.Lookup ContactId {
     apiName = "Case.ContactId"
